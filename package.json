@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "MCP server providing enterprise printer information for sales and service teams",
   "type": "module",
-  "module": "dist/index.js",
+  "module": "src/index.js",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc && cp src/pdf-wrapper.cjs dist/pdf-wrapper.cjs && node dist/build-database.js",
@@ -48,4 +48,5 @@
     "@smithery/cli": "^1.4.6"
   }
 }
+
 
