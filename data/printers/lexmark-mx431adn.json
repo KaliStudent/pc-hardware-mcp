@@ -150,10 +150,78 @@
         "Print Wireless Setup page"
       ]
     },
+    "webInterface": {
+      "accessUrl": "https://[printer-ip]",
+      "defaultCredentials": {"username": "Not required", "password": "Set via Security > Manage Permissions if needed"},
+      "certificateWarning": "Self-signed certificate - accept browser warning.",
+      "accessSteps": ["Print Network Setup Page from touchscreen", "Note IP address", "Browse to https://[ip]", "Accept certificate warning", "Access Embedded Web Server (EWS)", "Navigate settings and configuration"]
+    },
     "driverInstallation": {
-      "windows": "Download Lexmark Universal Print Driver or MX431adn-specific driver from lexmark.com. Run installer and select network installation. Driver auto-discovers printer or enter IP manually. Install full feature driver for scan and fax functionality.",
-      "mac": "Download macOS driver from lexmark.com. Add via System Preferences > Printers & Scanners. Supports AirPrint for basic printing. Use Lexmark driver for scanning and advanced features.",
-      "linux": "Download PPD files from Lexmark support. Configure via CUPS at localhost:631. Most print and scan features supported with proper SANE configuration."
+      "windows10": {
+        "procedure": ["Visit support.lexmark.com and search MX431adn", "Download Universal Print Driver (UPD) or device-specific driver", "Run installer as Administrator", "Select Network installation", "Auto-discover or enter IP manually", "Install full feature driver (print, scan, fax)", "Complete installation"],
+        "notes": ["UPD recommended for fleet deployment", "Device-specific driver for full features", "Lexmark Scan Center required for scanning"]
+      },
+      "windows11": {
+        "procedure": ["Download Windows 11 driver from support.lexmark.com", "Run installer as Administrator", "Select Network connection", "Complete setup"],
+        "notes": ["Windows 11 22H2+ fully supported", "UPD compatible"]
+      },
+      "mac": {
+        "procedure": ["Download macOS driver from support.lexmark.com", "Install PKG file", "Add via System Settings > Printers & Scanners", "Select MX431adn or use AirPrint", "Install Lexmark Scan software for scanning"],
+        "notes": ["macOS 11+ AirPrint supported", "Apple Silicon compatible", "Full driver required for scan/fax"]
+      },
+      "linux": {
+        "procedure": ["Download Lexmark Linux PPD from support site", "Configure via CUPS at localhost:631", "Add printer with device IP", "Select Lexmark PPD file", "Configure SANE for scanning"],
+        "notes": ["Ubuntu 20.04+ supported", "CUPS 2.0+ required", "SANE backends for scan functionality"]
+      },
+      "driverDownloads": [
+        {"os": "Windows 10/11", "url": "https://support.lexmark.com/en_us/printer/mx431adn"},
+        {"os": "macOS", "url": "https://support.lexmark.com/en_us/printer/mx431adn"},
+        {"os": "Linux", "url": "https://support.lexmark.com/en_us/printer/mx431adn"}
+      ]
+    },
+    "backupRestore": {
+      "systemBackup": {
+        "procedure": ["Access EWS at https://[ip]", "Navigate to Settings > Import/Export", "Click Export Configuration", "Save .lxk file", "Store securely"],
+        "fileFormat": ".lxk (Lexmark configuration file)",
+        "location": "Local download",
+        "notes": ["Includes network, security, scan settings", "Password-protect if contains credentials"]
+      },
+      "systemRestore": {
+        "procedure": ["Access EWS", "Settings > Import/Export", "Choose .lxk file", "Click Import", "Device applies settings and may reboot"],
+        "prerequisites": ["Valid .lxk backup file", "Same firmware version recommended", "Admin access to EWS"],
+        "notes": ["Some security settings may require re-entry", "Reboot takes 2-3 minutes"]
+      },
+      "addressBookBackup": {
+        "procedure": ["EWS > Address Book", "Export to CSV", "Save contacts file"],
+        "fileFormat": ".csv",
+        "location": "Local download",
+        "notes": ["Contains fax and scan destinations", "Can edit in Excel before re-import"]
+      },
+      "addressBookRestore": {
+        "procedure": ["EWS > Address Book", "Import from CSV", "Upload file", "Verify contacts"],
+        "fileFormat": ".csv",
+        "prerequisites": ["Valid CSV format"]
+      }
+    },
+    "scanDestinations": {
+      "scanToEmail": {
+        "requirements": ["SMTP server and port", "Authentication credentials", "Valid sender email", "Network access to SMTP server"],
+        "smtpConfiguration": ["Access EWS > Settings > Email", "Enter SMTP server: smtp.office365.com or smtp.gmail.com", "Port: 25, 587 (TLS), or 465 (SSL)", "Enable authentication if required", "Enter username (full email) and password", "Set From address (sender)", "Choose encryption: None/STARTTLS/SSL", "Test email via EWS"],
+        "authenticationSetup": ["Office 365: smtp.office365.com:587 STARTTLS, full email as username", "Gmail: smtp.gmail.com:587, use app-specific password", "Exchange: Use internal server address", "Verify From address matches authenticated account"],
+        "testProcedure": ["EWS > Email Settings > Send Test Email", "Enter recipient", "Click Send", "Check inbox (1-2 min)", "From touchscreen: Scan > Email > Enter address > Scan"]
+      },
+      "scanToFolder": {
+        "requirements": ["SMB/CIFS or FTP network share", "Write permissions", "Network path: \\\\\\\\server\\\\share\\\\folder", "Firewall allows SMB (445) or FTP (21)"],
+        "smbConfiguration": ["EWS > Scan Settings > Scan Center", "Add new shortcut", "Name: Department Scans", "Path: \\\\\\\\fileserver\\\\scans\\\\dept", "Username: DOMAIN\\\\scanuser", "Password", "File format: PDF/JPEG/TIFF", "Test connection"],
+        "ftpConfiguration": ["EWS > Scan Center", "Add FTP shortcut", "Server: ftp.company.com", "Port: 21", "Username/password", "Directory path", "Passive mode recommended"],
+        "authenticationSetup": ["Active Directory: DOMAIN\\\\username", "Local: SERVERNAME\\\\username", "Verify write permissions on share", "Test manually from PC first"]
+      },
+      "scanToUsb": {
+        "requirements": ["FAT32 or exFAT formatted USB drive", "Minimum 100MB free space", "Front panel USB port"],
+        "procedure": ["Insert USB drive into port", "Touchscreen: Scan to USB option", "Choose file type (PDF/JPEG/TIFF)", "Select color/B&W", "Set resolution (200/300/600 dpi)", "Load document in ADF or on glass", "Press Scan", "Wait for completion", "Eject USB via touchscreen"],
+        "supportedFormats": ["PDF (single/multi-page)", "JPEG (single page)", "TIFF (single/multi-page)"],
+        "notes": ["FAT32 has 4GB file limit", "Always eject before removing", "Files saved with timestamp"]
+      }
     },
     "configPages": {
       "meterPage": "Touchscreen: Reports > Device > Device Statistics",

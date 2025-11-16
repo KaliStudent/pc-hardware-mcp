@@ -181,10 +181,58 @@
         "Test throughput and connectivity"
       ]
     },
+    "webInterface": {
+      "accessUrl": "http://[printer-ip]",
+      "defaultCredentials": {"username": "Administrator", "password": "Set during install"},
+      "certificateWarning": "HTTP default. HTTPS via cert.",
+      "accessSteps": ["Print Network Config", "Note IP", "Browse http://[ip]", "Login", "Command WorkStation/Web Connection"]
+    },
     "driverInstallation": {
-      "windows": "Download AccurioPress C4080 PostScript driver from Konica Minolta support. For production workflow, install Command WorkStation for job management. Configure color management profiles. Test with color calibration target.",
-      "mac": "Download macOS PostScript driver from support site. Install Command WorkStation for Mac if available. Configure ColorSync profiles. Add printer via System Preferences with PostScript PPD.",
-      "linux": "Download Linux PPD and CUPS driver. Install via CUPS interface. Configure color management with appropriate ICC profiles. Test PostScript rendering."
+      "windows10": {
+        "procedure": ["konicaminolta.com/support", "Search C4080", "Download PS driver + Command WorkStation", "Install", "Configure ICC profiles", "Calibrate"],
+        "notes": ["PostScript required", "Command WorkStation for production", "Color management critical"]
+      },
+      "windows11": {
+        "procedure": ["Download Win11 PS driver", "Install Command WorkStation", "Configure", "Calibrate"],
+        "notes": ["Win11 OK"]
+      },
+      "mac": {
+        "procedure": ["Download macOS PS driver", "Install Command WorkStation if available", "Add with PPD", "ColorSync profiles"],
+        "notes": ["PostScript PPD required"]
+      },
+      "linux": {
+        "procedure": ["Download PPD", "CUPS localhost:631", "Configure ICC profiles", "Test PS rendering"],
+        "notes": ["PostScript workflows"]
+      },
+      "driverDownloads": [
+        {"os": "Windows 10/11", "url": "https://www.konicaminolta.com/us-en/support"},
+        {"os": "macOS", "url": "https://www.konicaminolta.com/us-en/support"},
+        {"os": "Linux", "url": "https://www.konicaminolta.com/us-en/support"}
+      ]
+    },
+    "backupRestore": {
+      "systemBackup": {
+        "procedure": ["Web Connection > Import/Export", "Export all settings", "Save .zip"],
+        "fileFormat": ".zip",
+        "location": "Local",
+        "notes": ["Includes color profiles and media catalog"]
+      },
+      "systemRestore": {
+        "procedure": ["Import/Export", "Import .zip", "Apply", "Recalibrate color"],
+        "prerequisites": ["Valid backup", "Same firmware", "Recalibration after restore"]
+      }
+    },
+    "scanDestinations": {
+      "scanToEmail": {
+        "requirements": ["SMTP server", "Credentials"],
+        "smtpConfiguration": ["Web Connection > E-mail", "smtp.office365.com:587", "Auth", "Test"],
+        "authenticationSetup": ["O365: STARTTLS", "Gmail: app password"]
+      },
+      "scanToFolder": {
+        "requirements": ["SMB/FTP", "Credentials"],
+        "smbConfiguration": ["Scan settings", "SMB path", "DOMAIN\\\\user", "Test"],
+        "authenticationSetup": ["Active Directory recommended"]
+      }
     },
     "configPages": {
       "meterPage": "Touch screen: Counter > Print Counter List. Shows total impressions by CMYK, paper size, and job type.",

@@ -158,10 +158,72 @@
         "Confirm connection and test"
       ]
     },
+    "webInterface": {
+      "accessUrl": "http://[printer-ip]",
+      "defaultCredentials": {"username": "Administrator", "password": "Set during initial setup"},
+      "certificateWarning": "HTTP default. HTTPS available via certificate installation.",
+      "accessSteps": ["Print Network Configuration from touchscreen", "Note IP", "Browse to http://[ip]", "Login as Administrator", "Access Web Connection interface"]
+    },
     "driverInstallation": {
-      "windows": "Download Konica Minolta bizhub C360i PCL/PS driver from support website. Run installer and select network search or enter IP address manually. Configure print settings and test page.",
-      "mac": "Download macOS driver from Konica Minolta support. Install PKG file and add printer via System Preferences > Printers & Scanners. Device supports AirPrint for driver-free printing.",
-      "linux": "Download Linux PPD and driver package from support site. Install via CUPS web interface (localhost:631). Configure using device IP address."
+      "windows10": {
+        "procedure": ["Visit konicaminolta.com/support", "Search bizhub C360i", "Download PCL or PS driver", "Run installer", "Network search or enter IP", "Install driver", "Test print"],
+        "notes": ["PCL6 recommended", "PS for graphics workflows", "PageScope utilities available"]
+      },
+      "windows11": {
+        "procedure": ["Download Win11 driver", "Run as admin", "Network setup", "Complete"],
+        "notes": ["Win11 22H2+ supported"]
+      },
+      "mac": {
+        "procedure": ["Download macOS driver", "Install PKG", "Add via System Settings", "Select or use AirPrint"],
+        "notes": ["macOS 11+ AirPrint OK", "Full driver for scan"]
+      },
+      "linux": {
+        "procedure": ["Download PPD from KM support", "CUPS localhost:631", "Add with IP", "Select PPD"],
+        "notes": ["Ubuntu 20.04+", "SANE for scanning"]
+      },
+      "driverDownloads": [
+        {"os": "Windows 10/11", "url": "https://www.konicaminolta.com/us-en/support"},
+        {"os": "macOS", "url": "https://www.konicaminolta.com/us-en/support"},
+        {"os": "Linux", "url": "https://www.konicaminolta.com/us-en/support"}
+      ]
+    },
+    "backupRestore": {
+      "systemBackup": {
+        "procedure": ["Web Connection > Import/Export", "Export settings", "Save .zip or .dat file"],
+        "fileFormat": ".zip or .dat",
+        "location": "Local download"
+      },
+      "systemRestore": {
+        "procedure": ["Web Connection > Import/Export", "Import file", "Apply settings", "Reboot"],
+        "prerequisites": ["Valid backup", "Same firmware recommended"]
+      },
+      "addressBookBackup": {
+        "procedure": ["Web Connection > Address Book", "Export", "Save CSV"],
+        "fileFormat": ".csv"
+      },
+      "addressBookRestore": {
+        "procedure": ["Web Connection > Address Book", "Import CSV"],
+        "fileFormat": ".csv"
+      }
+    },
+    "scanDestinations": {
+      "scanToEmail": {
+        "requirements": ["SMTP server", "Auth credentials", "Sender email", "Network access"],
+        "smtpConfiguration": ["Web Connection > Network > E-mail Settings", "SMTP server: smtp.office365.com", "Port: 587 TLS or 465 SSL", "Auth: username/password", "From address", "Test"],
+        "authenticationSetup": ["Office 365: smtp.office365.com:587 STARTTLS", "Gmail: smtp.gmail.com:587 app password"],
+        "testProcedure": ["Web interface test", "Touchscreen: Scan > Email > address > Scan"]
+      },
+      "scanToFolder": {
+        "requirements": ["SMB/FTP share", "Credentials", "Network path"],
+        "smbConfiguration": ["Web Connection > Scan/Fax", "Add SMB destination", "Path: \\\\\\\\server\\\\share", "User: DOMAIN\\\\user", "Password", "Test"],
+        "ftpConfiguration": ["Add FTP destination", "Server/port", "Credentials", "Path"],
+        "authenticationSetup": ["AD: DOMAIN\\\\username", "Local: SERVERNAME\\\\username"]
+      },
+      "scanToUsb": {
+        "requirements": ["FAT32/exFAT USB", "Front panel port"],
+        "procedure": ["Insert USB", "Scan to USB", "Choose format/settings", "Scan", "Eject"],
+        "supportedFormats": ["PDF", "JPEG", "TIFF", "XPS"]
+      }
     },
     "configPages": {
       "meterPage": "Touch screen: Counter > Print Counter List. Shows total impressions, prints, copies, scans by color.",

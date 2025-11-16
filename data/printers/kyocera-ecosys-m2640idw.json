@@ -132,10 +132,66 @@
         "Alternatively, use WPS push-button method if supported by router"
       ]
     },
+    "webInterface": {
+      "accessUrl": "http://[printer-ip]",
+      "defaultCredentials": {"username": "Admin", "password": "Admin (default - change immediately)"},
+      "certificateWarning": "HTTP default. HTTPS via cert install.",
+      "accessSteps": ["Print Network Status", "Note IP", "Browse http://[ip]", "Login Admin/Admin", "Command Center RX"]
+    },
     "driverInstallation": {
-      "windows": "Download KX Driver from Kyocera website. Run installer and follow prompts. Select network search to automatically detect printer.",
-      "mac": "Download macOS driver from Kyocera website. Open .dmg file and run installer. Add printer via System Preferences using Bonjour or IP address.",
-      "linux": "Use Kyocera Linux PPD files available from support website. Add printer via CUPS web interface at localhost:631."
+      "windows10": {
+        "procedure": ["kyoceradocumentsolutions.com/support", "Search M2640idw", "Download KX Driver", "Run installer", "Network search or IP", "Install", "Test"],
+        "notes": ["KX Driver universal", "TWAIN for scanning"]
+      },
+      "windows11": {
+        "procedure": ["Download Win11 KX Driver", "Run installer", "Network", "Complete"],
+        "notes": ["Win11 OK"]
+      },
+      "mac": {
+        "procedure": ["Download macOS driver", "Install .dmg", "Add via System Settings", "Bonjour or IP"],
+        "notes": ["macOS 11+ AirPrint"]
+      },
+      "linux": {
+        "procedure": ["Download PPD", "CUPS localhost:631", "Add with IP"],
+        "notes": ["Ubuntu 20.04+"]
+      },
+      "driverDownloads": [
+        {"os": "Windows 10/11", "url": "https://www.kyoceradocumentsolutions.com/support"},
+        {"os": "macOS", "url": "https://www.kyoceradocumentsolutions.com/support"},
+        {"os": "Linux", "url": "https://www.kyoceradocumentsolutions.com/support"}
+      ]
+    },
+    "backupRestore": {
+      "systemBackup": {
+        "procedure": ["Command Center RX > Export/Import", "Export", "Save .zip"],
+        "fileFormat": ".zip",
+        "location": "Local"
+      },
+      "systemRestore": {
+        "procedure": ["Export/Import", "Import .zip", "Apply", "Reboot"],
+        "prerequisites": ["Valid backup"]
+      },
+      "addressBookBackup": {
+        "procedure": ["Address Book > Export CSV"],
+        "fileFormat": ".csv"
+      }
+    },
+    "scanDestinations": {
+      "scanToEmail": {
+        "requirements": ["SMTP server", "Credentials"],
+        "smtpConfiguration": ["Command Center RX > Email", "smtp.office365.com:587", "Auth", "From address", "Test"],
+        "authenticationSetup": ["O365: :587 STARTTLS", "Gmail: app password"]
+      },
+      "scanToFolder": {
+        "requirements": ["SMB/FTP", "Credentials"],
+        "smbConfiguration": ["Address Book > SMB", "\\\\\\\\server\\\\share", "DOMAIN\\\\user", "Password", "Test"],
+        "authenticationSetup": ["DOMAIN\\\\user or SERVERNAME\\\\user"]
+      },
+      "scanToUsb": {
+        "requirements": ["FAT32/exFAT USB"],
+        "procedure": ["Insert USB", "Scan to USB", "Settings", "Scan", "Remove"],
+        "supportedFormats": ["PDF", "JPEG", "TIFF", "XPS"]
+      }
     },
     "configPages": {
       "meterPage": "Press Menu > Report > Page Counter to print current page counts for device and toner",

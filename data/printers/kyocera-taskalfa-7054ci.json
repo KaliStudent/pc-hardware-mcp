@@ -163,10 +163,67 @@
         "Print Wireless LAN Status to verify"
       ]
     },
+    "webInterface": {
+      "accessUrl": "http://[printer-ip]",
+      "defaultCredentials": {"username": "Admin", "password": "Admin (change immediately)"},
+      "certificateWarning": "HTTP default. HTTPS via cert.",
+      "accessSteps": ["Print Network Status", "Note IP", "Browse http://[ip]", "Login Admin/Admin", "Command Center RX"]
+    },
     "driverInstallation": {
-      "windows": "Download Kyocera TASKalfa 7054ci KX driver from Kyocera website. Install driver package which includes PCL and PostScript options. Use KX driver for best performance and feature access. Configure device settings in driver for finishing options.",
-      "mac": "Download macOS driver package from Kyocera support. Install PKG file and add printer via System Preferences > Printers & Scanners. Use Kyocera PPD for full feature support. Supports AirPrint for basic printing.",
-      "linux": "Download Linux PPD from Kyocera. Install via CUPS web interface at localhost:631. Configure using device IP address. Most features supported via CUPS including duplex and color management."
+      "windows10": {
+        "procedure": ["kyoceradocumentsolutions.com", "Search TASKalfa 7054ci", "Download KX Driver (PCL/PS)", "Install", "Network/IP", "Configure finishing options", "Test"],
+        "notes": ["KX Driver recommended", "PS for graphics", "Configure finisher in driver"]
+      },
+      "windows11": {
+        "procedure": ["Download Win11 KX Driver", "Install", "Network", "Configure", "Test"],
+        "notes": ["Win11 OK"]
+      },
+      "mac": {
+        "procedure": ["Download macOS driver", "Install PKG", "Add via System Settings", "Use Kyocera PPD or AirPrint"],
+        "notes": ["macOS 11+ AirPrint", "Full PPD for finishing"]
+      },
+      "linux": {
+        "procedure": ["Download PPD", "CUPS localhost:631", "Add with IP", "Configure"],
+        "notes": ["Ubuntu 20.04+", "Duplex/color OK"]
+      },
+      "driverDownloads": [
+        {"os": "Windows 10/11", "url": "https://www.kyoceradocumentsolutions.com/support"},
+        {"os": "macOS", "url": "https://www.kyoceradocumentsolutions.com/support"},
+        {"os": "Linux", "url": "https://www.kyoceradocumentsolutions.com/support"}
+      ]
+    },
+    "backupRestore": {
+      "systemBackup": {
+        "procedure": ["Command Center RX > Export/Import", "Export all", "Save .zip"],
+        "fileFormat": ".zip",
+        "location": "Local",
+        "notes": ["Includes finishing settings"]
+      },
+      "systemRestore": {
+        "procedure": ["Export/Import", "Import .zip", "Apply", "Reboot"],
+        "prerequisites": ["Valid backup", "Same firmware"]
+      },
+      "addressBookBackup": {
+        "procedure": ["Address Book > Export CSV"],
+        "fileFormat": ".csv"
+      }
+    },
+    "scanDestinations": {
+      "scanToEmail": {
+        "requirements": ["SMTP", "Credentials"],
+        "smtpConfiguration": ["Command Center > Email", "smtp.office365.com:587", "Auth", "From", "Test"],
+        "authenticationSetup": ["O365: STARTTLS", "Gmail: app password"]
+      },
+      "scanToFolder": {
+        "requirements": ["SMB/FTP", "Credentials"],
+        "smbConfiguration": ["Address Book > SMB", "\\\\\\\\server\\\\share", "DOMAIN\\\\user", "Test"],
+        "authenticationSetup": ["DOMAIN\\\\user"]
+      },
+      "scanToUsb": {
+        "requirements": ["FAT32/exFAT USB"],
+        "procedure": ["Insert", "Scan to USB", "Settings", "Scan", "Remove"],
+        "supportedFormats": ["PDF", "JPEG", "TIFF", "XPS"]
+      }
     },
     "configPages": {
       "meterPage": "Touchscreen: Status/Job Cancel > Counter. Shows total, copy, print counters by color.",

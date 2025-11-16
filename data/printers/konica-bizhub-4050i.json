@@ -137,10 +137,66 @@
         "Confirm connection and test"
       ]
     },
+    "webInterface": {
+      "accessUrl": "http://[printer-ip]",
+      "defaultCredentials": {"username": "Administrator", "password": "Set during initial setup"},
+      "certificateWarning": "HTTP default. HTTPS via certificate.",
+      "accessSteps": ["Print Network Config", "Note IP", "Browse http://[ip]", "Login", "Access Web Connection"]
+    },
     "driverInstallation": {
-      "windows": "Download Konica Minolta bizhub 4050i PCL/PS driver from support website. Run installer and select network search or enter IP address manually. Configure print settings and test page.",
-      "mac": "Download macOS driver from Konica Minolta support. Install PKG file and add printer via System Preferences > Printers & Scanners. Device supports AirPrint for driver-free printing.",
-      "linux": "Download Linux PPD and driver package from support site. Install via CUPS web interface (localhost:631). Configure using device IP address."
+      "windows10": {
+        "procedure": ["konicaminolta.com/support", "Search 4050i", "Download PCL/PS", "Run installer", "Network/IP", "Install", "Test"],
+        "notes": ["PCL6 recommended"]
+      },
+      "windows11": {
+        "procedure": ["Download Win11 driver", "Run as admin", "Network", "Complete"],
+        "notes": ["Win11 22H2+ OK"]
+      },
+      "mac": {
+        "procedure": ["Download macOS driver", "Install PKG", "Add printer or AirPrint"],
+        "notes": ["macOS 11+ AirPrint"]
+      },
+      "linux": {
+        "procedure": ["Download PPD", "CUPS localhost:631", "Add with IP"],
+        "notes": ["Ubuntu 20.04+"]
+      },
+      "driverDownloads": [
+        {"os": "Windows 10/11", "url": "https://www.konicaminolta.com/us-en/support"},
+        {"os": "macOS", "url": "https://www.konicaminolta.com/us-en/support"},
+        {"os": "Linux", "url": "https://www.konicaminolta.com/us-en/support"}
+      ]
+    },
+    "backupRestore": {
+      "systemBackup": {
+        "procedure": ["Web Connection > Import/Export", "Export", "Save .zip/.dat"],
+        "fileFormat": ".zip/.dat",
+        "location": "Local"
+      },
+      "systemRestore": {
+        "procedure": ["Import/Export", "Import", "Apply", "Reboot"],
+        "prerequisites": ["Valid backup"]
+      },
+      "addressBookBackup": {
+        "procedure": ["Address Book", "Export CSV"],
+        "fileFormat": ".csv"
+      }
+    },
+    "scanDestinations": {
+      "scanToEmail": {
+        "requirements": ["SMTP server", "Credentials"],
+        "smtpConfiguration": ["Web Connection > E-mail", "smtp.office365.com:587", "Auth", "Test"],
+        "authenticationSetup": ["O365: :587 STARTTLS", "Gmail: app password"]
+      },
+      "scanToFolder": {
+        "requirements": ["SMB/FTP", "Credentials"],
+        "smbConfiguration": ["Scan/Fax settings", "SMB path", "User", "Test"],
+        "authenticationSetup": ["DOMAIN\\\\user or SERVERNAME\\\\user"]
+      },
+      "scanToUsb": {
+        "requirements": ["FAT32/exFAT USB"],
+        "procedure": ["Insert", "Scan to USB", "Settings", "Scan", "Eject"],
+        "supportedFormats": ["PDF", "JPEG", "TIFF"]
+      }
     },
     "configPages": {
       "meterPage": "Touch screen: Counter > Print Counter List. Shows total impressions, prints, copies, scans.",
