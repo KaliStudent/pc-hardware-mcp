@@ -1,4 +1,4 @@
-name: Build MCP Server
+name: pc-hardware-mcp
 
 on:
   push:
@@ -35,3 +35,4 @@ jobs:
       - name: Verify output
       # sanity check — ensures dist/index.js exists
         run: ls -R dist
+
