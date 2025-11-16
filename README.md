@@ -1,5 +1,7 @@
 # Printer MCP Server
 
+[![smithery badge](https://smithery.ai/badge/@KaliStudent/pc-hardware-mcp)](https://smithery.ai/server/@KaliStudent/pc-hardware-mcp)
+
 A comprehensive Model Context Protocol (MCP) server providing enterprise printer information for sales and service teams. Access detailed specifications, pricing, troubleshooting, and setup information for major enterprise printer brands.
 
 ## Features
