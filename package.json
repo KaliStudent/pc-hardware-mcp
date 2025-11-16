@@ -1,0 +1,38 @@
+{
+  "name": "printer-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server providing enterprise printer information for sales and service teams",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc && cp src/pdf-wrapper.cjs dist/pdf-wrapper.cjs && node dist/build-database.js",
+    "watch": "tsc --watch",
+    "prepare": "npm run build",
+    "dev": "tsc && cp src/pdf-wrapper.cjs dist/pdf-wrapper.cjs && node dist/index.js",
+    "start": "node dist/index.js"
+  },
+  "keywords": [
+    "mcp",
+    "printer",
+    "enterprise",
+    "hp",
+    "canon",
+    "kyocera",
+    "ricoh",
+    "sharp",
+    "lexmark",
+    "konica-minolta"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "better-sqlite3": "^11.7.0",
+    "pdf-parse": "^2.4.5"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.12",
+    "@types/node": "^22.10.2",
+    "typescript": "^5.7.2"
+  }
+}

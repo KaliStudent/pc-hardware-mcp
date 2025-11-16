@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "printer-info": {
+      "command": "node",
+      "args": [
+        "C:/users/brian/printerMCP/dist/index.js"
+      ]
+    }
+  }
+}
