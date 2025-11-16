@@ -1,0 +1,729 @@
+{
+  "id": "hp-clj-m479fdw",
+  "manufacturer": "HP",
+  "model": "Color LaserJet Pro MFP M479fdw",
+  "series": "Color LaserJet Pro",
+  "formFactor": "workgroup",
+  "type": "laser",
+  "color": true,
+  "functions": ["print", "copy", "scan", "fax"],
+  "specifications": {
+    "printSpeed": {
+      "mono": 28,
+      "color": 28
+    },
+    "printResolution": {
+      "max": "600x600 dpi",
+      "enhanced": "4800x600 dpi (with ImageREt 3600)"
+    },
+    "firstPageOut": {
+      "mono": 8.9,
+      "color": 9.5
+    },
+    "duty": {
+      "monthly": 50000,
+      "recommended": 4000
+    },
+    "paperHandling": {
+      "inputCapacity": 300,
+      "outputCapacity": 150,
+      "maxInputCapacity": 850,
+      "duplexing": "standard",
+      "paperSizes": ["A4", "A5", "B5", "Letter", "Legal", "Executive"],
+      "paperWeights": "60-220 g/m²"
+    },
+    "memory": "512 MB RAM",
+    "processor": "1.2 GHz",
+    "connectivity": ["Ethernet (10/100/1000)", "USB 2.0", "Wi-Fi 802.11ac", "NFC"],
+    "networkProtocols": ["TCP/IP", "IPv4", "IPv6", "SMB", "FTP", "SNMP", "IPP", "AirPrint", "Mopria"],
+    "dimensions": {
+      "width": 420,
+      "depth": 475,
+      "height": 401,
+      "weight": 24.6,
+      "unit": "mm",
+      "weightUnit": "kg"
+    },
+    "powerConsumption": {
+      "operating": "580 watts",
+      "standby": "11.5 watts",
+      "sleep": "1.1 watts"
+    }
+  },
+  "sales": {
+    "msrp": 579,
+    "currency": "USD",
+    "streetPrice": 449,
+    "targetMarket": ["Small Workgroups", "Home Office", "SMB", "Professional Services"],
+    "sellingPoints": [
+      "Fast 28 PPM color and monochrome",
+      "Built-in Wi-Fi, Ethernet, and NFC",
+      "Automatic two-sided printing",
+      "4-in-1 functionality with fax",
+      "Mobile printing via HP Smart app"
+    ],
+    "competitiveAdvantages": [
+      "HP Smart app for easy management",
+      "JetIntelligence toner for high yields",
+      "Compact footprint for small offices",
+      "Strong security with HP Sure Start",
+      "Excellent color quality for presentations"
+    ],
+    "idealFor": [
+      "Small businesses needing affordable color",
+      "Home offices requiring multifunction capability",
+      "Professional services firms",
+      "Teams needing mobile printing flexibility"
+    ]
+  },
+  "costs": {
+    "consumables": {
+      "tonerCartridges": {
+        "black": {
+          "partNumber": "CF410A (standard), CF410X (high yield)",
+          "yield": 2300,
+          "yieldHigh": 6500,
+          "cost": 72,
+          "costHigh": 155
+        },
+        "cyan": {
+          "partNumber": "CF411A (standard), CF411X (high yield)",
+          "yield": 2300,
+          "yieldHigh": 5000,
+          "cost": 72,
+          "costHigh": 145
+        },
+        "magenta": {
+          "partNumber": "CF413A (standard), CF413X (high yield)",
+          "yield": 2300,
+          "yieldHigh": 5000,
+          "cost": 72,
+          "costHigh": 145
+        },
+        "yellow": {
+          "partNumber": "CF412A (standard), CF412X (high yield)",
+          "yield": 2300,
+          "yieldHigh": 5000,
+          "cost": 72,
+          "costHigh": 145
+        }
+      },
+      "imagingDrums": {
+        "combined": {
+          "partNumber": "CF414A (Imaging Drum)",
+          "yield": 23000,
+          "cost": 135
+        }
+      }
+    },
+    "costPerPage": {
+      "mono": 0.024,
+      "color": 0.11
+    }
+  },
+  "setup": {
+    "unboxing": [
+      "Remove all packing tape and materials",
+      "Remove orange pull tab from scanner lid",
+      "Remove orange shipping locks from toner cartridges",
+      "Open cartridge door and ensure all four toners are seated",
+      "Load paper in Tray 2",
+      "Connect power cable"
+    ],
+    "initialSetup": [
+      "Press power button on front panel",
+      "Select language on touchscreen",
+      "Select country/region",
+      "Configure date and time",
+      "Choose network setup method (Wireless/Ethernet/USB)",
+      "Complete setup wizard",
+      "Print setup report"
+    ],
+    "networkSetup": {
+      "ethernet": [
+        "Connect RJ-45 Ethernet cable to port on rear",
+        "Touchscreen: Setup > Network Setup > Wired (Ethernet)",
+        "Select Auto (DHCP) or Manual (Static IP)",
+        "If manual: Enter IP address, subnet mask, gateway",
+        "Set DNS servers if needed",
+        "Print network configuration page",
+        "Access HP Embedded Web Server at http://[printer-ip]"
+      ],
+      "wifi": [
+        "Touchscreen: Setup > Network Setup > Wireless",
+        "Select Wireless Setup Wizard",
+        "Choose your Wi-Fi network from list",
+        "Enter WPA2 password using on-screen keyboard",
+        "Confirm connection successful",
+        "Print wireless network test report",
+        "Alternative: Use Wi-Fi Direct for ad-hoc connections"
+      ],
+      "wifiDirect": [
+        "Touchscreen: Setup > Network Setup > Wi-Fi Direct",
+        "Enable Wi-Fi Direct",
+        "Note the network name (DIRECT-xx-HP M479) and password",
+        "Devices can connect directly without router",
+        "Useful for guest printing or mobile devices"
+      ]
+    },
+    "webInterface": {
+      "accessUrl": "http://[printer-ip]",
+      "defaultCredentials": {
+        "username": "admin",
+        "password": "no password (blank) - set during first access"
+      },
+      "certificateWarning": "HP printers use HTTP by default. HTTPS available but requires manual certificate configuration.",
+      "accessSteps": [
+        "Print network configuration page: Reports > Configuration/Status Pages > Network Summary",
+        "Note the IP address from the printed page",
+        "Open web browser and navigate to http://[printer-ip]",
+        "HP Embedded Web Server (EWS) will load",
+        "First access may prompt to set admin password",
+        "Access all configuration via tabs: Status, Scan/Digital Send, Copy, Fax, Security, Networking, etc."
+      ]
+    },
+    "driverInstallation": {
+      "windows10": "Download HP Universal Print Driver (UPD) or model-specific driver from hp.com/support. Search for 'M479fdw' and select Windows 10. Run HP Easy Start installer which auto-detects network printers. Choose 'Full Feature Software' for scan, fax, and status monitoring. Alternative: Install HP Smart app from Microsoft Store for simplified setup and mobile features.",
+      "windows11": "Same as Windows 10. HP drivers are fully compatible with Windows 11. Download from hp.com/support or use HP Smart app. Windows 11 may auto-detect via WSD (Web Services for Devices) but full feature driver recommended for scan and fax.",
+      "mac": "Download macOS driver from hp.com/support or use HP Easy Start. Compatible with macOS 10.15+ and Apple Silicon. Add printer via System Settings > Printers & Scanners > Add Printer. Select HP M479fdw from list. macOS may download driver automatically. Device supports native AirPrint. Use HP Smart app for scanning and advanced features.",
+      "linux": "Install HPLIP (HP Linux Imaging and Printing) version 3.22.10 or later from hplip.sourceforge.net or via package manager (apt install hplip or dnf install hplip). Run 'hp-setup' in terminal for guided setup. Install proprietary plugins with 'hp-plugin' for full functionality. Configure via CUPS at localhost:631. Ubuntu/Debian users can use system-config-printer GUI. Driver supports PPD-based printing and SANE scanning.",
+      "driverDownloads": {
+        "windows": "https://support.hp.com/us-en/drivers/selfservice/hp-color-laserjet-pro-mfp-m479-series/19202135",
+        "mac": "https://support.hp.com/us-en/drivers/selfservice/hp-color-laserjet-pro-mfp-m479-series/19202135",
+        "linux": "https://developers.hp.com/hp-linux-imaging-and-printing/gethplip",
+        "universal": "https://support.hp.com/us-en/drivers/selfservice/hp-universal-print-driver-series/1145748"
+      }
+    },
+    "backupRestore": {
+      "systemBackup": {
+        "procedure": [
+          "Access HP Embedded Web Server at http://[printer-ip]",
+          "Navigate to Security tab > Backup/Restore Settings",
+          "Click 'Create Backup' button",
+          "Select items to backup: Network settings, Email settings, Device settings, Security settings",
+          "Choose 'Include passwords' if desired (requires admin password)",
+          "Click 'Backup' to download .zip file",
+          "Save file with date in filename (e.g., M479fdw_backup_2024-11-16.zip)"
+        ],
+        "fileFormat": ".zip archive",
+        "location": "Downloads to local computer - store securely"
+      },
+      "systemRestore": {
+        "procedure": [
+          "Access HP Embedded Web Server",
+          "Navigate to Security > Backup/Restore Settings",
+          "Click 'Browse' under Restore Settings",
+          "Select previously saved .zip backup file",
+          "If backup included passwords, enter admin password",
+          "Click 'Restore'",
+          "Printer will process restore and may reboot (2-3 minutes)",
+          "Verify settings after restoration completes"
+        ],
+        "prerequisites": [
+          "Backup file must be from same model (M479 series)",
+          "Firmware should be same or newer version",
+          "Admin password required if backup included passwords",
+          "Clear any active print jobs before restoring"
+        ]
+      },
+      "addressBookBackup": {
+        "procedure": [
+          "Access HP Embedded Web Server",
+          "Navigate to Scan/Digital Send > Address Book",
+          "Click 'Export Address Book' button",
+          "Select export format (CSV recommended for compatibility)",
+          "Choose which lists to export (Quick Sets, Email, Network Folders)",
+          "Click 'Export' to download file",
+          "Save as descriptive filename (e.g., M479_Contacts_2024-11.csv)"
+        ],
+        "fileFormat": "CSV (Comma Separated Values)",
+        "location": "Downloads to local computer"
+      },
+      "addressBookRestore": {
+        "procedure": [
+          "Access HP Embedded Web Server",
+          "Navigate to Scan/Digital Send > Address Book",
+          "Click 'Import Address Book'",
+          "Select file format (CSV)",
+          "Click 'Browse' and select CSV file",
+          "Choose import option: Merge with existing or Replace all",
+          "Click 'Import'",
+          "Review imported entries in address book"
+        ],
+        "prerequisites": [
+          "CSV file must have correct column headers",
+          "Maximum 100 entries in address book",
+          "Valid email addresses and folder paths required"
+        ]
+      }
+    },
+    "scanDestinations": {
+      "scanToEmail": {
+        "requirements": [
+          "SMTP server address and port",
+          "SMTP authentication credentials (username/password)",
+          "Valid sender email address",
+          "Network access to SMTP server (port 25, 465, or 587)"
+        ],
+        "smtpConfiguration": [
+          "Access HP EWS > Scan/Digital Send > Email Setup",
+          "Click 'Edit Email/SMTP Setup'",
+          "Enter SMTP Server Address (e.g., smtp.office365.com or smtp.gmail.com)",
+          "Set SMTP Port: 25 (standard), 587 (TLS), or 465 (SSL)",
+          "Check 'SMTP Server Requires Authentication'",
+          "Enter SMTP Username (full email address)",
+          "Enter SMTP Password (use app password for Gmail)",
+          "Set Default 'From' address",
+          "Configure SSL/TLS if using secure port",
+          "Click 'Apply' to save"
+        ],
+        "authenticationSetup": [
+          "Office 365: smtp.office365.com port 587 with STARTTLS, use full email as username",
+          "Gmail: smtp.gmail.com port 587, enable 2FA and create app password",
+          "Exchange on-premise: Use internal server address",
+          "For port 465: Enable SSL, for port 587: Enable STARTTLS",
+          "Some servers require 'From' address to match authenticated account"
+        ],
+        "testProcedure": [
+          "In Email Setup page, click 'Send Test Email'",
+          "Enter test recipient address",
+          "Click 'Send'",
+          "Check recipient inbox for test message",
+          "If failed, review SMTP log: General > Service tab > Event Log"
+        ]
+      },
+      "scanToFolder": {
+        "requirements": [
+          "Network folder with write permissions (SMB share)",
+          "Valid Windows domain/workgroup credentials",
+          "UNC path to folder (\\\\\\\\server\\\\share\\\\folder)",
+          "Firewall allows SMB traffic (port 445)"
+        ],
+        "smbConfiguration": [
+          "Access HP EWS > Scan/Digital Send > Network Folder Setup",
+          "Click 'Create Network Folder Destination'",
+          "Enter Display Name (appears on printer panel)",
+          "Enter Folder Path: \\\\\\\\server\\\\share\\\\folder",
+          "For domain: DOMAIN\\\\username, For workstation: COMPUTERNAME\\\\username",
+          "Enter Password",
+          "Set file naming: Prefix/Suffix and date/time format",
+          "Choose default file type (PDF, JPEG, TIFF)",
+          "Click 'Test Connection' to verify access",
+          "Save destination"
+        ],
+        "ftpConfiguration": [
+          "HP M479fdw does not support FTP natively",
+          "Use SMB (Windows shares) or Email for scan delivery",
+          "Third-party solutions available for FTP scanning"
+        ],
+        "authenticationSetup": [
+          "Active Directory: Use DOMAIN\\\\username format",
+          "Local Windows account: Use COMPUTERNAME\\\\username",
+          "Ensure account has write permissions to destination folder",
+          "Both Share and NTFS permissions must allow write access",
+          "Test from another computer: Try to create file in same folder"
+        ],
+        "testProcedure": [
+          "Click 'Test Destination' in Network Folder Setup",
+          "Verify 'Connection Successful' message",
+          "Perform actual scan from control panel",
+          "Navigate to Scan > Network Folder",
+          "Select configured destination",
+          "Press Start and verify file appears in folder"
+        ]
+      },
+      "scanToUsb": {
+        "requirements": [
+          "USB flash drive formatted as FAT32 (recommended) or NTFS",
+          "Front USB port (below touchscreen)",
+          "Sufficient free space on drive"
+        ],
+        "procedure": [
+          "Format USB drive as FAT32 for best compatibility",
+          "Insert USB drive into front USB port (below touchscreen)",
+          "Touchscreen displays 'USB Device Detected' message",
+          "Touch 'Scan' on home screen",
+          "Select 'USB'",
+          "Choose scan settings (Color/B&W, resolution, file type)",
+          "Select simplex or duplex scanning",
+          "Touch 'Start' to begin scan",
+          "Files are saved with date/time stamp",
+          "Wait for 'Scan Complete' message before removing USB drive"
+        ],
+        "supportedFormats": [
+          "PDF (single-page or multi-page)",
+          "JPEG (single page only, compressed)",
+          "TIFF (single or multi-page)",
+          "PDF/A (archival format)",
+          "Searchable PDF with OCR (if enabled)"
+        ]
+      }
+    },
+    "configPages": {
+      "meterPage": "Touchscreen: Reports > Configuration/Status Pages > Supplies Status Page. Shows toner levels and page counts.",
+      "configPage": "Touchscreen: Reports > Configuration/Status Pages > Configuration Page. Displays all device settings, network config, and installed options.",
+      "networkConfigPage": "Reports > Configuration/Status Pages > Network Summary. Shows IP address, subnet, gateway, and wireless settings.",
+      "webInterface": "Access HP Embedded Web Server by entering printer's IP address in web browser. Default login: admin/no password. Provides configuration, job accounting, security settings, and remote management."
+    },
+    "commonIssues": [
+      "Download and install HP Smart app for mobile and remote management",
+      "Enable HP Web Services for HP ePrint email printing",
+      "Configure scan to email via HP Embedded Web Server > Scan/Digital Send",
+      "Set up scan to network folder using SMB in EWS",
+      "Update firmware via EWS > Administration > Firmware Update",
+      "Configure user access controls if needed for cost tracking"
+    ]
+  },
+  "troubleshooting": {
+    "commonErrors": [
+      {
+        "code": "49.XX.XX",
+        "description": "Firmware error / Critical error",
+        "severity": "critical",
+        "causes": [
+          "Corrupt print job",
+          "Incompatible driver",
+          "Firmware bug",
+          "Network communication issue",
+          "Bad PDF or PostScript file"
+        ],
+        "solutions": [
+          "Turn printer off using power button",
+          "Wait 60 seconds",
+          "Turn printer back on",
+          "Cancel all pending print jobs from computer",
+          "Delete and re-add printer driver",
+          "Update printer firmware via HP EWS",
+          "If error persists, perform cold reset",
+          "Try printing from different application",
+          "Simplify complex documents before printing"
+        ]
+      },
+      {
+        "code": "50.X Fuser Error",
+        "description": "Fuser malfunction",
+        "severity": "critical",
+        "causes": [
+          "Fuser temperature issue",
+          "Power supply problem",
+          "Fuser at end of life",
+          "Line voltage fluctuation"
+        ],
+        "solutions": [
+          "Turn off printer and unplug from power",
+          "Wait 30 minutes for fuser to cool",
+          "Check power source is stable 110-127V or 220-240V",
+          "Plug directly into wall outlet, not power strip",
+          "Power on and test",
+          "If error persists, fuser may need replacement",
+          "Check fuser page count (rated for ~50K pages)",
+          "Contact HP support for fuser replacement"
+        ]
+      },
+      {
+        "code": "59.X Error",
+        "description": "Motor error",
+        "severity": "critical",
+        "causes": [
+          "Main motor failure",
+          "Obstruction in paper path",
+          "Gear or mechanical failure"
+        ],
+        "solutions": [
+          "Turn printer off",
+          "Open all doors and trays",
+          "Check for obstructions in paper path",
+          "Manually rotate gears to check for binding",
+          "Remove all paper and reload",
+          "Close all doors",
+          "Power on",
+          "If error continues, service may be required"
+        ]
+      },
+      {
+        "code": "Incompatible Supply",
+        "description": "Toner cartridge not recognized",
+        "severity": "warning",
+        "causes": [
+          "Non-HP or refilled cartridge",
+          "Cartridge chip damaged",
+          "Cartridge not fully seated",
+          "Wrong cartridge model"
+        ],
+        "solutions": [
+          "Remove and reseat cartridge firmly",
+          "Verify cartridge part number matches (CF410-413)",
+          "Clean cartridge chip contacts with lint-free cloth",
+          "Ensure using genuine HP cartridges (CF410A/X series)",
+          "Check for protective tape still on cartridge",
+          "Try different cartridge to isolate issue",
+          "Update firmware may help compatibility"
+        ]
+      }
+    ],
+    "paperJams": [
+      {
+        "location": "Tray 2 (Main Cassette)",
+        "accessInstructions": [
+          "Note jam location from touchscreen display",
+          "Pull Tray 2 completely out of printer"
+        ],
+        "clearanceSteps": [
+          "Remove all paper from tray",
+          "Look for jammed sheets in feed area",
+          "Remove any torn pieces",
+          "Check pickup roller for damage or wear",
+          "Fan paper stack and check for damaged sheets",
+          "Reload paper with guides snug against edges",
+          "Push tray fully back into printer",
+          "Close all doors"
+        ],
+        "prevention": [
+          "Use only 60-220 g/m² paper",
+          "Fan paper before loading",
+          "Don't overfill tray (max 250 sheets 75 g/m²)",
+          "Store paper in controlled environment",
+          "Don't mix paper types or sizes in same tray",
+          "Check pickup roller wear every 50K pages"
+        ]
+      },
+      {
+        "location": "Duplexer (Inside Rear Door)",
+        "accessInstructions": [
+          "Open rear door (large door on back)",
+          "Grasp green handles on duplexer"
+        ],
+        "clearanceSteps": [
+          "Pull green handles to release duplexer",
+          "Carefully remove jammed paper",
+          "Check for torn pieces in paper path",
+          "Push duplexer firmly back into place",
+          "Ensure duplexer clicks and is fully seated",
+          "Close rear door"
+        ],
+        "prevention": [
+          "Use 60-105 g/m² paper for duplex printing",
+          "Avoid very smooth or textured paper in duplex",
+          "Ensure paper is not curled or wrinkled",
+          "Don't use damaged or previously jammed sheets",
+          "Clean duplexer rollers monthly"
+        ]
+      },
+      {
+        "location": "Fuser Area (Rear Access)",
+        "accessInstructions": [
+          "WARNING: Fuser is very hot! Wait 30 minutes after printing",
+          "Open rear door",
+          "Pull green fuser release levers"
+        ],
+        "clearanceSteps": [
+          "Ensure fuser has cooled (check display for warning)",
+          "Pull both green levers outward",
+          "Gently pull jammed paper straight out",
+          "Do not touch fuser rollers",
+          "Push levers back to locked position",
+          "Close rear door",
+          "Resume printing"
+        ],
+        "prevention": [
+          "Use appropriate media weight settings",
+          "Avoid damp or wrinkled paper",
+          "Keep fuser clean per maintenance schedule",
+          "Replace fuser at rated life (~50K pages)"
+        ]
+      }
+    ],
+    "qualityIssues": [
+      {
+        "issue": "Faded or light prints",
+        "symptoms": ["Washed out appearance", "Light areas", "Incomplete coverage"],
+        "causes": ["Low toner", "EconoMode enabled", "Toner needs distributing", "Defective cartridge"],
+        "solutions": [
+          "Check toner levels: Touchscreen > Supplies Status",
+          "Disable EconoMode: Touchscreen > Setup > Print Quality > EconoMode Off",
+          "Remove and shake toner cartridge gently",
+          "Clean toner cartridge: Remove, wipe contacts, reinstall",
+          "Replace toner if near end of life",
+          "Adjust print density: Setup > Print Quality > Toner Density > Increase",
+          "Run cleaning page: Reports > Print Quality Tools > Cleaning Page"
+        ]
+      },
+      {
+        "issue": "Color inconsistency or incorrect colors",
+        "symptoms": ["Wrong colors", "Color drift", "Tint issues"],
+        "causes": ["Calibration needed", "Old or defective toner", "Imaging drum issue"],
+        "solutions": [
+          "Run color calibration: Setup > Print Quality > Calibrate Color",
+          "Print full color page to use toner evenly",
+          "Check all toner levels are adequate",
+          "Replace any low or defective color cartridges",
+          "Clean imaging drum: Reports > Print Quality Tools > Cleaning Page",
+          "Reset color calibration if recently changed toner",
+          "Check color settings in print driver (RGB vs CMYK)",
+          "Replace imaging drum if over 23,000 pages"
+        ]
+      },
+      {
+        "issue": "Streaks, lines, or spots",
+        "symptoms": ["Vertical streaks", "Repetitive marks", "Random spots"],
+        "causes": ["Dirty imaging drum", "Debris in paper path", "Toner spill", "Worn drum"],
+        "solutions": [
+          "Print cleaning page: Reports > Print Quality Tools > Cleaning Page",
+          "Run extended cleaning if available",
+          "Inspect imaging drum through front door for damage",
+          "Clean debris from paper path with lint-free cloth",
+          "Check for toner spills inside printer",
+          "If streaks are evenly spaced, measure distance and compare to drum circumference",
+          "Replace imaging drum if damaged or over 23K pages",
+          "Clean corona wires if accessible"
+        ]
+      },
+      {
+        "issue": "Paper curl or wave",
+        "symptoms": ["Printed pages curled", "Wavy paper edges"],
+        "causes": ["High humidity", "Fuser temperature too high", "Lightweight paper", "Paper stored improperly"],
+        "solutions": [
+          "Reduce fuser temperature: Setup > Print Quality > Optimize for Paper Type > Light Paper",
+          "Store paper in controlled environment (20-24°C, 40-60% RH)",
+          "Use heavier weight paper (80-100 g/m²)",
+          "Print on opposite side to counter-curl",
+          "Feed paper from opposite direction",
+          "Reduce fuser heat by using 'Light' or 'Recycled' paper setting",
+          "Allow printed sheets to rest flat under weight"
+        ]
+      }
+    ],
+    "networkIssues": [
+      {
+        "issue": "Printer not found on network",
+        "symptoms": ["Cannot find printer", "Driver can't locate device", "Offline status"],
+        "diagnosticSteps": [
+          "Print network configuration page",
+          "Check IP address assignment",
+          "Verify cable connection (Ethernet) or WiFi signal",
+          "Ping printer IP from computer"
+        ],
+        "solutions": [
+          "Verify Ethernet cable is connected and link light is on",
+          "For WiFi: Check signal strength is adequate",
+          "Ensure printer and computer are on same network/VLAN",
+          "Check IP address is not 0.0.0.0 or 169.254.x.x",
+          "If auto IP (169.254.x.x), enable DHCP or set static IP",
+          "Disable firewall temporarily to test",
+          "Power cycle printer and network equipment",
+          "Re-run network setup wizard if needed",
+          "Use HP Print and Scan Doctor utility to diagnose"
+        ]
+      },
+      {
+        "issue": "Scan to email not working",
+        "symptoms": ["Email not sending", "SMTP error", "Authentication failed"],
+        "diagnosticSteps": [
+          "Verify SMTP settings in HP EWS",
+          "Test email account from computer",
+          "Check firewall allows SMTP port"
+        ],
+        "solutions": [
+          "Access HP Embedded Web Server > Scan/Digital Send > Email Setup",
+          "Enter correct SMTP server address (e.g., smtp.gmail.com)",
+          "Use correct SMTP port: 25, 465 (SSL), or 587 (TLS)",
+          "Enable SMTP authentication if required",
+          "Enter valid username and password",
+          "For Gmail: Enable 'Allow less secure apps' or use app password",
+          "For Office 365: Use smtp.office365.com port 587 with TLS",
+          "Test 'Send Test Email' in EWS",
+          "Check email server allows relay from printer IP",
+          "Verify sender email address is configured"
+        ]
+      },
+      {
+        "issue": "HP Smart app cannot find printer",
+        "symptoms": ["App says no printers found", "Cannot connect from mobile"],
+        "diagnosticSteps": [
+          "Check mobile device is on same WiFi network",
+          "Verify printer is powered on",
+          "Check HP Web Services status"
+        ],
+        "solutions": [
+          "Ensure mobile device connected to same WiFi as printer",
+          "Enable HP Web Services: Touchscreen > Web Services > Enable",
+          "Complete HP Web Services setup and accept terms",
+          "Update HP Smart app to latest version",
+          "Restart printer and mobile device",
+          "Try adding printer manually using IP address",
+          "For remote printing, verify HP+ is enabled and registered",
+          "Check router allows device-to-device communication",
+          "Disable AP isolation on wireless router"
+        ]
+      }
+    ],
+    "generalMaintenance": [
+      {
+        "task": "Replace toner cartridges",
+        "frequency": "Standard: 2,300 pages, High Yield: 5,000-6,500 pages",
+        "procedure": [
+          "Open front cartridge door",
+          "Press down on old cartridge and pull out",
+          "Remove new cartridge from packaging",
+          "Remove orange protective cover from new cartridge",
+          "Shake cartridge gently 5-6 times",
+          "Align cartridge with color-coded slot",
+          "Push firmly until it clicks into place",
+          "Close front door",
+          "Printer recognizes new cartridge automatically"
+        ],
+        "partsNeeded": ["CF410A/X (Black)", "CF411A/X (Cyan)", "CF412A/X (Yellow)", "CF413A/X (Magenta)"]
+      },
+      {
+        "task": "Replace imaging drum",
+        "frequency": "23,000 pages (all colors)",
+        "procedure": [
+          "Open top cover",
+          "Remove all four toner cartridges",
+          "Grasp handles on imaging drum unit",
+          "Pull drum unit straight up and out",
+          "Unpack new CF414A imaging drum",
+          "Remove protective packaging",
+          "Do not expose drum to direct light for extended periods",
+          "Align drum unit and lower into printer",
+          "Push down until it clicks into place",
+          "Reinstall all four toner cartridges in correct positions",
+          "Close top cover",
+          "Print supplies status page to verify"
+        ],
+        "partsNeeded": ["CF414A Imaging Drum"]
+      },
+      {
+        "task": "Clean printer",
+        "frequency": "Monthly or when print quality degrades",
+        "procedure": [
+          "Print cleaning page: Reports > Print Quality Tools > Cleaning Page",
+          "Run second cleaning page if needed",
+          "Wipe exterior with damp lint-free cloth",
+          "Clean scanner glass with glass cleaner",
+          "Clean ADF input/output areas",
+          "Vacuum any dust or debris from paper trays",
+          "Clean pickup rollers with water-dampened cloth",
+          "Allow to air dry before use"
+        ],
+        "partsNeeded": ["Lint-free cloths", "Glass cleaner"]
+      }
+    ]
+  },
+  "firmware": {
+    "latest": "20230830 (V.4.11.2.1)",
+    "releaseDate": "2023-08-30",
+    "updateProcedure": "Access HP Embedded Web Server at http://[printer-ip]. Navigate to Administration > Firmware Update. Check for updates automatically or upload firmware file manually from hp.com/support. Printer will reboot during update - do not power off."
+  },
+  "warranty": {
+    "standard": "1 year limited hardware warranty",
+    "extendedOptions": [
+      "HP Care Pack 1-year post-warranty support",
+      "HP Care Pack 3-year next business day onsite",
+      "HP Care Pack 3-year 4-hour response (select areas)",
+      "HP+ with extended 2-year warranty (requires registration within 7 days)"
+    ]
+  },
+  "certifications": ["ENERGY STAR", "EPEAT Silver", "Blue Angel"],
+  "releaseDate": "2019-08"
+}

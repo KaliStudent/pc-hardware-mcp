@@ -1,0 +1,789 @@
+{
+  "id": "brother-hl-l9470cdn",
+  "manufacturer": "Brother",
+  "model": "HL-L9470CDN",
+  "series": "HL-L",
+  "formFactor": "workgroup",
+  "type": "laser",
+  "color": true,
+  "functions": ["print"],
+  "specifications": {
+    "printSpeed": {
+      "mono": 40,
+      "color": 40
+    },
+    "printResolution": {
+      "max": "2400x600 dpi (HQ1200)"
+    },
+    "firstPageOut": {
+      "mono": 8.5,
+      "color": 10.5
+    },
+    "duty": {
+      "monthly": 100000,
+      "recommended": 5000
+    },
+    "paperHandling": {
+      "inputCapacity": 300,
+      "outputCapacity": 250,
+      "maxInputCapacity": 1340,
+      "duplexing": "standard",
+      "paperSizes": ["A4", "A5", "A6", "Letter", "Legal", "Executive", "Folio"],
+      "paperWeights": "60-220 g/m²"
+    },
+    "memory": "1 GB RAM",
+    "processor": "800 MHz",
+    "connectivity": ["Ethernet (10/100/1000)", "USB 2.0"],
+    "networkProtocols": ["TCP/IP", "IPv4", "IPv6", "SMB", "FTP", "SNMP", "IPP", "AirPrint", "Mopria", "Brother Print Service Plugin"],
+    "dimensions": {
+      "width": 419,
+      "depth": 483,
+      "height": 369,
+      "weight": 28.5,
+      "unit": "mm",
+      "weightUnit": "kg"
+    },
+    "powerConsumption": {
+      "operating": "700 watts",
+      "standby": "60 watts",
+      "sleep": "8 watts",
+      "deepSleep": "2.5 watts"
+    }
+  },
+  "sales": {
+    "msrp": 599,
+    "currency": "USD",
+    "streetPrice": 499,
+    "targetMarket": ["Small Workgroups", "Corporate Offices", "Professional Services", "Education"],
+    "sellingPoints": [
+      "Fast 40 PPM color and monochrome printing",
+      "2.7-inch color touchscreen LCD",
+      "High-yield toner for low cost per page",
+      "Automatic duplex printing standard",
+      "Expandable to 1,340 sheet capacity"
+    ],
+    "competitiveAdvantages": [
+      "Exceptional color output quality",
+      "Low total cost of ownership",
+      "Fast first page out for productivity",
+      "Robust business-class construction",
+      "Excellent value for color laser"
+    ],
+    "idealFor": [
+      "Workgroups needing reliable color",
+      "Small businesses with color needs",
+      "Offices seeking low TCO color printing",
+      "Professional services creating presentations",
+      "Education institutions with limited budgets"
+    ]
+  },
+  "costs": {
+    "consumables": {
+      "tonerCartridges": {
+        "black": {
+          "partNumber": "TN-436BK (standard), TN-439BK (extra high)",
+          "yield": 9000,
+          "yieldHigh": 9000,
+          "cost": 145,
+          "costHigh": 145
+        },
+        "cyan": {
+          "partNumber": "TN-433C (standard), TN-439C (extra high)",
+          "yield": 4000,
+          "yieldHigh": 9000,
+          "cost": 110,
+          "costHigh": 185
+        },
+        "magenta": {
+          "partNumber": "TN-433M (standard), TN-439M (extra high)",
+          "yield": 4000,
+          "yieldHigh": 9000,
+          "cost": 110,
+          "costHigh": 185
+        },
+        "yellow": {
+          "partNumber": "TN-433Y (standard), TN-439Y (extra high)",
+          "yield": 4000,
+          "yieldHigh": 9000,
+          "cost": 110,
+          "costHigh": 185
+        }
+      },
+      "drums": {
+        "black": {
+          "partNumber": "DR-431BK",
+          "yield": 30000,
+          "cost": 95
+        },
+        "color": {
+          "partNumber": "DR-431CL (C/M/Y combined)",
+          "yield": 30000,
+          "cost": 200
+        }
+      },
+      "belts": {
+        "transfer": {
+          "partNumber": "BU-330CL",
+          "yield": 50000,
+          "cost": 110
+        }
+      },
+      "wasteContainer": {
+        "partNumber": "WT-330CL",
+        "yield": 50000,
+        "cost": 45
+      }
+    },
+    "costPerPage": {
+      "mono": 0.016,
+      "color": 0.095
+    }
+  },
+  "setup": {
+    "unboxing": [
+      "Remove all packing tape and materials",
+      "Remove protective film from LCD panel",
+      "Remove orange protective covers from inside printer",
+      "Install all four toner cartridges (CMYK)",
+      "Install drum units (black and color)",
+      "Load paper in standard tray",
+      "Connect power cable"
+    ],
+    "initialSetup": [
+      "Press power button on top panel",
+      "Select language on 2.7-inch color LCD",
+      "Select country/region",
+      "Configure date and time",
+      "Choose network connection method",
+      "Print setup report",
+      "Calibrate color (printer will do automatically)"
+    ],
+    "networkSetup": {
+      "ethernet": [
+        "Connect RJ-45 Gigabit Ethernet cable to rear port",
+        "LCD: Network > Wired > TCP/IP",
+        "Select Boot Method: Auto (DHCP) or Static",
+        "If Static: Enter IP address, subnet mask, gateway",
+        "Configure DNS servers if needed",
+        "Print Network Configuration List",
+        "Access web interface at http://[printer-ip]"
+      ]
+    },
+    "webInterface": {
+      "accessUrl": "http://[printer-ip]",
+      "defaultCredentials": {
+        "username": "admin (or leave blank)",
+        "password": "access (default) - should be changed"
+      },
+      "certificateWarning": "Brother printers use HTTP by default. HTTPS available via manual certificate installation.",
+      "accessSteps": [
+        "Print Network Configuration Report: LCD > Information > Network Config",
+        "Note the IP address from printed report",
+        "Open web browser and navigate to http://[printer-ip]",
+        "Brother Web-Based Management interface loads",
+        "Login with admin/access or click 'Login' without credentials if authentication disabled",
+        "First access: Administrator tab > Login Password to set secure password",
+        "Access printer settings, status, color calibration, and network configuration"
+      ]
+    },
+    "driverInstallation": {
+      "windows10": {
+        "procedure": [
+          "Visit brother.com/support and search for HL-L9470CDN",
+          "Select Windows 10 (64-bit) from OS dropdown",
+          "Download 'Full Driver & Software Package' (approximately 150 MB)",
+          "Run downloaded installer as Administrator",
+          "Accept license agreement",
+          "Select 'Network Connection' installation type",
+          "Driver searches for printer automatically via mDNS/Bonjour",
+          "Select your printer from list (identified by IP or hostname)",
+          "Choose driver type: PCL6 (recommended) or BR-Script (PostScript)",
+          "BR-Script provides better color management for graphics work",
+          "Install additional utilities: Status Monitor, Remote Printer Console",
+          "Complete installation and print test page",
+          "Configure color settings: Printer Properties > Color tab"
+        ],
+        "notes": [
+          "Windows 10 Version 1903 or later recommended",
+          "BR-Script driver required for PostScript workflows",
+          "Color profiles automatically installed with driver",
+          "Use Brother iPrint&Scan for additional features"
+        ]
+      },
+      "windows11": {
+        "procedure": [
+          "Visit brother.com/support and search for HL-L9470CDN",
+          "Select Windows 11 (64-bit) from OS dropdown",
+          "Download 'Full Driver & Software Package'",
+          "Run installer as Administrator (right-click > Run as administrator)",
+          "Accept license agreement",
+          "Select 'Network Connection' installation type",
+          "Driver auto-discovers printer on network",
+          "Select printer from discovered list",
+          "Choose PCL6 (standard) or BR-Script (PostScript) driver",
+          "Install Brother utilities for monitoring and management",
+          "Complete installation",
+          "Windows 11 may prompt for additional permissions - allow all",
+          "Configure color management in driver settings"
+        ],
+        "notes": [
+          "Windows 11 22H2 or later fully supported",
+          "TPM and Secure Boot compatible",
+          "Works with Windows 11 ARM via emulation (limited performance)",
+          "Color profiles compatible with Windows 11 color management"
+        ]
+      },
+      "mac": {
+        "procedure": [
+          "For macOS Monterey (12.x) or later: AirPrint works without drivers",
+          "For full features: Visit brother.com/support",
+          "Select macOS from OS dropdown (specify version)",
+          "Download 'Full Driver & Software Package' DMG file",
+          "Double-click DMG to mount",
+          "Run Brother installer package",
+          "Follow installation wizard",
+          "Grant necessary permissions when prompted",
+          "Open System Settings > Printers & Scanners (or System Preferences on older macOS)",
+          "Click '+' to add printer",
+          "Select HL-L9470CDN from list",
+          "For 'Use' dropdown, select 'Brother HL-L9470CDN series' (full features)",
+          "Or select 'AirPrint' for basic functionality",
+          "Add printer and print test page"
+        ],
+        "notes": [
+          "macOS 11 (Big Sur) and later: Native AirPrint support",
+          "macOS 10.15 (Catalina) or later recommended for full driver",
+          "BR-Script driver available for PostScript workflows",
+          "Brother Printer Driver supports color management",
+          "Apple Silicon (M1/M2/M3) fully supported"
+        ]
+      },
+      "linux": {
+        "procedure": [
+          "Visit brother.com/support/linux",
+          "Download Linux driver (DEB for Debian/Ubuntu, RPM for Fedora/RHEL)",
+          "For Debian/Ubuntu: sudo dpkg -i brother-hl-l9470cdn-*.deb",
+          "For Fedora/RHEL: sudo rpm -i brother-hl-l9470cdn-*.rpm",
+          "Or use Brother Linux Driver Install Tool:",
+          "bash linux-brprinter-installer-*.*.*-*.sh",
+          "Select network printer installation",
+          "Tool searches for printer automatically",
+          "Select HL-L9470CDN from found devices",
+          "Driver and filters install to /opt/brother/Printers/",
+          "Configure via CUPS: Open browser to localhost:631",
+          "Administration > Add Printer",
+          "Select discovered Brother HL-L9470CDN",
+          "Choose Brother CUPS driver from list",
+          "Set as default if desired, configure color settings"
+        ],
+        "notes": [
+          "Ubuntu 20.04 LTS and later supported",
+          "Fedora 34+ and RHEL 8+ supported",
+          "CUPS 2.0 or later required",
+          "32-bit and 64-bit packages available",
+          "Brother provides PPD files for manual CUPS setup",
+          "Color management via CUPS ColorModel settings",
+          "Works with GNOME Print, KDE Print, and command-line printing"
+        ]
+      },
+      "driverDownloads": [
+        {
+          "os": "Windows 10/11",
+          "url": "https://support.brother.com/g/b/downloadtop.aspx?c=us&lang=en&prod=hll9470cdn_us"
+        },
+        {
+          "os": "macOS",
+          "url": "https://support.brother.com/g/b/downloadtop.aspx?c=us&lang=en&prod=hll9470cdn_us"
+        },
+        {
+          "os": "Linux",
+          "url": "https://support.brother.com/g/b/producttop.aspx?c=us&lang=en&prod=hll9470cdn_us"
+        }
+      ]
+    },
+    "backupRestore": {
+      "systemBackup": {
+        "procedure": [
+          "Access Brother Web-Based Management at http://[printer-ip]",
+          "Login with administrator credentials (admin/access by default)",
+          "Navigate to Administrator tab > Import/Export Settings",
+          "Click 'Export' to save all settings",
+          "File downloads as 'config.csv' or 'settings.txt'",
+          "Save file with descriptive name: HLL9470CDN_Config_2024-11-16.csv",
+          "Backup includes: Network settings, Print settings, Security settings, User restrictions",
+          "Store backup file securely - contains network configuration and passwords",
+          "Create new backup after any significant configuration changes",
+          "Recommended: Monthly backups or before firmware updates"
+        ],
+        "fileFormat": ".csv or .txt (plain text configuration file)",
+        "location": "Downloads to local computer via web browser",
+        "notes": [
+          "Backup file is plain text - protect if it contains sensitive information",
+          "Some settings like Secure Function Lock may need separate export",
+          "Print Configuration Page for paper reference of all settings"
+        ]
+      },
+      "systemRestore": {
+        "procedure": [
+          "Access Brother Web-Based Management at http://[printer-ip]",
+          "Login with administrator credentials",
+          "Navigate to Administrator tab > Import/Export Settings",
+          "Click 'Choose File' or 'Browse' under Import section",
+          "Select previously saved configuration file (.csv or .txt)",
+          "Click 'Submit' or 'Import' to begin restore",
+          "Printer displays 'Importing Configuration...'",
+          "Wait for completion (30-60 seconds)",
+          "Printer automatically reboots to apply settings",
+          "After reboot, verify network configuration",
+          "Print Configuration Page to confirm all settings restored",
+          "Test print to verify printer operation"
+        ],
+        "prerequisites": [
+          "Must have previously exported configuration file",
+          "Firmware version should match (same major version)",
+          "Network access to printer required",
+          "Administrator password needed if authentication enabled"
+        ],
+        "notes": [
+          "Restore may reset administrator password - note password from backup file",
+          "IP address may change if DHCP was configured",
+          "Toner and drum counters NOT restored (hardware-tracked)",
+          "Secure Function Lock users may need to be reconfigured"
+        ]
+      }
+    },
+    "configPages": {
+      "meterPage": "LCD: Information > Usage Counter. Shows total pages, color pages, and duplex pages.",
+      "configPage": "LCD: Information > Print Settings",
+      "networkConfigPage": "Information > Network Config",
+      "webInterface": "Access Brother Web-Based Management at http://[printer-ip]. No password required by default. Full configuration, status monitoring, color calibration access."
+    },
+    "commonIssues": [
+      "Run auto color calibration after initial setup",
+      "Update firmware via web interface for latest features",
+      "Configure Secure Function Lock for user access control",
+      "Enable secure print with PIN codes if needed",
+      "Set up network folder access for scan-to-network (if MFC model)",
+      "Configure color profiles for accurate color reproduction",
+      "Enable Active Directory authentication if in domain environment"
+    ]
+  },
+  "troubleshooting": {
+    "commonErrors": [
+      {
+        "code": "Toner Low / Replace Toner",
+        "description": "Toner cartridge low or empty",
+        "severity": "warning",
+        "causes": [
+          "Toner cartridge near end of life",
+          "Toner depleted"
+        ],
+        "solutions": [
+          "Check toner level on LCD display",
+          "Order replacement Brother TN-43x toner",
+          "Continue printing with 'Toner Low' warning",
+          "When 'Replace Toner' appears, replace cartridge",
+          "After replacing: Open and close front cover to reset",
+          "Use genuine Brother toner for best quality",
+          "Consider high-yield TN-439 series for lower cost per page"
+        ]
+      },
+      {
+        "code": "Drum End Soon / Replace Drum",
+        "description": "Drum unit near end of life",
+        "severity": "warning",
+        "causes": [
+          "Drum approaching or at 30,000 page life",
+          "Drum counter needs reset after replacement"
+        ],
+        "solutions": [
+          "Order replacement DR-431BK (black) or DR-431CL (color)",
+          "Continue using until print quality degrades",
+          "Replace drum when quality issues appear",
+          "After installing new drum, reset counter:",
+          "Hold down 'GO' button for 4 seconds",
+          "Select drum to reset (Black or Color)",
+          "Press '1' to confirm reset"
+        ]
+      },
+      {
+        "code": "Belt End Soon / Replace Belt",
+        "description": "Transfer belt near end of life",
+        "severity": "warning",
+        "causes": [
+          "Belt unit approaching 50,000 page life"
+        ],
+        "solutions": [
+          "Order replacement BU-330CL belt unit",
+          "Continue using until prompted to replace",
+          "Replace belt when print quality degrades",
+          "Installation procedure:",
+          "Open front cover and remove drum units",
+          "Remove old belt unit",
+          "Install new BU-330CL belt",
+          "Reinstall drums and close cover",
+          "Belt counter resets automatically"
+        ]
+      },
+      {
+        "code": "Machine Error XX",
+        "description": "Internal printer error",
+        "severity": "critical",
+        "causes": [
+          "Internal component malfunction",
+          "Fuser error",
+          "Laser unit error",
+          "Memory error"
+        ],
+        "solutions": [
+          "Note the specific error code number",
+          "Turn printer off and wait 10 seconds",
+          "Turn printer back on",
+          "If error code 84 (fuser): Wait 30 min to cool",
+          "If error persists, contact Brother support",
+          "Common error 76: Memory issue - reduce print job complexity",
+          "Service may be required for persistent errors"
+        ]
+      }
+    ],
+    "paperJams": [
+      {
+        "location": "Paper Tray",
+        "accessInstructions": [
+          "Pull paper tray completely out",
+          "Check LCD for jam location"
+        ],
+        "clearanceSteps": [
+          "Remove all paper from tray",
+          "Check feed area for jammed sheets",
+          "Gently remove jammed paper",
+          "Remove all torn fragments",
+          "Check pickup roller condition",
+          "Fan paper stack before reloading",
+          "Ensure paper guides fit paper size exactly",
+          "Reinsert tray until it clicks"
+        ],
+        "prevention": [
+          "Use 60-220 g/m² paper within specifications",
+          "Don't exceed 250 sheets in standard tray",
+          "Fan paper before loading to prevent static",
+          "Adjust guides snug against paper",
+          "Store paper properly to avoid moisture",
+          "Don't mix paper types or sizes"
+        ]
+      },
+      {
+        "location": "Inside Printer (Front Access)",
+        "accessInstructions": [
+          "Open front cover",
+          "Remove all four drum units"
+        ],
+        "clearanceSteps": [
+          "Open front cover completely",
+          "Remove black drum unit first",
+          "Remove color drum units (C, M, Y)",
+          "Locate and gently remove jammed paper",
+          "Check for torn pieces and remove completely",
+          "Reinstall all drum units in correct positions",
+          "Close front cover firmly",
+          "Printer will reset automatically"
+        ],
+        "prevention": [
+          "Use appropriate paper weight for job",
+          "Avoid damp or wrinkled paper",
+          "Don't reuse previously jammed sheets",
+          "Keep interior clean from dust and debris"
+        ]
+      },
+      {
+        "location": "Rear (Duplex Unit)",
+        "accessInstructions": [
+          "Open back cover",
+          "Pull out duplex tray"
+        ],
+        "clearanceSteps": [
+          "Open back cover at rear",
+          "Pull duplex tray out if equipped",
+          "Remove jammed paper carefully",
+          "Check both duplex feed paths",
+          "Remove all torn paper pieces",
+          "Reinstall duplex tray",
+          "Close back cover until it clicks"
+        ],
+        "prevention": [
+          "Use 60-163 g/m² paper for duplex",
+          "Avoid very smooth or very rough paper",
+          "Don't use cardstock in duplex mode",
+          "Ensure paper is flat, not curled"
+        ]
+      },
+      {
+        "location": "Fuser Area",
+        "accessInstructions": [
+          "WARNING: Fuser is extremely hot!",
+          "Wait 30 minutes after printing",
+          "Open rear cover"
+        ],
+        "clearanceSteps": [
+          "Ensure fuser has cooled (check LCD warning)",
+          "Open rear cover",
+          "Identify jam in fuser area from LCD",
+          "Gently pull jammed paper out",
+          "Do NOT touch fuser rollers",
+          "Remove all torn pieces",
+          "Close rear cover",
+          "Resume printing"
+        ],
+        "prevention": [
+          "Use correct paper weight settings",
+          "Avoid extremely thick or thin paper",
+          "Keep fuser area clean",
+          "Replace fuser at recommended intervals"
+        ]
+      }
+    ],
+    "qualityIssues": [
+      {
+        "issue": "Faded or light colors",
+        "symptoms": ["Washed out prints", "Light color density", "Weak coverage"],
+        "causes": ["Low toner", "Toner save mode on", "Incorrect color settings", "Worn drum"],
+        "solutions": [
+          "Check all toner levels on LCD",
+          "Disable Toner Save Mode: Settings > General Setup > Ecology",
+          "Remove and shake toner cartridges gently",
+          "Increase color density in print driver",
+          "Run color calibration: Settings > Machine Info > Auto Calibration",
+          "Replace low or defective toner",
+          "Check drum life - replace if over 30,000 pages",
+          "Clean corona wires in drum units"
+        ]
+      },
+      {
+        "issue": "Color inconsistency or incorrect colors",
+        "symptoms": ["Wrong colors", "Color drift", "Mismatched colors"],
+        "causes": ["Calibration needed", "Mixed toner brands", "Color profile issue", "Worn drums"],
+        "solutions": [
+          "Run auto color calibration: Settings > Machine Info > Auto Calibration",
+          "Print color test page to diagnose",
+          "Verify using all genuine Brother toner",
+          "Check color settings in print driver",
+          "Use correct color profile (sRGB recommended)",
+          "Clean all drum units and corona wires",
+          "Replace any worn drums (check life on LCD)",
+          "Ensure proper room temperature (20-25°C)",
+          "Re-calibrate after replacing any drum or toner"
+        ]
+      },
+      {
+        "issue": "Streaks or lines on prints",
+        "symptoms": ["Vertical lines", "Horizontal streaks", "Repetitive marks"],
+        "causes": ["Dirty drum", "Dirty corona wire", "Toner spill", "Worn transfer belt"],
+        "solutions": [
+          "Clean corona wires in all drum units",
+          "For black drum: Slide green tab left to right several times",
+          "For color drums: Use cleaning mechanism inside each",
+          "Print 10-20 blank pages to clear excess toner",
+          "Check for toner spills inside printer - clean carefully",
+          "Inspect drums for visible damage or marks",
+          "If streaks are evenly spaced, measure spacing",
+          "Replace drum if damaged or at rated life",
+          "Clean or replace transfer belt if over 50,000 pages"
+        ]
+      },
+      {
+        "issue": "Color registration off / Misaligned colors",
+        "symptoms": ["Colors not aligned", "Blurry color edges", "Shadow effects"],
+        "causes": ["Registration needs adjustment", "Belt wear", "Temperature fluctuation"],
+        "solutions": [
+          "Run auto color registration: Settings > Machine Info > Auto Registration",
+          "Allow printer to warm up fully before critical jobs",
+          "Ensure stable room temperature",
+          "Check transfer belt for wear or damage",
+          "Clean all four drums",
+          "Replace transfer belt if over 50,000 pages",
+          "If issue persists, contact Brother service",
+          "Professional calibration may be needed"
+        ]
+      }
+    ],
+    "networkIssues": [
+      {
+        "issue": "Printer not found on network",
+        "symptoms": ["Cannot find printer", "Shows offline", "Driver can't connect"],
+        "diagnosticSteps": [
+          "Print Network Configuration List",
+          "Check IP address assignment",
+          "Verify Ethernet cable connection",
+          "Ping printer from computer"
+        ],
+        "solutions": [
+          "Check Ethernet cable is securely connected",
+          "Verify link lights on Ethernet port are on",
+          "Ensure printer and computer on same network/subnet",
+          "Check IP address is not 0.0.0.0 or auto-IP",
+          "Enable DHCP or configure static IP correctly",
+          "Restart printer and network switch/router",
+          "Disable firewall temporarily to test",
+          "Re-run network setup if needed",
+          "Use Brother iPrint&Scan to find printer",
+          "Try manual IP entry in driver if discovery fails"
+        ]
+      },
+      {
+        "issue": "Color management not working correctly",
+        "symptoms": ["Colors don't match screen", "Inconsistent color output"],
+        "diagnosticSteps": [
+          "Check driver color settings",
+          "Verify color profile selected",
+          "Test with known color target"
+        ],
+        "solutions": [
+          "Use BR-Script (PostScript) driver for better color",
+          "Select appropriate color mode in driver",
+          "Choose sRGB color profile for standard work",
+          "For accurate color: Use Adobe RGB or custom profile",
+          "Calibrate monitor to match printer output",
+          "Run printer color calibration regularly",
+          "Use Brother Color Correction Utility",
+          "Enable ICM (Windows) or ColorSync (Mac)",
+          "Print color test chart to verify calibration"
+        ]
+      },
+      {
+        "issue": "AirPrint not working from iOS/Mac",
+        "symptoms": ["Printer not visible", "AirPrint fails", "Job doesn't print"],
+        "diagnosticSteps": [
+          "Check iOS device on same WiFi (Note: Printer is wired only)",
+          "Verify Bonjour/mDNS enabled",
+          "Check printer status"
+        ],
+        "solutions": [
+          "Note: This model is Ethernet only, no WiFi",
+          "Ensure iOS device WiFi is on same network as printer",
+          "Enable Bonjour/mDNS on printer: Web > Network > Protocol",
+          "Restart iOS device and printer",
+          "Check router allows multicast traffic",
+          "Disable AP isolation if on wireless",
+          "Update iOS to latest version",
+          "Try discovering printer manually by IP address",
+          "Reset network settings on iOS device if needed"
+        ]
+      }
+    ],
+    "generalMaintenance": [
+      {
+        "task": "Replace toner cartridges",
+        "frequency": "Black: 9,000 pages, Color: 4,000-9,000 pages",
+        "procedure": [
+          "Open front cover",
+          "Remove corresponding drum unit",
+          "Press release lever and remove old toner",
+          "Unpack new Brother TN-43x toner",
+          "Remove protective cover",
+          "Gently shake cartridge 5-6 times",
+          "Install new toner into drum until it clicks",
+          "Reinstall drum unit in correct position",
+          "Close front cover",
+          "Toner level resets automatically"
+        ],
+        "partsNeeded": ["TN-436BK, TN-433C/M/Y or TN-439BK/C/M/Y"]
+      },
+      {
+        "task": "Replace drum units",
+        "frequency": "30,000 pages per drum",
+        "procedure": [
+          "Order replacement DR-431BK (black) or DR-431CL (color)",
+          "Open front cover",
+          "Remove drum unit to be replaced",
+          "Separate toner from old drum",
+          "Unpack new drum unit",
+          "Remove all protective covers",
+          "Install toner cartridge into new drum",
+          "Install drum/toner assembly in correct slot",
+          "Reset drum counter: Hold GO button 4 seconds",
+          "Select drum color, press 1 to reset",
+          "Close front cover"
+        ],
+        "partsNeeded": ["DR-431BK (Black), DR-431CL (Color)"]
+      },
+      {
+        "task": "Replace transfer belt",
+        "frequency": "50,000 pages",
+        "procedure": [
+          "Open front cover",
+          "Remove all four drum units",
+          "Pull out belt unit by lifting handle",
+          "Unpack new BU-330CL belt unit",
+          "Remove protective packaging",
+          "Install new belt unit until it clicks",
+          "Reinstall all four drum units in correct order",
+          "Close front cover",
+          "Belt counter resets automatically"
+        ],
+        "partsNeeded": ["BU-330CL"]
+      },
+      {
+        "task": "Replace waste toner box",
+        "frequency": "50,000 pages",
+        "procedure": [
+          "Open front cover",
+          "Remove waste toner box from left side",
+          "Seal old box using provided cap",
+          "Dispose according to local regulations",
+          "Install new WT-330CL waste toner box",
+          "Push until it clicks into place",
+          "Close front cover",
+          "Counter resets automatically"
+        ],
+        "partsNeeded": ["WT-330CL"]
+      },
+      {
+        "task": "Clean corona wires",
+        "frequency": "Monthly or when quality issues appear",
+        "procedure": [
+          "Open front cover",
+          "Remove drum unit needing cleaning",
+          "For black drum: Slide green tab left to right several times",
+          "Return tab to home position",
+          "For color drums: Use built-in cleaning mechanism",
+          "Reinstall drum unit",
+          "Repeat for other drums as needed",
+          "Close front cover",
+          "Print test page to verify"
+        ],
+        "partsNeeded": ["None - built-in cleaning mechanism"]
+      },
+      {
+        "task": "Run color calibration",
+        "frequency": "Weekly or after replacing drums/toner",
+        "procedure": [
+          "LCD: Settings > Machine Info > Auto Calibration",
+          "Select 'Start'",
+          "Printer will print calibration pattern internally",
+          "Process takes about 2 minutes",
+          "Printer reads pattern automatically",
+          "Calibration complete message displays",
+          "Print color test page to verify",
+          "Run registration if colors still misaligned"
+        ],
+        "partsNeeded": ["None"]
+      }
+    ]
+  },
+  "firmware": {
+    "latest": "T",
+    "releaseDate": "2024-06-20",
+    "updateProcedure": "Access web interface at http://[printer-ip]. Navigate to Administrator > Firmware Update. Check for updates or upload firmware file from brother.com/support. Printer will reboot during update (approximately 10 minutes). Do not power off during update process."
+  },
+  "warranty": {
+    "standard": "1 year limited warranty with free phone support",
+    "extendedOptions": [
+      "Brother 2-year extended warranty",
+      "Brother CarePack 3-year next business day on-site",
+      "Brother 4-year advanced exchange service",
+      "On-site service agreements for high-volume users"
+    ]
+  },
+  "certifications": ["ENERGY STAR", "EPEAT Silver"],
+  "releaseDate": "2021-10"
+}

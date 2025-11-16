@@ -1,0 +1,900 @@
+{
+  "id": "brother-mfc-l5900dw",
+  "manufacturer": "Brother",
+  "model": "MFC-L5900DW",
+  "series": "MFC-L",
+  "formFactor": "workgroup",
+  "type": "laser",
+  "color": false,
+  "functions": ["print", "copy", "scan", "fax"],
+  "specifications": {
+    "printSpeed": {
+      "mono": 42,
+      "color": 0
+    },
+    "printResolution": {
+      "max": "1200x1200 dpi"
+    },
+    "firstPageOut": {
+      "mono": 6.5,
+      "color": 0
+    },
+    "duty": {
+      "monthly": 100000,
+      "recommended": 5000
+    },
+    "paperHandling": {
+      "inputCapacity": 300,
+      "outputCapacity": 150,
+      "maxInputCapacity": 1340,
+      "duplexing": "standard",
+      "paperSizes": ["A4", "A5", "A6", "Letter", "Legal", "Executive", "Folio"],
+      "paperWeights": "60-163 g/m²"
+    },
+    "memory": "512 MB RAM",
+    "processor": "800 MHz",
+    "connectivity": ["Ethernet (10/100/1000)", "USB 2.0", "Wi-Fi 802.11b/g/n", "NFC"],
+    "networkProtocols": ["TCP/IP", "IPv4", "IPv6", "SMB", "FTP", "SNMP", "IPP", "AirPrint", "Mopria", "Brother iPrint&Scan"],
+    "dimensions": {
+      "width": 410,
+      "depth": 398,
+      "height": 356,
+      "weight": 14.1,
+      "unit": "mm",
+      "weightUnit": "kg"
+    },
+    "powerConsumption": {
+      "operating": "610 watts",
+      "standby": "45 watts",
+      "sleep": "4.5 watts",
+      "deepSleep": "1.4 watts"
+    }
+  },
+  "sales": {
+    "msrp": 449,
+    "currency": "USD",
+    "streetPrice": 349,
+    "targetMarket": ["Small Workgroups", "Branch Offices", "SMB", "Professional Services"],
+    "sellingPoints": [
+      "Fast 42 PPM monochrome printing",
+      "Large 3.7-inch color touchscreen",
+      "Expandable to 1,340-sheet capacity",
+      "Super high-yield toner up to 20,000 pages",
+      "Advanced security features"
+    ],
+    "competitiveAdvantages": [
+      "Ultra-low cost per page with high-yield toner",
+      "Fast first page out time (6.5 seconds)",
+      "Flexible paper handling with multiple trays",
+      "Strong business-class build quality",
+      "Excellent value for performance"
+    ],
+    "idealFor": [
+      "Busy workgroups needing reliability",
+      "Small businesses seeking low TCO",
+      "Offices with moderate to high volume",
+      "Organizations requiring secure printing",
+      "Environments needing flexible connectivity"
+    ]
+  },
+  "costs": {
+    "consumables": {
+      "tonerCartridges": {
+        "black": {
+          "partNumber": "TN-880 (standard), TN-850 (high yield), TN-820 (super high)",
+          "yield": 12000,
+          "yieldHigh": 8000,
+          "yieldSuper": 20000,
+          "cost": 150,
+          "costHigh": 120,
+          "costSuper": 230
+        }
+      },
+      "drums": {
+        "black": {
+          "partNumber": "DR-820",
+          "yield": 30000,
+          "cost": 100
+        }
+      }
+    },
+    "costPerPage": {
+      "mono": 0.0115,
+      "color": 0
+    }
+  },
+  "setup": {
+    "unboxing": [
+      "Remove all packing tape and materials",
+      "Remove protective film from scanner glass",
+      "Remove orange protective shipping material from inside",
+      "Install drum unit and toner cartridge together",
+      "Load paper in standard tray",
+      "Connect power cable"
+    ],
+    "initialSetup": [
+      "Press power button",
+      "Select language on 3.7-inch touchscreen",
+      "Select country/region",
+      "Configure date and time",
+      "Choose network setup method (Ethernet/WiFi/USB)",
+      "Complete initial setup wizard",
+      "Print setup report to verify"
+    ],
+    "networkSetup": {
+      "ethernet": [
+        "Connect RJ-45 Ethernet cable to port on rear",
+        "Touchscreen: Network > Wired LAN > TCP/IP",
+        "Select Boot Method: Auto (DHCP) or Static",
+        "If Static: Enter IP address, subnet mask, gateway",
+        "Configure DNS servers if needed",
+        "Print Network Configuration Report",
+        "Access web interface at http://[printer-ip]"
+      ],
+      "wifi": [
+        "Touchscreen: Network > WLAN > Setup Wizard",
+        "Select your WiFi network from list",
+        "Enter WPA2/WPA3 password using on-screen keyboard",
+        "Confirm connection successful",
+        "Print Wireless LAN Report to verify",
+        "Alternative: Use WPS for automatic setup",
+        "WiFi Direct available for direct mobile connections"
+      ],
+      "wps": [
+        "Touchscreen: Network > WLAN > WPS",
+        "Press WPS button on router within 2 minutes",
+        "Device connects automatically",
+        "Verify connection on touchscreen"
+      ]
+    },
+    "webInterface": {
+      "accessUrl": "http://[printer-ip]",
+      "defaultCredentials": {
+        "username": "admin",
+        "password": "access (default) - change on first login recommended"
+      },
+      "certificateWarning": "Brother devices use HTTP by default. HTTPS available with manual certificate configuration.",
+      "accessSteps": [
+        "Print Network Configuration Report: Touchscreen > All Settings > Print Reports > Network Configuration",
+        "Note the IPv4 address from printed report",
+        "Open web browser and navigate to http://[printer-ip]",
+        "Brother Web-Based Management loads",
+        "Login with admin/access credentials",
+        "First access: Change admin password via Administrator tab > Login Password",
+        "Access all settings: Scan/Email, Fax, Network, Security, Device Management"
+      ]
+    },
+    "driverInstallation": {
+      "windows10": {
+        "procedure": [
+          "Visit brother.com/support and search for MFC-L5900DW",
+          "Select Windows 10 (64-bit) from OS dropdown",
+          "Download 'Full Driver & Software Package' (approximately 200 MB)",
+          "Run installer as Administrator",
+          "Accept license agreement",
+          "Select 'Network Connection' (or USB/Wireless as appropriate)",
+          "Installer auto-discovers printer via mDNS/Bonjour",
+          "Select your MFC-L5900DW from detected devices list",
+          "Choose driver type: PCL6 (recommended) or BR-Script (PostScript)",
+          "Select components: Printer driver, Scanner driver, PC-Fax driver",
+          "Optional: Install Brother iPrint&Scan, ControlCenter, Status Monitor",
+          "Complete installation and restart if prompted",
+          "Test print and scan to verify installation"
+        ],
+        "notes": [
+          "Windows 10 Version 1903 or later recommended",
+          "Scanner driver enables TWAIN and WIA scanning from Windows apps",
+          "PC-Fax allows sending faxes directly from computer",
+          "Brother iPrint&Scan provides mobile-like interface on PC",
+          "ControlCenter 4 offers advanced scan workflows and OCR"
+        ]
+      },
+      "windows11": {
+        "procedure": [
+          "Visit brother.com/support and search for MFC-L5900DW",
+          "Select Windows 11 (64-bit) from OS dropdown",
+          "Download 'Full Driver & Software Package'",
+          "Right-click installer > Run as administrator",
+          "Accept license agreement",
+          "Select connection type: Network, Wireless, or USB",
+          "Installer searches network for compatible devices",
+          "Select MFC-L5900DW from discovered printers",
+          "Choose PCL6 (standard) or BR-Script (PostScript) driver",
+          "Select all components: Print, Scan, Fax drivers",
+          "Install utilities: iPrint&Scan, ControlCenter 4",
+          "Allow Windows 11 security prompts",
+          "Complete installation",
+          "Test all functions: Print, Scan, Copy"
+        ],
+        "notes": [
+          "Windows 11 22H2 or later fully supported",
+          "TPM 2.0 and Secure Boot compatible",
+          "Native TWAIN and WIA scanning support",
+          "Brother ControlCenter 4 supports Windows 11 features",
+          "Works with Windows 11 ARM via emulation (limited performance)"
+        ]
+      },
+      "mac": {
+        "procedure": [
+          "For macOS Monterey (12) or later: AirPrint works for basic printing",
+          "For full features including scanning: Visit brother.com/support",
+          "Select macOS from OS dropdown (specify your macOS version)",
+          "Download 'Full Driver & Software Package' DMG file",
+          "Double-click DMG to mount disk image",
+          "Run Brother installer package (.pkg file)",
+          "Follow installation wizard",
+          "Grant necessary permissions when prompted (System Extensions, Accessibility)",
+          "Open System Settings > Printers & Scanners (or System Preferences on macOS 12 and earlier)",
+          "Click '+' to add printer",
+          "Select MFC-L5900DW from list",
+          "Choose 'Brother MFC-L5900DW series' driver for full features",
+          "Or choose 'AirPrint' for basic print-only functionality",
+          "For scanning: Install Brother iPrint&Scan from Mac App Store",
+          "Or use Image Capture app with Brother scanner driver"
+        ],
+        "notes": [
+          "macOS 11 (Big Sur) and later: AirPrint supported",
+          "macOS 10.15 (Catalina) minimum for full driver support",
+          "Brother Scanner Driver enables scanning from any TWAIN app",
+          "Brother iPrint&Scan offers easiest scanning interface",
+          "Apple Silicon (M1/M2/M3) fully supported (Universal Binary)",
+          "For faxing: Brother PC-Fax driver available for macOS"
+        ]
+      },
+      "linux": {
+        "procedure": [
+          "Visit support.brother.com/g/s/id/linux",
+          "Download driver for MFC-L5900DW (DEB for Ubuntu/Debian, RPM for Fedora/RHEL)",
+          "Or use Brother Linux Driver Install Tool (recommended):",
+          "wget https://download.brother.com/welcome/dlf006893/linux-brprinter-installer-2.2.3-1.gz",
+          "gunzip linux-brprinter-installer-*.gz",
+          "sudo bash linux-brprinter-installer-*",
+          "Select Model: MFC-L5900DW",
+          "Select connection type: Network recommended",
+          "Tool auto-discovers printer on network",
+          "Select device from list",
+          "Installer downloads and installs printer and scanner drivers",
+          "Drivers install to /opt/brother/Printers/ and /opt/brother/scanner/",
+          "For manual configuration: Open browser to localhost:631 (CUPS)",
+          "Administration > Add Printer > Brother MFC-L5900DW",
+          "Choose Brother PPD from list",
+          "For scanning: Install brscan4 driver and configure using brsaneconfig4"
+        ],
+        "notes": [
+          "Ubuntu 20.04 LTS and later supported",
+          "Fedora 34+ and RHEL 8+ supported",
+          "Requires CUPS 2.0 or later for printing",
+          "Requires SANE for scanning functionality",
+          "Brother provides both 32-bit and 64-bit packages",
+          "Scanning tested with XSane, SimpleScan, and GNOME Document Scanner",
+          "Network scanning fully supported via brscan4 driver"
+        ]
+      },
+      "driverDownloads": [
+        {
+          "os": "Windows 10/11",
+          "url": "https://support.brother.com/g/b/downloadtop.aspx?c=us&lang=en&prod=mfcl5900dw_us_as"
+        },
+        {
+          "os": "macOS",
+          "url": "https://support.brother.com/g/b/downloadtop.aspx?c=us&lang=en&prod=mfcl5900dw_us_as"
+        },
+        {
+          "os": "Linux",
+          "url": "https://support.brother.com/g/s/id/linux/en/index.html"
+        }
+      ]
+    },
+    "backupRestore": {
+      "systemBackup": {
+        "procedure": [
+          "Access Brother Web-Based Management at http://[printer-ip]",
+          "Login with admin credentials (default: admin/access)",
+          "Navigate to Administrator tab",
+          "Select 'Setting & Export' or 'Export Settings' option",
+          "Choose configuration categories to export:",
+          "- Network settings (TCP/IP, WiFi, email server)",
+          "- Device settings (default paper, timeout, ecology)",
+          "- Security settings (Secure Function Lock, SSL/TLS)",
+          "- Address book entries (email, fax, scan destinations)",
+          "Click 'Export' button",
+          "Save configuration file: MFC-L5900DW_Config_2024-11-16.bin or .xml",
+          "Store backup securely - contains passwords and network configuration",
+          "Recommended: Create backup before firmware updates or major changes"
+        ],
+        "fileFormat": ".bin or .xml (proprietary Brother format)",
+        "location": "Downloads to local computer",
+        "notes": [
+          "Backup file may contain passwords in encrypted form",
+          "Some models export as .xml (plain text), others as .bin (encrypted)",
+          "Secure Function Lock user database exported separately",
+          "Address book included in system backup automatically"
+        ]
+      },
+      "systemRestore": {
+        "procedure": [
+          "Access Brother Web-Based Management at http://[printer-ip]",
+          "Login with administrator credentials",
+          "Navigate to Administrator tab",
+          "Select 'Setting Import' or 'Import Settings' option",
+          "Click 'Browse' or 'Choose File'",
+          "Select previously exported configuration file (.bin or .xml)",
+          "Click 'Submit' or 'Import' to begin restore",
+          "System displays 'Importing configuration...'",
+          "Wait 30-90 seconds for import to complete",
+          "Device automatically reboots to apply settings",
+          "After reboot (1-2 minutes), verify network connectivity",
+          "Print Network Configuration Report to confirm settings",
+          "Test device functions: print, scan, fax"
+        ],
+        "prerequisites": [
+          "Valid backup file from same or compatible model",
+          "Firmware version should be same or newer than backup",
+          "Network access to device (or use USB for initial restore)",
+          "Admin password if authentication is enabled"
+        ],
+        "notes": [
+          "IP address may change if backup had different network config",
+          "Admin password will be restored from backup",
+          "Consumable counters (toner, drum) NOT affected by restore",
+          "Some advanced security settings may require manual reconfiguration",
+          "Address book restored automatically with system settings"
+        ]
+      },
+      "addressBookBackup": {
+        "procedure": [
+          "Access Brother Web-Based Management at http://[printer-ip]",
+          "Login with admin credentials",
+          "Navigate to Address Book tab",
+          "Click 'Export' button at top or bottom of address book list",
+          "Choose export format: CSV (recommended) or LDIF",
+          "Select entries to export: All contacts, or specific groups",
+          "Click 'OK' or 'Export' to download",
+          "File saves as: addressbook.csv or addressbook.ldif",
+          "Rename file with date: MFC-L5900DW_AddressBook_2024-11-16.csv",
+          "Address book includes: Name, Email, Fax number, File (SMB) paths"
+        ],
+        "fileFormat": ".csv (comma-separated values, Excel-compatible)",
+        "location": "Downloads to local computer",
+        "notes": [
+          "CSV format can be edited in Excel or Google Sheets",
+          "Maximum address book entries: varies by model (typically 500-1000)",
+          "Includes all scan-to destinations: email, FTP, SMB, CIFS",
+          "Export before making bulk changes for easy rollback"
+        ]
+      },
+      "addressBookRestore": {
+        "procedure": [
+          "Prepare CSV file with columns: Name, Email Address, Fax Number, File Path",
+          "Ensure CSV follows Brother format (export existing book to see format)",
+          "Access Brother Web-Based Management at http://[printer-ip]",
+          "Login with admin credentials",
+          "Navigate to Address Book tab",
+          "Click 'Import' button",
+          "Click 'Browse' and select prepared CSV file",
+          "Choose import mode:",
+          "- Overwrite: Replaces entire address book (deletes existing entries)",
+          "- Append: Adds new entries, keeps existing (may create duplicates)",
+          "Click 'Submit' or 'Import' to begin",
+          "Wait for import confirmation message",
+          "Verify entries: Check address book list in web interface",
+          "Test scan-to-email with imported addresses"
+        ],
+        "fileFormat": ".csv with specific column headers",
+        "prerequisites": [
+          "CSV must have headers: Name,Email Address,Fax Number,File Path",
+          "Email addresses must be valid format (user@domain.com)",
+          "File paths must use format: \\\\\\\\server\\\\share\\\\path",
+          "Maximum entry count depends on model memory"
+        ],
+        "notes": [
+          "Import validates email addresses - invalid entries will be skipped",
+          "Fax numbers optional if device doesn't have fax capability",
+          "For SMB/CIFS paths, authentication credentials set separately",
+          "Imported entries available immediately on device touchscreen"
+        ]
+      }
+    },
+    "scanDestinations": {
+      "scanToEmail": {
+        "requirements": [
+          "SMTP server address and port",
+          "SMTP authentication credentials (username and password)",
+          "Valid sender email address configured",
+          "Network connection to SMTP server (firewall allows port 25/587/465)"
+        ],
+        "smtpConfiguration": [
+          "Access Brother Web-Based Management at http://[printer-ip]",
+          "Login with admin credentials",
+          "Navigate to Administrator tab > Email/IFAX Settings",
+          "Enter SMTP Server Address: smtp.office365.com or smtp.gmail.com",
+          "Enter SMTP Port: 25 (standard), 587 (TLS), or 465 (SSL)",
+          "Check 'SMTP Server Requires Authentication' if needed",
+          "Enter SMTP Username (usually full email address)",
+          "Enter SMTP Password (use app password for Gmail)",
+          "Set 'From' address (sender email - must be valid)",
+          "Configure SSL/TLS: None (port 25), STARTTLS (port 587), or SSL (port 465)",
+          "Set Maximum Email Size if server has limits (default: 2MB)",
+          "Click 'Submit' to save configuration",
+          "Use 'Send Test Email' button to verify settings"
+        ],
+        "authenticationSetup": [
+          "Office 365: smtp.office365.com, port 587, STARTTLS, use full email@domain.com as username",
+          "Gmail: smtp.gmail.com, port 587, STARTTLS, enable 2FA and create app-specific password",
+          "Exchange on-premise: Use internal server address (mail.company.local), port 25 or 587",
+          "Generic SMTP: Check with IT for server address, port, and authentication method",
+          "For port 465: Select SSL, for port 587: Select STARTTLS",
+          "Some servers require 'From' address to match authenticated account"
+        ],
+        "testProcedure": [
+          "In web interface: Email/IFAX Settings > Send Test Email",
+          "Enter test recipient email address",
+          "Click 'Send Test'",
+          "Check recipient inbox (may take 1-2 minutes)",
+          "If failed, check touchscreen for error code",
+          "Common errors: Authentication Failed, Connection Timeout, Relay Denied",
+          "From device touchscreen: Scan > Email > Address Book > Select recipient > Start scan"
+        ]
+      },
+      "scanToFolder": {
+        "requirements": [
+          "Network file share (SMB/CIFS or FTP server)",
+          "Valid credentials with write permissions to target folder",
+          "Network path to folder: \\\\\\\\server\\\\share\\\\folder",
+          "Firewall allows SMB (port 445) or FTP (port 21)"
+        ],
+        "smbConfiguration": [
+          "Access Brother Web-Based Management",
+          "Navigate to Administrator > Scan to Network (or Scan to FTP/Network)",
+          "Click 'Add' to create new scan destination",
+          "Enter Profile Name (displayed on touchscreen): Marketing Scans",
+          "Enter Network Path: \\\\\\\\fileserver\\\\scans\\\\marketing",
+          "Enter Username: DOMAIN\\\\scanuser or SERVERNAME\\\\scanner",
+          "Enter Password for the account",
+          "Set File Name: Prefix (scan), Suffix (date/time), Extension (.pdf)",
+          "Choose File Type: PDF (recommended), JPEG, TIFF, PDF/A",
+          "Set Scan Quality: 200dpi (normal), 300dpi (high quality)",
+          "Choose Color Mode: Auto, Color, Grayscale, Black & White",
+          "Set Duplex: Simplex or Duplex (2-sided scanning)",
+          "Click 'Test' to verify connection and permissions",
+          "Click 'Submit' to save destination"
+        ],
+        "ftpConfiguration": [
+          "Brother MFC-L5900DW supports FTP scanning (older protocol)",
+          "Access web interface > Administrator > Scan to FTP",
+          "Click 'Add' to create FTP destination",
+          "Enter Profile Name: FTP Archive",
+          "Enter FTP Server Address: ftp.company.com or 192.168.1.100",
+          "Enter FTP Port: 21 (default)",
+          "Enter Username and Password for FTP account",
+          "Enter Upload Directory path on FTP server: /scans/incoming",
+          "Choose Passive Mode if behind firewall (recommended)",
+          "Set file naming and scan settings same as SMB",
+          "Test connection before saving",
+          "Note: FTP transmits passwords in clear text - use FTPS if available"
+        ],
+        "authenticationSetup": [
+          "Active Directory: Use DOMAIN\\\\username format (e.g., CONTOSO\\\\scanservice)",
+          "Local server account: Use SERVERNAME\\\\username format",
+          "Verify account has write permissions to target folder:",
+          "  - Share permissions: Read/Write on share properties",
+          "  - NTFS permissions: Modify or Write on folder security tab",
+          "Test credentials manually: From another PC, try creating file in target folder",
+          "Best practice: Create dedicated service account for scanner (not personal account)",
+          "For user-prompted auth: Configure 'Authentication Required' on device touchscreen"
+        ]
+      },
+      "scanToUsb": {
+        "requirements": [
+          "USB flash drive formatted as FAT32 (up to 32GB) or exFAT (larger drives)",
+          "NTFS drives may work but not officially supported on all models",
+          "Minimum 100MB free space recommended",
+          "USB port on front or side of device"
+        ],
+        "procedure": [
+          "Format USB drive as FAT32 (for drives ≤32GB) or exFAT (for larger drives)",
+          "Insert USB drive into device's USB port (usually front panel)",
+          "Touchscreen displays 'USB Memory Detected' or 'USB Connected'",
+          "Touch 'Scan' on main menu",
+          "Select 'Scan to USB' option",
+          "Choose scan settings:",
+          "  - File Type: PDF (recommended), JPEG, TIFF, PDF/A",
+          "  - Color: Auto, Color, Grayscale, Black & White",
+          "  - Resolution: 200dpi (normal), 300dpi (high), 600dpi (photo)",
+          "  - Duplex: 1-sided or 2-sided scanning",
+          "Load document in ADF (up to 50 sheets) or place on scanner glass",
+          "Press 'Start' or 'Scan' button to begin",
+          "Wait for 'Scan Complete' message",
+          "Touchscreen: Press 'Eject USB' or 'Remove USB' before physically removing drive",
+          "Files saved to root directory of USB drive with timestamp naming: BRHXXXXXX.pdf"
+        ],
+        "supportedFormats": [
+          "PDF (single or multi-page, default)",
+          "JPEG (single page, good for photos)",
+          "TIFF (single or multi-page, uncompressed, large files)",
+          "PDF/A (archival format, good for long-term storage)"
+        ],
+        "notes": [
+          "FAT32 has 4GB file size limit - use exFAT for large scan jobs",
+          "Scan resolution affects file size: 200dpi ≈ 1MB per page, 600dpi ≈ 10MB per page",
+          "PDF recommended for documents, JPEG for photos/images",
+          "Always use 'Eject' function before removing USB to prevent corruption"
+        ]
+      }
+    },
+    "configPages": {
+      "meterPage": "Touchscreen: Information > Machine Info > Page Counter. Shows total pages, duplex pages, and 2-in-1 pages.",
+      "configPage": "Touchscreen: Information > Print Reports > Printer Settings",
+      "networkConfigPage": "Information > Print Reports > Network Configuration",
+      "webInterface": "Access Brother web-based management at http://[printer-ip]. No password required by default. Configure all settings, check status, manage users, view logs."
+    },
+    "commonIssues": [
+      "Install Brother Mobile Connect app for smartphone access",
+      "Configure scan-to-email via web interface > Administrator > Email/IFAX",
+      "Set up scan-to-FTP or scan-to-Network for file server scanning",
+      "Enable Secure Function Lock for user access control",
+      "Update firmware via web interface > Administrator > Firmware Update",
+      "Configure Active Directory authentication if needed",
+      "Set up secure print with PIN codes"
+    ]
+  },
+  "troubleshooting": {
+    "commonErrors": [
+      {
+        "code": "Unable to Print XX",
+        "description": "General print error",
+        "severity": "warning",
+        "causes": [
+          "Paper jam",
+          "No paper loaded",
+          "Cover open",
+          "Toner empty",
+          "Memory full"
+        ],
+        "solutions": [
+          "Check touchscreen for specific error details",
+          "Clear any paper jams following on-screen instructions",
+          "Ensure paper is loaded in tray",
+          "Close all covers securely",
+          "Replace toner if empty",
+          "Cancel print job and retry with smaller file",
+          "Restart printer if needed"
+        ]
+      },
+      {
+        "code": "Drum End Soon / Replace Drum",
+        "description": "Drum unit near end of life",
+        "severity": "warning",
+        "causes": [
+          "Drum unit approaching or at 30,000 page life",
+          "Drum counter needs reset after replacement"
+        ],
+        "solutions": [
+          "Order replacement DR-820 drum unit",
+          "Continue printing until 'Replace Drum' appears",
+          "Replace drum unit when print quality degrades",
+          "After installing new drum, reset counter:",
+          "Open front cover, press Clear/Back button",
+          "Press Up Arrow button, select '1' to reset",
+          "Close front cover"
+        ]
+      },
+      {
+        "code": "Machine Error XX",
+        "description": "Internal system error",
+        "severity": "critical",
+        "causes": [
+          "Internal component malfunction",
+          "Firmware issue",
+          "Hardware failure"
+        ],
+        "solutions": [
+          "Note the specific error number (e.g., Machine Error 76)",
+          "Turn printer off using power switch",
+          "Wait 10 seconds",
+          "Turn printer back on",
+          "If error persists, note error code",
+          "Contact Brother support with error code",
+          "May require service depending on error number"
+        ]
+      },
+      {
+        "code": "No Paper / Paper Jam",
+        "description": "Feed error or jam detected",
+        "severity": "warning",
+        "causes": [
+          "Paper cassette empty",
+          "Paper jam in feed path",
+          "Paper guides not adjusted",
+          "Wrinkled or damaged paper"
+        ],
+        "solutions": [
+          "Load paper if tray is empty",
+          "Check paper guides are snug against paper edges",
+          "Follow touchscreen jam clearance instructions",
+          "Open all indicated covers and remove jammed paper",
+          "Remove any torn pieces completely",
+          "Use fresh, undamaged paper",
+          "Don't overfill paper tray"
+        ]
+      }
+    ],
+    "paperJams": [
+      {
+        "location": "Paper Tray",
+        "accessInstructions": [
+          "Pull paper tray completely out",
+          "Note jam location from touchscreen"
+        ],
+        "clearanceSteps": [
+          "Remove all paper from tray",
+          "Look for jammed sheets in feed area",
+          "Remove jammed paper carefully",
+          "Check for torn pieces and remove all fragments",
+          "Inspect pickup roller for wear or debris",
+          "Fan paper stack before reloading",
+          "Ensure paper guides touch paper edges",
+          "Reinsert tray fully until it clicks"
+        ],
+        "prevention": [
+          "Use 60-163 g/m² paper",
+          "Don't exceed tray capacity (250 sheets 80g/m²)",
+          "Fan paper before loading",
+          "Adjust guides to fit paper size exactly",
+          "Don't mix paper sizes or types",
+          "Store paper in controlled environment"
+        ]
+      },
+      {
+        "location": "Inside Machine (Front Access)",
+        "accessInstructions": [
+          "Open front cover",
+          "Remove drum and toner assembly"
+        ],
+        "clearanceSteps": [
+          "Open front cover fully",
+          "Pull drum/toner assembly straight out",
+          "Set assembly on clean, flat surface",
+          "Gently remove jammed paper from inside",
+          "Check for small torn pieces",
+          "Reinstall drum/toner assembly",
+          "Push until it clicks",
+          "Close front cover firmly"
+        ],
+        "prevention": [
+          "Use appropriate paper weight",
+          "Avoid damp or wrinkled paper",
+          "Clean feed path regularly",
+          "Don't reuse previously jammed sheets"
+        ]
+      },
+      {
+        "location": "Rear (Duplex Area)",
+        "accessInstructions": [
+          "Open back cover at rear of printer",
+          "Press green release tabs"
+        ],
+        "clearanceSteps": [
+          "Open back cover completely",
+          "Pull out duplex tray if equipped",
+          "Gently remove jammed paper",
+          "Check both sides of duplex unit",
+          "Remove all torn pieces",
+          "Reinstall duplex tray",
+          "Close back cover until it clicks"
+        ],
+        "prevention": [
+          "Use 60-105 g/m² paper for duplex",
+          "Avoid textured or very smooth paper in duplex",
+          "Don't use curled or folded sheets",
+          "Ensure paper isn't too thin for duplex mode"
+        ]
+      }
+    ],
+    "qualityIssues": [
+      {
+        "issue": "Faded or light print",
+        "symptoms": ["Washed out text", "Light areas", "Incomplete coverage"],
+        "causes": ["Low toner", "Toner save mode on", "Drum needs cleaning", "Defective toner"],
+        "solutions": [
+          "Check toner level on touchscreen",
+          "Disable Toner Save: Settings > General Setup > Ecology > Toner Save > Off",
+          "Remove drum/toner assembly and shake gently",
+          "Clean corona wire in drum unit",
+          "Replace toner if defective or empty",
+          "Clean drum unit by printing several full pages",
+          "If issue persists, replace drum unit"
+        ]
+      },
+      {
+        "issue": "Streaks or lines on prints",
+        "symptoms": ["Vertical lines", "Horizontal streaks", "Repetitive marks"],
+        "causes": ["Dirty drum", "Dirty corona wire", "Debris in paper path", "Worn drum"],
+        "solutions": [
+          "Clean corona wire in drum unit using blue slider",
+          "Slide blue tab from left to right several times",
+          "Print 10-20 blank pages to clean drum",
+          "Check for toner spills and clean if needed",
+          "Inspect drum surface for visible damage",
+          "If streaks are evenly spaced, measure - indicates drum wear",
+          "Replace drum if damaged or over 30,000 pages",
+          "Clean fuser area if horizontal streaks present"
+        ]
+      },
+      {
+        "issue": "Toner specks or marks",
+        "symptoms": ["Random dots", "Smudges", "Background shading"],
+        "causes": ["Toner spill", "Humidity", "Worn drum", "Corona wire dirty"],
+        "solutions": [
+          "Clean corona wire using blue slider tab",
+          "Run several blank pages to clear excess toner",
+          "Check for toner spills - clean carefully with dry cloth",
+          "Ensure proper humidity (30-70% RH)",
+          "Replace drum if worn or damaged",
+          "Check toner cartridge is fully inserted",
+          "Use Brother genuine toner for best results"
+        ]
+      },
+      {
+        "issue": "Wrinkled or curled paper",
+        "symptoms": ["Paper curls", "Wrinkled output", "Wavy edges"],
+        "causes": ["Thin paper with high coverage", "Humidity too high", "Fuser heat"],
+        "solutions": [
+          "Use heavier paper weight (80-90 g/m²)",
+          "Reduce print density if not needed",
+          "Open rear output tray for face-up exit",
+          "Store paper in dry environment (30-70% RH)",
+          "Try different paper brand or type",
+          "Let paper acclimate to room temperature",
+          "Print on opposite side to counter-curl"
+        ]
+      }
+    ],
+    "networkIssues": [
+      {
+        "issue": "Printer not found on network",
+        "symptoms": ["Cannot find printer", "Driver can't locate device", "Shows offline"],
+        "diagnosticSteps": [
+          "Print Network Configuration Report",
+          "Check IP address assignment",
+          "Verify cable connection or WiFi status",
+          "Ping printer from computer"
+        ],
+        "solutions": [
+          "Verify Ethernet cable connected (check link lights)",
+          "For WiFi: Run WiFi Report to check signal strength",
+          "Ensure printer and computer on same network",
+          "Check IP is not 0.0.0.0 or 169.254.x.x (auto-IP)",
+          "Enable DHCP or configure static IP correctly",
+          "Disable firewall temporarily to test",
+          "Restart printer and network equipment",
+          "Re-run network setup wizard if needed",
+          "Use Brother iPrint&Scan to find printer automatically"
+        ]
+      },
+      {
+        "issue": "Scan to email not working",
+        "symptoms": ["Email fails to send", "SMTP error", "Authentication failed"],
+        "diagnosticSteps": [
+          "Verify SMTP settings in web interface",
+          "Test email account from PC",
+          "Check firewall rules"
+        ],
+        "solutions": [
+          "Access http://[printer-ip] > Administrator Settings",
+          "Navigate to Email/IFAX > Email/IFAX TX",
+          "Enter SMTP server address (e.g., smtp.gmail.com)",
+          "Set correct SMTP port: 25, 465 (SSL), or 587 (TLS)",
+          "Enable SMTP Authentication if required",
+          "Enter valid SMTP username and password",
+          "Configure sender email address",
+          "Test by sending scan to email",
+          "For Gmail: Use app password, not regular password",
+          "Verify email server allows relay from printer IP"
+        ]
+      },
+      {
+        "issue": "Mobile printing not working",
+        "symptoms": ["Brother iPrint&Scan can't find printer", "AirPrint not working"],
+        "diagnosticSteps": [
+          "Check mobile device on same WiFi",
+          "Verify printer WiFi connection",
+          "Check printer services enabled"
+        ],
+        "solutions": [
+          "Ensure mobile device on same WiFi network",
+          "Enable WiFi Direct for direct connection option",
+          "Update Brother iPrint&Scan app to latest version",
+          "Enable mDNS/Bonjour in network settings",
+          "For AirPrint: Ensure AirPrint enabled in web interface",
+          "Restart printer and mobile device",
+          "Check router allows multicast (required for discovery)",
+          "Disable AP isolation on wireless router",
+          "Try adding printer manually using IP address"
+        ]
+      }
+    ],
+    "generalMaintenance": [
+      {
+        "task": "Replace toner cartridge",
+        "frequency": "Standard: 8,000 / High: 12,000 / Super High: 20,000 pages",
+        "procedure": [
+          "Open front cover",
+          "Remove drum/toner assembly",
+          "Push down blue lock lever and remove toner",
+          "Unpack new Brother TN-series toner",
+          "Remove protective cover and seal",
+          "Rock cartridge gently 5-6 times",
+          "Install toner into drum unit until it locks",
+          "Install drum/toner assembly back in printer",
+          "Close front cover",
+          "Printer detects new toner automatically"
+        ],
+        "partsNeeded": ["TN-880, TN-850, or TN-820"]
+      },
+      {
+        "task": "Replace drum unit",
+        "frequency": "30,000 pages",
+        "procedure": [
+          "Order replacement DR-820 drum unit",
+          "Open front cover",
+          "Remove drum/toner assembly",
+          "Separate toner from old drum",
+          "Unpack new drum unit",
+          "Remove protective cover and orange parts",
+          "Install toner cartridge into new drum",
+          "Install drum/toner assembly in printer",
+          "Reset drum counter: Open/close cover, press Clear",
+          "Press Up Arrow, select '1' to reset",
+          "Close front cover"
+        ],
+        "partsNeeded": ["DR-820"]
+      },
+      {
+        "task": "Clean corona wire",
+        "frequency": "Monthly or when quality issues appear",
+        "procedure": [
+          "Open front cover",
+          "Remove drum/toner assembly",
+          "Clean corona wire using blue slider tab",
+          "Slide blue tab from left to right 2-3 times",
+          "Return tab to home position (arrow mark)",
+          "Reinstall drum/toner assembly",
+          "Close front cover",
+          "Print test page to verify quality"
+        ],
+        "partsNeeded": ["None - use built-in cleaning mechanism"]
+      },
+      {
+        "task": "Clean printer",
+        "frequency": "Monthly",
+        "procedure": [
+          "Wipe exterior with slightly damp lint-free cloth",
+          "Clean scanner glass with glass cleaner",
+          "Clean document feeder with damp cloth",
+          "Wipe paper path with dry lint-free cloth",
+          "Clean pickup rollers if jams occurring",
+          "Remove any dust from paper cassettes",
+          "Check for toner spills and clean if found"
+        ],
+        "partsNeeded": ["Lint-free cloths", "Glass cleaner"]
+      }
+    ]
+  },
+  "firmware": {
+    "latest": "R",
+    "releaseDate": "2024-07-18",
+    "updateProcedure": "Access web interface at http://[printer-ip]. Navigate to Administrator > Firmware Update. Check for updates automatically or upload firmware file from brother.com/support. Printer will reboot during update - do not power off. Update takes approximately 10 minutes."
+  },
+  "warranty": {
+    "standard": "1 year limited warranty with free phone support",
+    "extendedOptions": [
+      "Brother 2-year extended warranty",
+      "Brother CarePack 3-year next business day exchange",
+      "Brother On-Site Service agreements available",
+      "Extended warranty with advanced exchange"
+    ]
+  },
+  "certifications": ["ENERGY STAR", "EPEAT Silver"],
+  "releaseDate": "2020-11"
+}

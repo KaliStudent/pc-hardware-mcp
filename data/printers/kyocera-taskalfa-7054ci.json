@@ -1,0 +1,520 @@
+{
+  "id": "kyocera-ta7054ci",
+  "manufacturer": "Kyocera",
+  "model": "TASKalfa 7054ci",
+  "series": "TASKalfa",
+  "formFactor": "departmental",
+  "type": "laser",
+  "color": true,
+  "functions": ["print", "copy", "scan", "fax"],
+  "specifications": {
+    "printSpeed": {
+      "mono": 70,
+      "color": 70
+    },
+    "printResolution": {
+      "max": "1200x1200 dpi"
+    },
+    "firstPageOut": {
+      "mono": 4.3,
+      "color": 5.4
+    },
+    "duty": {
+      "monthly": 300000,
+      "recommended": 50000
+    },
+    "paperHandling": {
+      "inputCapacity": 2180,
+      "outputCapacity": 500,
+      "maxInputCapacity": 7180,
+      "duplexing": "standard",
+      "paperSizes": ["A3", "A4", "A5", "B4", "B5", "SRA3", "Letter", "Legal", "11x17", "Ledger"],
+      "paperWeights": "52-300 g/m²"
+    },
+    "memory": "8 GB RAM + 320 GB SSD",
+    "processor": "Dual-core 1.2 GHz",
+    "connectivity": ["Ethernet (10/100/1000)", "USB 2.0", "Wi-Fi (optional)"],
+    "networkProtocols": ["TCP/IP", "IPv4", "IPv6", "SMB", "FTP", "SNMP", "IPP", "LPD"],
+    "dimensions": {
+      "width": 650,
+      "depth": 685,
+      "height": 1145,
+      "weight": 141,
+      "unit": "mm",
+      "weightUnit": "kg"
+    },
+    "powerConsumption": {
+      "operating": "1.8 kW",
+      "standby": "85 watts",
+      "sleep": "0.7 watts"
+    }
+  },
+  "sales": {
+    "msrp": 15995,
+    "currency": "USD",
+    "streetPrice": 13500,
+    "targetMarket": ["Large Workgroups", "Departments", "Corporate Offices", "Print Centers"],
+    "sellingPoints": [
+      "High-speed 70 PPM color output",
+      "Large 10.1-inch tablet-style touchscreen",
+      "Advanced security with Data Security Kit",
+      "Kyocera's long-life ECOSYS technology",
+      "Flexible finishing options available"
+    ],
+    "competitiveAdvantages": [
+      "Ultra-low cost per page with long-life components",
+      "Industry-leading uptime and reliability",
+      "Ceramic drum technology lasts 300,000+ pages",
+      "Separate toner and drum reduces waste",
+      "Strong TCO advantage over competitors"
+    ],
+    "idealFor": [
+      "Departments with high color volume needs",
+      "Corporate offices requiring reliability",
+      "Organizations focused on low TCO",
+      "Businesses needing advanced workflow automation",
+      "Companies requiring strong data security"
+    ]
+  },
+  "costs": {
+    "consumables": {
+      "tonerCartridges": {
+        "black": {
+          "partNumber": "TK-7209K",
+          "yield": 35000,
+          "cost": 195
+        },
+        "cyan": {
+          "partNumber": "TK-7209C",
+          "yield": 35000,
+          "cost": 275
+        },
+        "magenta": {
+          "partNumber": "TK-7209M",
+          "yield": 35000,
+          "cost": 275
+        },
+        "yellow": {
+          "partNumber": "TK-7209Y",
+          "yield": 35000,
+          "cost": 275
+        }
+      },
+      "drums": {
+        "combined": {
+          "partNumber": "DK-7205 (Drum Kit)",
+          "yield": 600000,
+          "cost": 650
+        }
+      },
+      "wasteContainer": {
+        "partNumber": "WT-7200",
+        "yield": 44000,
+        "cost": 45
+      },
+      "maintenanceKit": {
+        "partNumber": "MK-7205",
+        "yield": 600000,
+        "cost": 850
+      }
+    },
+    "costPerPage": {
+      "mono": 0.0056,
+      "color": 0.065
+    }
+  },
+  "setup": {
+    "unboxing": [
+      "Professional installation recommended due to size and weight",
+      "Remove all external packing materials",
+      "Remove orange protective tape and shipping locks",
+      "Install all four toner containers (CMYK)",
+      "Install waste toner container",
+      "Load paper in main cassettes",
+      "Connect power cable (requires dedicated 20A circuit recommended)"
+    ],
+    "initialSetup": [
+      "Power on using main power switch",
+      "Wait for system initialization",
+      "Select language on 10.1-inch touchscreen",
+      "Configure date, time, and time zone",
+      "Set administrator password",
+      "Configure network settings",
+      "Register device online (optional)",
+      "Print configuration page"
+    ],
+    "networkSetup": {
+      "ethernet": [
+        "Connect RJ-45 Gigabit Ethernet cable",
+        "Touchscreen: System Menu > Network/Interface > Network",
+        "Select TCP/IP > Auto (DHCP) or Manual",
+        "If Manual: Configure IP, subnet, gateway, DNS",
+        "Print Network Status List to verify",
+        "Access Command Center at http://[device-ip]",
+        "Configure SNMP for network monitoring if desired"
+      ],
+      "wifi": [
+        "Requires optional IB-51 Wireless LAN Interface",
+        "Install wireless module in designated slot (service install)",
+        "System Menu > Network/Interface > Wireless LAN",
+        "Select Infrastructure Mode",
+        "Choose SSID and enter WPA2 password",
+        "Confirm connection status",
+        "Print Wireless LAN Status to verify"
+      ]
+    },
+    "driverInstallation": {
+      "windows": "Download Kyocera TASKalfa 7054ci KX driver from Kyocera website. Install driver package which includes PCL and PostScript options. Use KX driver for best performance and feature access. Configure device settings in driver for finishing options.",
+      "mac": "Download macOS driver package from Kyocera support. Install PKG file and add printer via System Preferences > Printers & Scanners. Use Kyocera PPD for full feature support. Supports AirPrint for basic printing.",
+      "linux": "Download Linux PPD from Kyocera. Install via CUPS web interface at localhost:631. Configure using device IP address. Most features supported via CUPS including duplex and color management."
+    },
+    "configPages": {
+      "meterPage": "Touchscreen: Status/Job Cancel > Counter. Shows total, copy, print counters by color.",
+      "configPage": "Touchscreen: System Menu > Report > Configuration Page",
+      "networkConfigPage": "System Menu > Report > Network Status List",
+      "webInterface": "Access Command Center RX at http://[device-ip]. Default login: Admin with custom password set during setup. Provides device management, user authentication, job accounting, and detailed configuration."
+    },
+    "commonIssues": [
+      "Configure scan destinations via Command Center > Destination",
+      "Set up LDAP integration for address book",
+      "Enable user authentication and department codes for tracking",
+      "Configure email settings for scan-to-email functionality",
+      "Update firmware via Command Center for latest features",
+      "Install Data Security Kit (E) if handling sensitive documents",
+      "Set up HyPAS workflow applications if needed"
+    ]
+  },
+  "troubleshooting": {
+    "commonErrors": [
+      {
+        "code": "C6000",
+        "description": "Laser unit error",
+        "severity": "critical",
+        "causes": [
+          "Laser scanner malfunction",
+          "Polygon mirror motor failure",
+          "Optical system failure"
+        ],
+        "solutions": [
+          "Turn off main power switch",
+          "Wait 60 seconds",
+          "Turn power back on",
+          "If error persists after restart, service required",
+          "Contact Kyocera authorized service",
+          "Do not attempt user repair - laser system repair requires technician"
+        ]
+      },
+      {
+        "code": "C6400",
+        "description": "Fusing unit error",
+        "severity": "critical",
+        "causes": [
+          "Fusing unit temperature sensor error",
+          "Fusing unit at end of life",
+          "Thermistor failure",
+          "Power supply issue"
+        ],
+        "solutions": [
+          "Turn off power and wait 30 minutes for cooling",
+          "Check fusing unit page count (rated 600K pages)",
+          "Power back on and test",
+          "If error continues, fusing unit replacement needed",
+          "Schedule service call",
+          "Professional replacement required as part of MK-7205 maintenance kit"
+        ]
+      },
+      {
+        "code": "J2000",
+        "description": "Paper misfeed",
+        "severity": "warning",
+        "causes": [
+          "Paper loaded incorrectly",
+          "Worn pickup rollers",
+          "Humidity or paper quality issue",
+          "Foreign object in path"
+        ],
+        "solutions": [
+          "Follow touchscreen instructions showing jam location",
+          "Open indicated cover or drawer",
+          "Remove all jammed sheets carefully",
+          "Check for torn pieces - remove all fragments",
+          "Verify paper size/type settings match loaded paper",
+          "Reload paper with guides properly adjusted",
+          "Clean pickup rollers if jams recurring",
+          "Replace pickup roller assembly if worn"
+        ]
+      },
+      {
+        "code": "Call Service C",
+        "description": "Service call required",
+        "severity": "critical",
+        "causes": [
+          "Internal component failure",
+          "System malfunction requiring service"
+        ],
+        "solutions": [
+          "Note the complete error code displayed",
+          "Power off the system",
+          "Contact Kyocera authorized service provider",
+          "Provide error code and device serial number",
+          "Do not attempt further operation",
+          "Professional service required"
+        ]
+      }
+    ],
+    "paperJams": [
+      {
+        "location": "Paper Cassette",
+        "accessInstructions": [
+          "Identify which cassette from touchscreen",
+          "Pull cassette completely out"
+        ],
+        "clearanceSteps": [
+          "Remove all paper from cassette",
+          "Look for jammed sheets in feed area",
+          "Remove any torn pieces",
+          "Check pickup roller condition",
+          "Fan paper and check quality",
+          "Ensure paper size matches cassette settings",
+          "Adjust paper guides to edges",
+          "Reload cassette and push fully in"
+        ],
+        "prevention": [
+          "Use 52-300 g/m² paper within spec",
+          "Fan paper before loading",
+          "Don't mix paper types in same cassette",
+          "Store paper at 20-25°C, 50-70% RH",
+          "Keep cassettes closed when not loading",
+          "Replace pickup rollers at maintenance intervals"
+        ]
+      },
+      {
+        "location": "Duplex Unit",
+        "accessInstructions": [
+          "Open right front door",
+          "Identify duplex area from diagram"
+        ],
+        "clearanceSteps": [
+          "Open right front door fully",
+          "Pull green duplex release lever",
+          "Remove jammed paper carefully",
+          "Check for any torn pieces",
+          "Push duplex unit back until it locks",
+          "Close right front door"
+        ],
+        "prevention": [
+          "Use appropriate weight for duplex (60-163 g/m²)",
+          "Avoid very smooth or textured paper",
+          "Ensure paper is not curled",
+          "Check duplex settings match paper type"
+        ]
+      },
+      {
+        "location": "Fusing Unit",
+        "accessInstructions": [
+          "WARNING: Fusing unit extremely hot - wait 30 minutes",
+          "Open right front door",
+          "Check temperature warning indicator"
+        ],
+        "clearanceSteps": [
+          "Ensure fuser has cooled completely (check indicator)",
+          "Open right front door",
+          "Pull green release levers on fuser",
+          "Carefully remove jammed paper",
+          "Do NOT touch fuser rollers",
+          "Close fuser access",
+          "Close right door"
+        ],
+        "prevention": [
+          "Use correct paper weight settings",
+          "Avoid damp or moisture-affected paper",
+          "Replace fuser at rated life (600K pages)",
+          "Maintain recommended room temperature"
+        ]
+      }
+    ],
+    "qualityIssues": [
+      {
+        "issue": "Color inconsistency or drift",
+        "symptoms": ["Colors not matching", "Gradual color change", "Inconsistent output"],
+        "causes": ["Calibration needed", "Drum wear", "Toner density variation", "Environmental changes"],
+        "solutions": [
+          "Run auto calibration: Touchscreen > Adjustment > Auto Color Adjustment",
+          "Perform full color registration",
+          "Clean ceramic drums",
+          "Check room temperature stability (20-27°C optimal)",
+          "Verify all toner levels adequate",
+          "Check drum life remaining (rated 600K pages)",
+          "Enable automatic calibration schedule",
+          "Run density adjustment if needed"
+        ]
+      },
+      {
+        "issue": "Banding or streaking",
+        "symptoms": ["Horizontal bands", "Vertical streaks", "Repetitive marks"],
+        "causes": ["Dirty transfer belt", "Drum contamination", "Developer unit issue", "Transfer roller wear"],
+        "solutions": [
+          "Run cleaning mode from touchscreen",
+          "Print full-page solid colors to clean drums",
+          "Inspect and clean transfer belt",
+          "Check all four drums for visible damage",
+          "Clean charging wires",
+          "Verify toner is distributed evenly",
+          "If banding is regular, measure spacing - indicates component wear",
+          "Replace worn components if at maintenance cycle"
+        ]
+      },
+      {
+        "issue": "Ghosting or faint duplicate images",
+        "symptoms": ["Ghost images on page", "Faint copies of previous image"],
+        "causes": ["Drum discharge issue", "Transfer voltage problem", "Fuser issue"],
+        "solutions": [
+          "Run drum refresh cycle",
+          "Clean all drums thoroughly",
+          "Check transfer voltage settings",
+          "Verify proper fuser operation",
+          "If ghosts match drum circumference, drum may need replacing",
+          "Contact service if issue persists - may need electrical adjustment"
+        ]
+      }
+    ],
+    "networkIssues": [
+      {
+        "issue": "Cannot access Command Center web interface",
+        "symptoms": ["Timeout accessing IP", "Cannot login", "Page won't load"],
+        "diagnosticSteps": [
+          "Print Network Status List",
+          "Verify IP address",
+          "Check Ethernet cable connection",
+          "Ping device from computer"
+        ],
+        "solutions": [
+          "Verify correct IP address from Network Status List",
+          "Check Ethernet cable is connected and link light on",
+          "Try different network cable or port on switch",
+          "Ensure HTTP/HTTPS is enabled in network settings",
+          "Check firewall isn't blocking access",
+          "Try different web browser",
+          "Reset network settings if needed via touchscreen",
+          "Access using https://[IP] if HTTP disabled"
+        ]
+      },
+      {
+        "issue": "Scan to SMB folder not working",
+        "symptoms": ["Cannot authenticate", "Access denied", "Folder not found"],
+        "diagnosticSteps": [
+          "Test folder access from Windows PC",
+          "Verify SMB enabled on server",
+          "Check user has write permissions"
+        ],
+        "solutions": [
+          "Use UNC path format: \\\\servername\\share\\folder",
+          "Enter credentials as domain\\username",
+          "Verify write permissions on destination folder",
+          "Enable SMB2 or SMB3 on server (disable SMB1)",
+          "Configure SMB settings in Command Center",
+          "Test with IP address instead of hostname",
+          "Check Windows firewall allows file sharing",
+          "Verify account isn't locked or expired"
+        ]
+      },
+      {
+        "issue": "Email scanning not working",
+        "symptoms": ["Emails not sending", "SMTP error", "Authentication failed"],
+        "diagnosticSteps": [
+          "Test SMTP server from PC",
+          "Verify SMTP settings",
+          "Check authentication requirements"
+        ],
+        "solutions": [
+          "Configure SMTP in Command Center > Device > Email Settings",
+          "Enter correct SMTP server address and port",
+          "Use port 25 (standard), 465 (SSL), or 587 (TLS)",
+          "Enable SMTP authentication if required by server",
+          "Enter valid SMTP username and password",
+          "Configure sender email address",
+          "Test send via Command Center",
+          "Verify email server allows relay from device IP",
+          "Check firewall allows outbound SMTP"
+        ]
+      }
+    ],
+    "generalMaintenance": [
+      {
+        "task": "Replace toner containers",
+        "frequency": "35,000 pages per color",
+        "procedure": [
+          "Touchscreen will display toner replacement message",
+          "Open front door",
+          "Pull out depleted toner container",
+          "Remove new TK-7209 toner from packaging",
+          "Shake container 10-15 times",
+          "Remove protective seal",
+          "Insert new container until it locks",
+          "Close front door",
+          "System recognizes new toner automatically"
+        ],
+        "partsNeeded": ["TK-7209K/C/M/Y"]
+      },
+      {
+        "task": "Replace drum unit",
+        "frequency": "600,000 pages",
+        "procedure": [
+          "This is part of MK-7205 maintenance kit",
+          "Professional service recommended",
+          "Schedule during planned downtime",
+          "Technician will replace drum, fuser, rollers",
+          "Full maintenance kit installation takes 2-3 hours",
+          "Reset all maintenance counters after service",
+          "Print test pages to verify quality"
+        ],
+        "partsNeeded": ["DK-7205 or full MK-7205 maintenance kit"]
+      },
+      {
+        "task": "Replace waste toner container",
+        "frequency": "44,000 pages",
+        "procedure": [
+          "Open right front door",
+          "Pull out waste toner container",
+          "Seal old container using provided cap",
+          "Insert new WT-7200 container",
+          "Push until it clicks",
+          "Close right door",
+          "Counter resets automatically"
+        ],
+        "partsNeeded": ["WT-7200"]
+      },
+      {
+        "task": "Maintenance kit replacement",
+        "frequency": "600,000 pages",
+        "procedure": [
+          "PROFESSIONAL SERVICE REQUIRED",
+          "Schedule with Kyocera authorized technician",
+          "MK-7205 kit includes: drum, fuser, feed rollers, transfer components",
+          "Plan 2-3 hour service window",
+          "Calibration and testing performed after installation",
+          "All maintenance counters reset",
+          "Extended life ensures continued reliability"
+        ],
+        "partsNeeded": ["MK-7205 Maintenance Kit"]
+      }
+    ]
+  },
+  "firmware": {
+    "latest": "2GH_S000.003.109",
+    "releaseDate": "2024-09-10",
+    "updateProcedure": "Access Command Center RX at http://[device-ip]. Login with administrator credentials. Navigate to Device > Firmware Update. Upload firmware file downloaded from Kyocera support portal. Do not power off during update (approximately 15 minutes). Device will automatically restart."
+  },
+  "warranty": {
+    "standard": "1 year limited warranty",
+    "extendedOptions": [
+      "Kyocera 2-year extended warranty",
+      "Kyocera 3-year total coverage",
+      "Kyocera 5-year comprehensive warranty",
+      "Fleet Services agreement with guaranteed response times",
+      "Cost-per-page service agreements available"
+    ]
+  },
+  "certifications": ["ENERGY STAR", "EPEAT Gold", "Blue Angel", "Nordic Swan"],
+  "releaseDate": "2022-03"
+}

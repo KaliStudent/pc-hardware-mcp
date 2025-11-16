@@ -1,0 +1,471 @@
+{
+  "id": "kyocera-m2640idw",
+  "manufacturer": "Kyocera",
+  "model": "ECOSYS M2640idw",
+  "series": "ECOSYS",
+  "formFactor": "workgroup",
+  "type": "laser",
+  "color": false,
+  "functions": ["print", "copy", "scan", "fax"],
+  "specifications": {
+    "printSpeed": {
+      "mono": 42
+    },
+    "printResolution": {
+      "max": "1200x1200 dpi"
+    },
+    "firstPageOut": {
+      "mono": 6.5
+    },
+    "duty": {
+      "monthly": 80000,
+      "recommended": 10000
+    },
+    "paperHandling": {
+      "inputCapacity": 350,
+      "outputCapacity": 150,
+      "maxInputCapacity": 850,
+      "duplexing": "standard",
+      "paperSizes": ["A4", "A5", "A6", "Letter", "Legal", "Executive", "Custom"],
+      "paperWeights": "60-220 g/m²"
+    },
+    "memory": "1 GB",
+    "processor": "800 MHz",
+    "connectivity": ["Ethernet", "Wi-Fi", "USB 2.0"],
+    "networkProtocols": ["TCP/IP", "IPv4", "IPv6", "IPP", "SNMP", "WSD"],
+    "dimensions": {
+      "width": 417,
+      "depth": 451,
+      "height": 455,
+      "weight": 18.8,
+      "unit": "mm",
+      "weightUnit": "kg"
+    },
+    "powerConsumption": {
+      "operating": "650 watts",
+      "standby": "50 watts",
+      "sleep": "0.7 watts"
+    }
+  },
+  "sales": {
+    "msrp": 1499,
+    "currency": "USD",
+    "streetPrice": 899,
+    "targetMarket": ["Small Workgroups", "Departments", "Small Business"],
+    "sellingPoints": [
+      "Industry-leading low total cost of ownership",
+      "Long-life components reduce replacement frequency",
+      "High monthly duty cycle for workgroup device",
+      "Kyocera's legendary reliability",
+      "Component-based design for efficient maintenance"
+    ],
+    "competitiveAdvantages": [
+      "Ceramic drum lasts up to 300,000 pages",
+      "Separate toner and drum = lower cost per page",
+      "Extremely low energy consumption in sleep mode",
+      "No ozone emissions",
+      "All-metal construction for longevity"
+    ],
+    "idealFor": [
+      "Cost-conscious businesses with technical IT staff",
+      "Organizations prioritizing environmental sustainability",
+      "Workgroups needing reliable monochrome printing",
+      "Businesses wanting to minimize supply interruptions"
+    ]
+  },
+  "costs": {
+    "consumables": {
+      "tonerCartridges": {
+        "black": {
+          "partNumber": "TK-1172",
+          "yield": 7200,
+          "cost": 69
+        }
+      },
+      "drums": {
+        "black": {
+          "partNumber": "DK-1150",
+          "yield": 300000,
+          "cost": 149
+        }
+      },
+      "maintenanceKit": {
+        "partNumber": "MK-1152",
+        "yield": 200000,
+        "cost": 189
+      }
+    },
+    "costPerPage": {
+      "mono": 0.007
+    }
+  },
+  "setup": {
+    "unboxing": [
+      "Remove all packing materials and protective foam",
+      "Remove orange protective shipping lock from scanner",
+      "Install toner kit (TK-1172)",
+      "Load paper in cassette",
+      "Connect power cable"
+    ],
+    "initialSetup": [
+      "Power on the device",
+      "Select language on control panel",
+      "Configure date and time",
+      "Set default paper size",
+      "Run test print to verify operation"
+    ],
+    "networkSetup": {
+      "ethernet": [
+        "Connect Ethernet cable to RJ-45 port on back",
+        "On control panel, press Menu/Enter",
+        "Navigate to System Menu > Network > TCP/IP",
+        "Select Auto Obtain (DHCP) or configure Static IP",
+        "Print network status page to verify connection",
+        "Access Command Center RX at http://[printer-ip]"
+      ],
+      "wifi": [
+        "Press Menu/Enter on control panel",
+        "Navigate to System Menu > Network > Wireless LAN",
+        "Select your SSID from list",
+        "Enter Wi-Fi password using on-screen keyboard",
+        "Confirm connection and print network status page",
+        "Alternatively, use WPS push-button method if supported by router"
+      ]
+    },
+    "driverInstallation": {
+      "windows": "Download KX Driver from Kyocera website. Run installer and follow prompts. Select network search to automatically detect printer.",
+      "mac": "Download macOS driver from Kyocera website. Open .dmg file and run installer. Add printer via System Preferences using Bonjour or IP address.",
+      "linux": "Use Kyocera Linux PPD files available from support website. Add printer via CUPS web interface at localhost:631."
+    },
+    "configPages": {
+      "meterPage": "Press Menu > Report > Page Counter to print current page counts for device and toner",
+      "configPage": "Press Menu > Report > Status Page to print complete device configuration",
+      "networkConfigPage": "Press Menu > Report > Network Status to print detailed network configuration",
+      "webInterface": "Enter printer IP address in browser (e.g., http://192.168.1.100) to access Command Center RX. Default admin password is 'admin'."
+    },
+    "commonIssues": [
+      "After initial setup, configure Scan to Email in Command Center RX > Email Settings",
+      "For Scan to SMB, configure Windows domain credentials in Address Book",
+      "Update firmware via Command Center RX for latest features and bug fixes",
+      "Install Kyocera Print Center app for mobile printing support"
+    ]
+  },
+  "troubleshooting": {
+    "commonErrors": [
+      {
+        "code": "Call Service C6000",
+        "description": "LSU (Laser Scanning Unit) error",
+        "severity": "critical",
+        "causes": [
+          "LSU malfunction",
+          "Main controller communication error",
+          "Excessive dust in LSU area"
+        ],
+        "solutions": [
+          "Power off printer for 30 seconds",
+          "Open front cover and clean LSU mirror with dry lint-free cloth",
+          "Check for obstructions in paper path",
+          "If error persists after power cycle, contact Kyocera service",
+          "This error may require technician intervention"
+        ]
+      },
+      {
+        "code": "Paper Jam",
+        "description": "Paper misfeed detected",
+        "severity": "warning",
+        "causes": [
+          "Paper loaded incorrectly",
+          "Foreign object in paper path",
+          "Worn feed rollers",
+          "Incompatible paper type"
+        ],
+        "solutions": [
+          "Open all covers indicated on control panel display",
+          "Remove jammed paper carefully in direction of arrow",
+          "Check paper is loaded correctly with guides snug",
+          "Clean feed rollers with damp cloth",
+          "Use paper within 60-220 g/m² specification"
+        ]
+      },
+      {
+        "code": "Replace Toner",
+        "description": "Toner cartridge depleted",
+        "severity": "warning",
+        "causes": [
+          "Toner kit at end of rated yield (7,200 pages)"
+        ],
+        "solutions": [
+          "Order replacement TK-1172 toner kit",
+          "Open front cover",
+          "Remove old toner container",
+          "Shake new toner container 15-20 times before installing",
+          "Insert new toner and close cover",
+          "Note: Drum unit does NOT need replacement - it lasts 300k pages"
+        ],
+        "partsNeeded": ["TK-1172 Toner Kit"]
+      },
+      {
+        "code": "Ready for Maintenance",
+        "description": "Maintenance kit interval reached",
+        "severity": "info",
+        "causes": [
+          "Device has reached 200,000 page maintenance interval"
+        ],
+        "solutions": [
+          "Order MK-1152 maintenance kit",
+          "Kit includes fuser unit and feed rollers",
+          "Replacement can be done by IT staff or certified technician",
+          "Follow maintenance kit installation guide",
+          "Reset counter via Service Menu after installation"
+        ],
+        "partsNeeded": ["MK-1152 Maintenance Kit"]
+      }
+    ],
+    "paperJams": [
+      {
+        "location": "Cassette (Paper Tray)",
+        "accessInstructions": [
+          "Pull out paper cassette completely",
+          "Look for jammed paper at rear of cassette cavity"
+        ],
+        "clearanceSteps": [
+          "Remove all paper from cassette",
+          "Remove any jammed sheets from feed area",
+          "Check feed rollers for damage or debris",
+          "Reload paper ensuring stack is below max line",
+          "Adjust paper guides to match paper size exactly",
+          "Reinsert cassette fully"
+        ],
+        "prevention": [
+          "Use only fresh, undamaged paper",
+          "Fan paper before loading to prevent static",
+          "Do not mix different paper types in same cassette",
+          "Keep paper stored in humidity-controlled environment (45-55% RH)"
+        ]
+      },
+      {
+        "location": "Fuser/Exit Area",
+        "accessInstructions": [
+          "Open rear cover (duplex unit)",
+          "CAUTION: Fuser may be extremely hot - wait if needed"
+        ],
+        "clearanceSteps": [
+          "If fuser is hot, wait 20 minutes before proceeding",
+          "Locate green release handles",
+          "Gently pull jammed paper straight out",
+          "Do not touch fuser roller directly",
+          "Close rear cover firmly until it clicks"
+        ],
+        "prevention": [
+          "Use correct paper weight settings in driver",
+          "Avoid printing on damp or curled paper",
+          "Clean paper path during maintenance intervals",
+          "Replace fuser at recommended interval (200k pages)"
+        ]
+      },
+      {
+        "location": "Duplex Unit",
+        "accessInstructions": [
+          "Open rear cover",
+          "Press green tabs on duplex unit"
+        ],
+        "clearanceSteps": [
+          "Pull duplex unit out partially",
+          "Remove jammed paper from duplex path",
+          "Check for torn pieces and remove completely",
+          "Push duplex unit back in until it locks",
+          "Close rear cover"
+        ],
+        "prevention": [
+          "Use 60-105 g/m² paper for duplex printing",
+          "Avoid specialty paper (glossy, textured) for duplex",
+          "Ensure duplex setting matches paper type in driver"
+        ]
+      }
+    ],
+    "qualityIssues": [
+      {
+        "issue": "Faint or light prints",
+        "symptoms": ["Low density", "Washed out text", "Faded output"],
+        "causes": ["Toner running low", "EcoPrint mode enabled", "Incorrect density setting"],
+        "solutions": [
+          "Check toner level via control panel Menu > Report > Toner Status",
+          "Disable EcoPrint mode in driver settings",
+          "Adjust print density: Menu > System Menu > Common Settings > Density",
+          "Shake toner container gently to redistribute",
+          "Replace toner if below 10%"
+        ]
+      },
+      {
+        "issue": "Vertical black streaks or lines",
+        "symptoms": ["Consistent black lines", "Streaks repeating at regular intervals"],
+        "causes": ["Drum surface scratched or dirty", "Toner spillage", "Defective cleaning blade"],
+        "solutions": [
+          "Print several test pages to clear minor streaks",
+          "Clean drum surface: Menu > Maintenance > Drum Refresh",
+          "Inspect drum unit (DK-1150) for visible damage",
+          "Check toner container for leaks",
+          "If drum is damaged, replacement is needed (rated for 300k pages)",
+          "Ensure environmental specs met (10-32°C, 10-80% RH)"
+        ]
+      },
+      {
+        "issue": "Ghosting (faint duplicate images)",
+        "symptoms": ["Previous image faintly visible", "Shadow of text appears"],
+        "causes": ["Incorrect paper type setting", "Low-quality paper", "Drum near end of life"],
+        "solutions": [
+          "Verify correct paper type selected in driver and control panel",
+          "Use higher quality paper (80 g/m² recommended)",
+          "Disable EcoPrint and adjust density to higher setting",
+          "Run drum refresh cycle",
+          "Check drum page count - replacement may be needed if >290k pages"
+        ]
+      }
+    ],
+    "networkIssues": [
+      {
+        "issue": "Cannot find printer on network",
+        "symptoms": ["Printer not discovered", "Unable to ping IP address"],
+        "diagnosticSteps": [
+          "Print network status page from control panel",
+          "Verify IP address is valid and on correct subnet",
+          "Check physical Ethernet/Wi-Fi connection",
+          "Verify printer shows 'Ready' status on control panel"
+        ],
+        "solutions": [
+          "Ensure network cable is securely connected",
+          "Try different network cable or port on switch",
+          "Manually assign static IP if DHCP is failing",
+          "Reset network settings: Menu > System Menu > Network > Reset Network",
+          "Update network firmware via Command Center RX",
+          "Disable firewall temporarily to test connectivity"
+        ]
+      },
+      {
+        "issue": "Scan to email not functioning",
+        "symptoms": ["Email send failed", "Authentication errors", "SMTP timeout"],
+        "diagnosticSteps": [
+          "Access Command Center RX via browser",
+          "Navigate to Email Settings",
+          "Verify SMTP server address and port",
+          "Test SMTP server from another device"
+        ],
+        "solutions": [
+          "Configure SMTP server: Command Center RX > Email > SMTP Settings",
+          "Common settings: Gmail (smtp.gmail.com:587), O365 (smtp.office365.com:587)",
+          "Enable SMTP Authentication and enter credentials",
+          "For Gmail, use App Password (not regular password)",
+          "Select TLS or STARTTLS encryption method",
+          "Add device email address in From Address field",
+          "Test by sending to internal email first"
+        ]
+      },
+      {
+        "issue": "Scan to SMB folder failing",
+        "symptoms": ["Access denied", "Cannot connect to shared folder"],
+        "diagnosticSteps": [
+          "Verify SMB path format: \\\\servername\\sharename\\folder",
+          "Test folder access from Windows PC with same credentials",
+          "Check SMB version compatibility"
+        ],
+        "solutions": [
+          "In Command Center RX, configure Address Book entry",
+          "Use format: \\\\192.168.1.10\\scans (IP preferred over hostname)",
+          "Enter domain\\username and password with write access",
+          "Enable SMBv1 on Windows if required (for older Kyocera firmware)",
+          "Or update Kyocera firmware to support SMB2/SMB3",
+          "Ensure folder has write permissions for specified user",
+          "Disable password-protected sharing on Windows for testing"
+        ]
+      }
+    ],
+    "generalMaintenance": [
+      {
+        "task": "Replace toner kit",
+        "frequency": "Every 7,200 pages",
+        "procedure": [
+          "Open front cover",
+          "Remove old toner container by pulling straight out",
+          "Remove new TK-1172 from packaging",
+          "Shake container 15-20 times horizontally",
+          "Remove protective seal",
+          "Insert container until it clicks",
+          "Close front cover"
+        ],
+        "partsNeeded": ["TK-1172 Toner Kit"]
+      },
+      {
+        "task": "Replace drum unit",
+        "frequency": "Every 300,000 pages (approximately 5-7 years)",
+        "procedure": [
+          "Order DK-1150 drum unit well in advance",
+          "Open front cover and remove toner container",
+          "Pull blue drum release lever",
+          "Pull drum unit straight out",
+          "Unpack new drum unit and remove all protective materials",
+          "Insert new drum until it locks",
+          "Reinstall toner container",
+          "Close cover and print test page"
+        ],
+        "partsNeeded": ["DK-1150 Drum Unit"]
+      },
+      {
+        "task": "Replace maintenance kit",
+        "frequency": "Every 200,000 pages or when 'Ready for Maintenance' appears",
+        "procedure": [
+          "Order MK-1152 maintenance kit",
+          "Power off and unplug printer",
+          "Wait 30 minutes for fuser to cool",
+          "Follow kit instructions to replace fuser unit",
+          "Replace feed rollers included in kit",
+          "Power on and access Service Menu (press 1203 on control panel)",
+          "Reset maintenance counter",
+          "Run test prints to verify operation"
+        ],
+        "partsNeeded": ["MK-1152 Maintenance Kit"]
+      },
+      {
+        "task": "Clean scanner glass and ADF",
+        "frequency": "Weekly in busy environments, monthly otherwise",
+        "procedure": [
+          "Lift scanner cover",
+          "Spray glass cleaner on lint-free cloth (not directly on glass)",
+          "Wipe scanner glass and document glass",
+          "Clean ADF feed rollers with damp cloth",
+          "Allow to dry completely",
+          "Test scan quality"
+        ]
+      },
+      {
+        "task": "Firmware updates",
+        "frequency": "Every 6 months or when issues occur",
+        "procedure": [
+          "Check current firmware: Menu > Report > Status Page",
+          "Visit Kyocera support website and search for M2640idw",
+          "Download latest firmware file",
+          "Access Command Center RX via browser",
+          "Login as admin (default password: admin)",
+          "Navigate to Firmware Update",
+          "Upload firmware file and click Update",
+          "Do not power off during update (takes 5-10 minutes)",
+          "Printer will reboot automatically when complete"
+        ]
+      }
+    ]
+  },
+  "firmware": {
+    "latest": "2VR_2000.001.701",
+    "releaseDate": "2024-03-15",
+    "updateProcedure": "Access Command Center RX > Firmware Update. Upload firmware file downloaded from Kyocera support site."
+  },
+  "warranty": {
+    "standard": "1 year depot warranty",
+    "extendedOptions": [
+      "Kyocera 2-year onsite warranty extension",
+      "Kyocera 3-year total warranty with next-day response",
+      "5-year warranty available through authorized dealers"
+    ]
+  },
+  "certifications": ["ENERGY STAR", "EPEAT Gold", "Blue Angel", "Nordic Swan"],
+  "releaseDate": "2020-04"
+}

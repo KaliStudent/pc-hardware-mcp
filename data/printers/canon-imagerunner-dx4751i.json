@@ -1,0 +1,835 @@
+{
+  "id": "canon-dx4751i",
+  "manufacturer": "Canon",
+  "model": "imageRUNNER ADVANCE DX 4751i",
+  "series": "imageRUNNER ADVANCE DX",
+  "formFactor": "departmental",
+  "type": "laser",
+  "color": false,
+  "functions": ["print", "copy", "scan", "fax"],
+  "specifications": {
+    "printSpeed": {
+      "mono": 51
+    },
+    "printResolution": {
+      "max": "1200x1200 dpi"
+    },
+    "firstPageOut": {
+      "mono": 5.2
+    },
+    "duty": {
+      "monthly": 300000,
+      "recommended": 30000
+    },
+    "paperHandling": {
+      "inputCapacity": 1200,
+      "outputCapacity": 500,
+      "maxInputCapacity": 6350,
+      "duplexing": "standard",
+      "paperSizes": ["A3", "A4", "A5", "B5", "Letter", "Legal", "11x17", "Ledger"],
+      "paperWeights": "52-300 g/m²"
+    },
+    "memory": "4 GB RAM + 320 GB HDD",
+    "processor": "Quad-core 1.8 GHz",
+    "connectivity": ["Ethernet", "Wi-Fi (optional)", "USB 2.0", "NFC (optional)", "Bluetooth (optional)"],
+    "networkProtocols": ["TCP/IP", "IPv4", "IPv6", "SNMPv3", "IPP", "WSD", "SMBv3"],
+    "dimensions": {
+      "width": 615,
+      "depth": 685,
+      "height": 1095,
+      "weight": 110,
+      "unit": "mm",
+      "weightUnit": "kg"
+    },
+    "powerConsumption": {
+      "operating": "1.6 kW",
+      "standby": "28 watts",
+      "sleep": "0.6 watts"
+    }
+  },
+  "sales": {
+    "msrp": 5250,
+    "currency": "USD",
+    "streetPrice": 3495,
+    "targetMarket": ["Enterprise", "Large Departments", "Corporate Offices", "Government"],
+    "sellingPoints": [
+      "High-speed 51 PPM A3/A4 printing",
+      "Maximum paper capacity of 6,350 sheets",
+      "Advanced security with McAfee integration",
+      "Cloud connectivity and mobile printing",
+      "Extensive finishing options available",
+      "uniFLOW integration for cost tracking"
+    ],
+    "competitiveAdvantages": [
+      "Canon's legendary reliability and image quality",
+      "Comprehensive fleet management via Remote UI",
+      "Lowest cost-per-page in enterprise A3 segment",
+      "Seamless integration with Canon's complete solution suite",
+      "Best-in-class security certifications"
+    ],
+    "idealFor": [
+      "Large departments requiring high-volume A3 printing",
+      "Organizations needing advanced document workflows",
+      "Businesses requiring strict security compliance",
+      "Centralized print hubs for multi-floor offices",
+      "Government agencies with security requirements"
+    ]
+  },
+  "costs": {
+    "consumables": {
+      "tonerCartridges": {
+        "black": {
+          "partNumber": "GPR-57 (0473C003AA)",
+          "yield": 39000,
+          "cost": 189
+        }
+      },
+      "drums": {
+        "black": {
+          "partNumber": "C-EXV51 Drum",
+          "yield": 80000,
+          "cost": 295
+        }
+      },
+      "wasteContainer": {
+        "partNumber": "WT-A3",
+        "yield": 54000,
+        "cost": 29
+      }
+    },
+    "costPerPage": {
+      "mono": 0.0048
+    }
+  },
+  "setup": {
+    "unboxing": [
+      "Remove all external packing materials",
+      "Remove protective orange shipping locks from scanner and internal components",
+      "Install toner cartridge (GPR-57)",
+      "Connect power cable to main unit",
+      "Power on device using main power switch"
+    ],
+    "initialSetup": [
+      "Select language and region on touch screen",
+      "Configure administrator password (CRITICAL for security)",
+      "Set date, time, and time zone",
+      "Configure initial network settings",
+      "Register device with Canon cloud services (optional)",
+      "Print configuration report to verify setup"
+    ],
+    "networkSetup": {
+      "ethernet": [
+        "Connect CAT6 Ethernet cable to RJ-45 port on rear",
+        "On touch screen: Settings/Registration > Network > TCP/IP Settings",
+        "Select IPv4 Settings",
+        "Choose Auto Obtain (DHCP) or configure Static IP",
+        "Configure IPv6 if required",
+        "Set DNS servers",
+        "Print Network Status Report to verify",
+        "Access Remote UI at https://[printer-ip] (HTTPS recommended)"
+      ],
+      "wifi": [
+        "Requires optional Canon Wireless LAN Kit",
+        "Install wireless kit in designated slot",
+        "Power on device and navigate to Network Settings",
+        "Select Wireless LAN Settings",
+        "Choose network SSID and enter WPA2/WPA3 password",
+        "Confirm connection and print network status",
+        "Note: Ethernet recommended for enterprise deployment"
+      ]
+    },
+    "webInterface": {
+      "accessUrl": "https://[printer-ip]:8443",
+      "defaultCredentials": {
+        "username": "Administrator",
+        "password": "Must be set during initial setup - no default password"
+      },
+      "certificateWarning": "Canon imageRUNNER uses self-signed certificate by default. Browser will show security warning - this is expected. Upload CA-signed certificate via Remote UI for production use.",
+      "accessSteps": [
+        "Print network status: Touch Menu > Output Reports > Network Status Report",
+        "Note IP address and HTTPS port (default: 8443)",
+        "Open browser to https://[printer-ip]:8443 OR http://[printer-ip] (redirects to HTTPS)",
+        "Accept certificate warning (click Advanced > Proceed or Add Exception)",
+        "Login with Administrator account and password set during initial setup",
+        "Remote UI dashboard loads with full device management capabilities",
+        "Access: Settings/Registration, Address Book, Job Log, Device Status, Security Settings"
+      ]
+    },
+    "driverInstallation": {
+      "windows10": "Download Canon Generic Plus PCL6 driver or UFRII LT driver from usa.canon.com/support. For DX 4751i, select 'Generic Plus PCL6 V4 driver' for Windows 10. Run installer, choose 'Add Network Printer', select 'Search for Network Printers', choose device from list. For enterprise: Use Canon Universal Print Driver (UPD) for fleet deployment. Install via print server or push via GPO. Driver supports secure print, department ID, and account tracking.",
+      "windows11": "Same as Windows 10. Canon drivers fully support Windows 11 x64. Download Generic Plus PCL6 V4 or UFRII LT V4 from Canon support site. Windows 11 may auto-detect via WSD but full driver recommended for secure print, finishing options, and department ID. Canon recommends UFRII driver for best image quality and feature support.",
+      "mac": "Download Canon UFRII LT Printer Driver for macOS from usa.canon.com/support (version 10.19 or later for macOS 13+). Compatible with Apple Silicon. Run installer PKG file. Add printer via System Settings > Printers & Scanners > Add Printer. Select 'Canon DX 4751i' from list or enter IP manually. Choose 'Canon UFRII LT' driver when prompted. Supports AirPrint for basic printing without driver. Full feature requires Canon driver.",
+      "linux": "Download Canon UFR II Printer Driver for Linux from Canon support (RPM or DEB package). For Ubuntu/Debian: 'sudo dpkg -i cnrdrvcups-ufr2-*.deb'. For RHEL/CentOS: 'sudo rpm -ivh cnrdrvcups-ufr2-*.rpm'. Configure via CUPS at localhost:631. Select Canon imageRUNNER DX 4751i PPD file. Supports IPP and SMB printing protocols. Basic print and scan functionality. Advanced features (secure print, department ID) limited on Linux.",
+      "driverDownloads": {
+        "windows": "https://www.usa.canon.com/support/p/imagerunner-advance-dx-4751i",
+        "mac": "https://www.usa.canon.com/support/p/imagerunner-advance-dx-4751i",
+        "linux": "https://www.usa.canon.com/support/p/imagerunner-advance-dx-4751i",
+        "universal": "https://www.usa.canon.com/support/business-product-support/drivers/universal-print-driver"
+      }
+    },
+    "backupRestore": {
+      "systemBackup": {
+        "procedure": [
+          "Access Remote UI at https://[printer-ip]:8443",
+          "Login as Administrator",
+          "Navigate to Settings/Registration (left sidebar)",
+          "Select 'Data Management' > 'Import/Export'",
+          "Choose 'Export Settings Data'",
+          "Select items to export: Network, Email, SMB, Department IDs, Address Book, Security",
+          "Check 'Include Encrypted Data' to backup passwords (recommended)",
+          "Click 'Start' to generate backup file",
+          "File downloads as .zip archive",
+          "Save securely with version/date: DX4751i_Backup_2024-11-16.zip"
+        ],
+        "fileFormat": ".zip archive (encrypted)",
+        "location": "Downloads to local computer - store in secure backup location with restricted access"
+      },
+      "systemRestore": {
+        "procedure": [
+          "Access Remote UI and login as Administrator",
+          "Navigate to Settings/Registration > Data Management > Import/Export",
+          "Select 'Import Settings Data'",
+          "Click 'Choose File' and select previously saved .zip backup",
+          "Enter decryption password if backup was encrypted",
+          "Review items to be imported (Network, Email, Security, etc.)",
+          "Click 'Start Import'",
+          "Device processes import (may take 5-10 minutes for large configs)",
+          "Device will automatically restart after import completes",
+          "Verify all settings via configuration page after restart"
+        ],
+        "prerequisites": [
+          "Backup must be from same model series (imageRUNNER ADVANCE DX)",
+          "Firmware version should match or be newer than backup source",
+          "Administrator credentials required",
+          "No active jobs should be running",
+          "Department IDs and user authentication settings will be restored",
+          "LDAP bindings may need reconfiguration depending on environment"
+        ]
+      },
+      "addressBookBackup": {
+        "procedure": [
+          "Access Remote UI > Address Book Management",
+          "Select 'Export Address Book'",
+          "Choose export format: CSV (recommended) or LDIF",
+          "Select address book type: Local, Personal, LDAP",
+          "Choose which entries to export (All, Selected Groups, or Specific Contacts)",
+          "Click 'Export' to download file",
+          "Save as: DX4751i_AddressBook_2024-11-16.csv",
+          "Note: LDAP entries cannot be exported (configured separately)"
+        ],
+        "fileFormat": "CSV or LDIF format",
+        "location": "Downloads to local computer"
+      },
+      "addressBookRestore": {
+        "procedure": [
+          "Access Remote UI > Address Book Management",
+          "Select 'Import Address Book'",
+          "Click 'Choose File' and select CSV or LDIF file",
+          "Select import action: Add to existing OR Replace all",
+          "Map CSV columns to address book fields if needed",
+          "Review import preview",
+          "Click 'Start Import'",
+          "Verify imported contacts in address book",
+          "Test contact by creating scan destination using imported entry"
+        ],
+        "prerequisites": [
+          "CSV must have headers: Name, Email, Fax Number, SMB Path",
+          "Maximum 2000 entries in local address book",
+          "LDAP integration configured separately in Network Settings",
+          "Department ID restrictions apply if enabled"
+        ]
+      }
+    },
+    "scanDestinations": {
+      "scanToEmail": {
+        "requirements": [
+          "SMTP server address and port (25, 465, or 587)",
+          "SMTP authentication credentials (if required)",
+          "Device email address (sender)",
+          "Network connectivity to mail server",
+          "SSL/TLS certificate if using secure SMTP (recommended)"
+        ],
+        "smtpConfiguration": [
+          "Access Remote UI > Settings/Registration > Send Settings",
+          "Navigate to 'E-Mail/I-Fax' > 'SMTP Settings'",
+          "Enter SMTP Server Name: smtp.office365.com or smtp.gmail.com",
+          "Set SMTP Port: 25 (unsecured), 587 (STARTTLS), or 465 (SSL)",
+          "Enable 'Use SMTP Authentication' if required",
+          "Enter SMTP User Name (full email address)",
+          "Enter SMTP Password (use app password for Gmail)",
+          "Set 'E-Mail Address' (device sender address)",
+          "Configure 'POP Before SMTP' if required (rare)",
+          "Enable 'Use TLS' for secure connection (port 587 or 465)",
+          "Set maximum email size if needed (default 25MB)",
+          "Click 'OK' to save and test connection"
+        ],
+        "authenticationSetup": [
+          "Office 365: smtp.office365.com port 587, TLS required, use licensed mailbox credentials",
+          "Gmail: smtp.gmail.com port 587, enable 2FA and generate app password",
+          "Exchange on-premise: Internal server FQDN, port 25 or 587 depending on config",
+          "For port 465: Enable 'Use SSL' setting",
+          "For port 587: Enable 'Use STARTTLS' setting",
+          "Ensure device IP is allowed in SMTP relay settings",
+          "Test relay: Remote UI > Send Settings > E-Mail/I-Fax > Send Test E-Mail"
+        ],
+        "testProcedure": [
+          "Remote UI > Settings/Registration > Send Settings > E-Mail/I-Fax",
+          "Click 'Send Test E-Mail' button",
+          "Enter test recipient address",
+          "Click 'Send'",
+          "Check recipient inbox (may take 1-2 minutes)",
+          "Review send log: Main Menu > Job Status > Communication Result",
+          "If failed, check error code in Communication Management Report",
+          "Common errors: #801 (Auth failed), #802 (Server connection failed), #805 (SMTP rejected)"
+        ]
+      },
+      "scanToFolder": {
+        "requirements": [
+          "SMB file share (Windows) or FTP server",
+          "Valid domain/local account with write permissions",
+          "UNC path for SMB: \\\\\\\\server\\\\share\\\\folder",
+          "Firewall allows SMB (port 445) or FTP (port 21)",
+          "SMB v2.0 or later recommended (v1.0 can be enabled if required)"
+        ],
+        "smbConfiguration": [
+          "Access Remote UI > Settings/Registration > Send Settings",
+          "Select 'File' > 'SMB Server Settings'",
+          "Click 'Register' to add new destination",
+          "Enter Display Name (shown on device panel)",
+          "Enter Host Name: Server FQDN or IP address",
+          "Enter Folder Path: \\\\share\\\\scans\\\\department",
+          "Select Authentication: SMB Authentication",
+          "Enter User Name: DOMAIN\\\\username (e.g., CORP\\\\scanservice)",
+          "Enter Password for the account",
+          "Select SMB Version: Auto-detect (or force v2/v3 for security)",
+          "Set File Format: PDF, JPEG, or TIFF (PDF recommended)",
+          "Configure file naming: Prefix, date/time stamp, counter",
+          "Click 'Connection Test' to verify access",
+          "Save destination"
+        ],
+        "ftpConfiguration": [
+          "Access Remote UI > Send Settings > File > FTP Server Settings",
+          "Click 'Register' to add FTP destination",
+          "Enter Display Name",
+          "Enter Server Name: ftp.company.com or IP address",
+          "Enter FTP Port (default 21)",
+          "Enter Folder Path: /incoming/scans",
+          "Enter User Name and Password for FTP account",
+          "Select Connection Mode: Passive (recommended) or Active",
+          "Choose File Format: PDF, TIFF, JPEG",
+          "Set file naming options",
+          "Click 'Connection Test'",
+          "Save destination"
+        ],
+        "authenticationSetup": [
+          "Active Directory: Use DOMAIN\\\\username format (e.g., CONTOSO\\\\scanner)",
+          "Local Windows account: Use SERVERNAME\\\\username or WORKGROUP\\\\username",
+          "Verify account has write permissions to destination folder",
+          "Check both Share permissions AND NTFS security permissions",
+          "For security: Create dedicated service account for scanning",
+          "Test manually: Try creating file in destination using same credentials from another PC",
+          "Canon recommends SMB v2 or v3 (disable SMB v1 for security)",
+          "If using Department ID: Assign scan destinations to specific departments"
+        ],
+        "testProcedure": [
+          "In SMB/FTP Server Settings, select destination and click 'Connection Test'",
+          "Verify 'Connection Successful' message",
+          "If failed, check error: Authentication error, Path not found, Server unreachable",
+          "Perform test scan from device: Touch 'Send' > Select destination > Load document > Press Start",
+          "Check destination folder for scanned file",
+          "Verify file opens and contains expected content",
+          "Review send log: Main Menu > Job Status > Communication Result"
+        ]
+      },
+      "scanToUsb": {
+        "requirements": [
+          "USB flash drive or external HDD",
+          "Formatted as FAT32, exFAT, or NTFS",
+          "Front USB port (below control panel) or rear USB port",
+          "Minimum 100MB free space",
+          "Note: USB scanning may need to be enabled by Administrator"
+        ],
+        "procedure": [
+          "Format USB drive as FAT32 for widest compatibility (exFAT for files >4GB)",
+          "Ensure USB scanning is enabled: Remote UI > Settings > Device Settings > Access Control > Enable USB Memory Media",
+          "Insert USB drive into front USB port (below touch panel)",
+          "Touch panel displays 'USB Memory Detected'",
+          "Touch 'Access Stored Files' or 'Save to USB'",
+          "Select 'Scan and Store' function",
+          "Choose scan settings: Color/B&W, Resolution (200-600 dpi), File Format (PDF/JPEG/TIFF)",
+          "Select Simplex (1-sided) or Duplex (2-sided)",
+          "Load document in ADF or place on platen glass",
+          "Press 'Start' to scan",
+          "Wait for 'Scan Complete' message",
+          "Safely remove USB: Touch 'Eject USB' before physically removing drive",
+          "Files saved with timestamp in /SCAN folder on USB"
+        ],
+        "supportedFormats": [
+          "PDF (single or multi-page, default)",
+          "Compact PDF (smaller file size)",
+          "PDF/A (archival standard)",
+          "Searchable PDF with OCR (requires OCR option)",
+          "TIFF (single or multi-page, uncompressed)",
+          "JPEG (single page, compressed)",
+          "XPS (XML Paper Specification)"
+        ]
+      }
+    },
+    "configPages": {
+      "meterPage": "Touch screen: Main Menu > Counter > Print Counter List. Shows total impressions, copies, prints, scans, and consumable status.",
+      "configPage": "Main Menu > Settings/Registration > Output Reports > Configuration Page. Prints complete device settings including network, security, and feature status.",
+      "networkConfigPage": "Main Menu > Settings/Registration > Output Reports > Network Status Report. Shows IP, MAC, DNS, WINS, and all network protocol settings.",
+      "webInterface": "Access Remote UI by entering device IP in web browser (https://192.168.1.100). Default admin login required. Configure HTTPS certificate for secure access. Remote UI provides complete device management, user administration, and fleet monitoring capabilities."
+    },
+    "commonIssues": [
+      "After initial setup, configure Scan and Send settings via Remote UI > Device Settings > Send",
+      "Set up LDAP integration for enterprise address book: Remote UI > Address Book Management",
+      "Configure department ID management for cost tracking if required",
+      "Enable audit logging for security compliance: Settings > Security Settings",
+      "For uniFLOW integration, install uniFLOW connector and configure authentication",
+      "Update firmware via Remote UI > Device Management > Firmware Update (requires Canon support account)"
+    ]
+  },
+  "troubleshooting": {
+    "commonErrors": [
+      {
+        "code": "E000001-0001",
+        "description": "Scanner communication error",
+        "severity": "critical",
+        "causes": [
+          "Scanner cable disconnected",
+          "Scanner unit power supply failure",
+          "Main controller communication failure"
+        ],
+        "solutions": [
+          "Power off device completely using main power switch",
+          "Wait 30 seconds",
+          "Power back on and allow full initialization",
+          "Check scanner cable connections",
+          "If error persists, contact Canon service - may require technician",
+          "Do not attempt to disassemble scanner unit"
+        ]
+      },
+      {
+        "code": "E007-0000",
+        "description": "Fixing unit (fuser) error",
+        "severity": "critical",
+        "causes": [
+          "Fixing unit at end of life",
+          "Thermistor failure",
+          "Heater lamp failure",
+          "Temperature sensor malfunction"
+        ],
+        "solutions": [
+          "Power off device for 15 minutes to allow cooling",
+          "Power back on",
+          "Check fixing unit page count (replace at rated life)",
+          "Verify fixing unit is properly seated",
+          "Error may require Canon certified technician",
+          "Fixing unit replacement is covered under most service contracts"
+        ]
+      },
+      {
+        "code": "E000002",
+        "description": "Paper jam",
+        "severity": "warning",
+        "causes": [
+          "Paper loaded incorrectly in drawer",
+          "Damaged or wrinkled paper",
+          "Feed rollers worn or contaminated",
+          "Duplex unit malfunction"
+        ],
+        "solutions": [
+          "Follow on-screen instructions to locate jam",
+          "Open indicated cover and remove all jammed paper",
+          "Check paper quality and reload correctly",
+          "Ensure paper guides are properly adjusted",
+          "Clean feed rollers if jams are recurring",
+          "Replace pickup rollers if excessively worn"
+        ]
+      },
+      {
+        "code": "E018-0001",
+        "description": "Toner cartridge not detected",
+        "severity": "warning",
+        "causes": [
+          "Toner cartridge not fully inserted",
+          "Non-Canon toner cartridge",
+          "Cartridge memory chip dirty or damaged",
+          "Cartridge improperly seated"
+        ],
+        "solutions": [
+          "Remove toner cartridge",
+          "Clean cartridge memory contacts with dry lint-free cloth",
+          "Verify using genuine Canon GPR-57 toner",
+          "Reinstall cartridge ensuring it clicks into place",
+          "Close front cover firmly",
+          "If error persists, try different genuine Canon cartridge",
+          "Update firmware if using new toner batch"
+        ]
+      }
+    ],
+    "paperJams": [
+      {
+        "location": "Paper Drawer (Cassette)",
+        "accessInstructions": [
+          "Identify which drawer from touch screen display",
+          "Pull drawer completely out of device",
+          "Look for jammed paper at rear of drawer cavity"
+        ],
+        "clearanceSteps": [
+          "Remove all paper from drawer",
+          "Check for damaged sheets and discard",
+          "Remove any jammed paper from feed area",
+          "Check pickup roller condition",
+          "Reload paper ensuring stack is below max line",
+          "Adjust front and side guides to match paper size exactly",
+          "Reinsert drawer completely until it clicks"
+        ],
+        "prevention": [
+          "Use only paper within 52-300 g/m² specification",
+          "Fan paper before loading to prevent static",
+          "Do not mix different paper types in same drawer",
+          "Store paper in climate-controlled environment (20-25°C, 50-70% RH)",
+          "Replace pickup rollers at recommended intervals"
+        ]
+      },
+      {
+        "location": "Fixing Unit (Fuser)",
+        "accessInstructions": [
+          "WARNING: Fixing unit is extremely hot - wait 30 minutes after power off",
+          "Open right door of main unit",
+          "Fixing unit is large assembly at rear"
+        ],
+        "clearanceSteps": [
+          "WAIT for fixing unit to cool completely",
+          "Pull green release lever on fixing unit",
+          "Gently remove jammed paper in direction of arrows",
+          "Do NOT touch fuser rollers - oils from skin cause print defects",
+          "Check for torn pieces and remove all paper fragments",
+          "Close right door firmly",
+          "Run test print to verify"
+        ],
+        "prevention": [
+          "Use correct paper weight setting in driver",
+          "Avoid printing on damp or curled paper",
+          "Replace fixing unit at rated life (300k pages for this model)",
+          "Keep fixing unit clean - schedule professional maintenance"
+        ]
+      },
+      {
+        "location": "Duplex Unit",
+        "accessInstructions": [
+          "Open rear door (left side of device)",
+          "Locate duplex unit - blue lever visible"
+        ],
+        "clearanceSteps": [
+          "Pull blue lever to release duplex unit",
+          "Slide duplex unit out partially",
+          "Remove jammed paper carefully",
+          "Check duplex path for obstructions or torn pieces",
+          "Slide duplex unit back in until it locks",
+          "Close rear door",
+          "Run duplex test print"
+        ],
+        "prevention": [
+          "Use 60-120 g/m² paper for duplex printing",
+          "Avoid heavily textured or pre-punched paper for duplex",
+          "Clean duplex rollers during scheduled maintenance",
+          "Ensure paper is completely dry before loading"
+        ]
+      },
+      {
+        "location": "Finisher Unit (if installed)",
+        "accessInstructions": [
+          "Open finisher front cover",
+          "Location indicated on touch screen display"
+        ],
+        "clearanceSteps": [
+          "Follow on-screen prompts for specific finisher jam location",
+          "Open indicated finisher cover",
+          "Remove jammed sheets",
+          "Check stapler unit for misfed staples",
+          "Close all finisher covers",
+          "Test stapling and finishing functions"
+        ],
+        "prevention": [
+          "Use only Canon-approved paper for stapling",
+          "Do not exceed stapling capacity (typically 50 sheets)",
+          "Replace staple cartridge before completely empty",
+          "Schedule regular finisher maintenance"
+        ]
+      }
+    ],
+    "qualityIssues": [
+      {
+        "issue": "Faded or light output",
+        "symptoms": ["Washed out text", "Low density", "Pale prints"],
+        "causes": ["Toner running low", "Toner save mode enabled", "Drum end of life", "Incorrect density setting"],
+        "solutions": [
+          "Check toner level: Main Menu > Management > Consumables > Toner Status",
+          "Disable Toner Save: Settings > Preferences > Common Settings",
+          "Adjust print density: Settings > Adjustment/Maintenance > Image Quality Adjustment",
+          "Run gradation adjustment from touch screen",
+          "If drum is near rated life (80k pages), consider replacement",
+          "Shake toner cartridge gently and reinstall",
+          "Perform automatic image quality adjustment"
+        ]
+      },
+      {
+        "issue": "Vertical black lines or streaks",
+        "symptoms": ["Consistent black lines down page", "Repeating streaks"],
+        "causes": ["Drum surface damage", "Foreign material on drum", "Transfer roller contamination", "Scanner glass dirty"],
+        "solutions": [
+          "Run drum cleaning cycle: Main Menu > Adjustment/Maintenance > Cleaning > Drum Cleaning",
+          "Clean scanner glass and platen with lint-free cloth and glass cleaner",
+          "Inspect drum unit for visible damage through front door",
+          "Print solid black test page to assess drum condition",
+          "Clean transfer roller if accessible",
+          "If drum is damaged, replacement required",
+          "Check for toner spillage inside device"
+        ]
+      },
+      {
+        "issue": "Background fog or shading",
+        "symptoms": ["Gray background on whites", "Excessive toner on non-image areas"],
+        "causes": ["Incorrect image density setting", "High humidity environment", "Drum charging issues", "Poor paper quality"],
+        "solutions": [
+          "Adjust image density lower: Settings > Image Quality > Density",
+          "Run special mode 3 adjustment for background removal",
+          "Ensure room humidity is 50-70% RH",
+          "Use higher quality paper (80 g/m² recommended)",
+          "Clean drum unit",
+          "Check transfer voltage settings (service mode)",
+          "If severe, may indicate drum or charging wire replacement needed"
+        ]
+      },
+      {
+        "issue": "Image skew or misalignment",
+        "symptoms": ["Crooked output", "Image not centered", "Text cut off"],
+        "causes": ["Paper guides incorrectly adjusted", "Registration rollers dirty", "Paper cassette misaligned"],
+        "solutions": [
+          "Check all paper cassette guides are snug against paper",
+          "Run paper transfer alignment: Main Menu > Adjustment/Maintenance > Adjust Image Position",
+          "Ensure paper is loaded straight in cassette",
+          "Clean registration rollers",
+          "Verify paper cassette is fully inserted",
+          "Check for foreign objects in paper path",
+          "Run automatic registration adjustment"
+        ]
+      }
+    ],
+    "networkIssues": [
+      {
+        "issue": "Cannot access device on network",
+        "symptoms": ["Ping fails", "Cannot access Remote UI", "Not visible in network scan"],
+        "diagnosticSteps": [
+          "Print Network Status Report from touch screen",
+          "Verify IP address is valid and on correct subnet",
+          "Check Ethernet cable is securely connected",
+          "Test with different Ethernet cable and switch port",
+          "Verify network switch port is active and auto-negotiating correctly"
+        ],
+        "solutions": [
+          "If using DHCP, verify DHCP server has available addresses in pool",
+          "Assign static IP if DHCP is problematic",
+          "Check firewall rules aren't blocking device",
+          "Disable HTTP and enable HTTPS only for security",
+          "Update device firmware via USB if network update fails",
+          "Reset network settings to defaults: Network > Reset Network Settings",
+          "Configure DNS servers manually if auto-config fails",
+          "For enterprise networks, verify VLAN configuration matches policy"
+        ]
+      },
+      {
+        "issue": "Scan to email not functioning",
+        "symptoms": ["Email send fails", "Authentication errors", "SMTP timeout"],
+        "diagnosticSteps": [
+          "Access Remote UI and navigate to Send Settings",
+          "Test SMTP server connectivity from another device",
+          "Check SMTP authentication credentials",
+          "Review send logs in Remote UI > Log"
+        ],
+        "solutions": [
+          "Configure SMTP in Remote UI: Device Settings > Send > Email Settings",
+          "SMTP Server: smtp.office365.com or smtp.gmail.com",
+          "Port: 587 (STARTTLS) or 465 (SSL)",
+          "Enable SMTP authentication",
+          "Use app-specific password for Office 365/Gmail",
+          "Configure correct From address (must be valid email)",
+          "Test with internal SMTP server first",
+          "For Office 365, enable 'authenticated SMTP' in admin portal",
+          "Check firewall allows outbound SMTP traffic",
+          "For enterprise: integrate with Exchange server for authorized sending"
+        ]
+      },
+      {
+        "issue": "Scan to SMB folder failing",
+        "symptoms": ["Access denied", "Cannot connect to server", "Folder not found"],
+        "diagnosticSteps": [
+          "Verify UNC path format: \\\\servername\\sharename\\folder",
+          "Test folder access from Windows PC with same credentials",
+          "Check SMB version compatibility",
+          "Review security event logs on file server"
+        ],
+        "solutions": [
+          "Configure in Remote UI: Address Book > Register Destination",
+          "Use IP address instead of hostname: \\\\192.168.1.10\\scans",
+          "Enter domain\\username and password with Write access to share",
+          "Enable SMB2 or higher: Settings > Network > SMB Settings",
+          "On Windows server, enable SMB1 temporarily for testing (not recommended long-term)",
+          "Verify user has explicit write permissions to destination folder",
+          "Disable password-protected sharing on Windows for initial testing",
+          "For Active Directory environments, use domain credentials",
+          "Check Windows Firewall allows SMB traffic",
+          "Test with simple share first (e.g., \\\\server\\test) before complex paths"
+        ]
+      },
+      {
+        "issue": "Mobile printing not working",
+        "symptoms": ["Canon PRINT app can't find device", "AirPrint not available"],
+        "diagnosticSteps": [
+          "Verify device and mobile on same network/subnet",
+          "Check Bonjour/mDNS is enabled on network",
+          "Verify wireless is enabled if using Wi-Fi"
+        ],
+        "solutions": [
+          "Enable Apple AirPrint: Settings > Network > AirPrint Settings > Use AirPrint: On",
+          "Enable Mopria: Settings > Network > Mopria > Enable Mopria",
+          "Disable AP isolation on wireless router",
+          "Install Canon PRINT Business app (iOS/Android)",
+          "For Android: Use Canon Print Service plugin",
+          "Enable NFC for tap-and-print (requires optional NFC kit)",
+          "Update device firmware for latest mobile printing features",
+          "Check mobile device can ping printer IP address"
+        ]
+      }
+    ],
+    "generalMaintenance": [
+      {
+        "task": "Replace toner cartridge",
+        "frequency": "Every 39,000 pages (GPR-57 yield)",
+        "procedure": [
+          "Open front door of device",
+          "Grasp toner cartridge handle and pull straight out",
+          "Remove new GPR-57 cartridge from packaging",
+          "Rock cartridge gently 5-6 times to distribute toner evenly",
+          "Remove protective seal and tape",
+          "Insert cartridge until it clicks into place",
+          "Close front door - counter resets automatically"
+        ],
+        "partsNeeded": ["GPR-57 Black Toner (0473C003AA)"]
+      },
+      {
+        "task": "Replace drum unit",
+        "frequency": "Every 80,000 pages or when 'Replace Drum' message appears",
+        "procedure": [
+          "Order C-EXV51 drum unit in advance",
+          "Open front door and remove toner cartridge",
+          "Release drum unit lock lever (blue)",
+          "Pull drum unit straight out",
+          "Remove new drum from packaging - do NOT touch drum surface",
+          "Remove all protective covers from new drum",
+          "Insert new drum until it locks into place",
+          "Reinstall toner cartridge",
+          "Close front door",
+          "Reset drum counter: Main Menu > Adjustment/Maintenance > Reset Counter > Drum"
+        ],
+        "partsNeeded": ["C-EXV51 Drum Unit"]
+      },
+      {
+        "task": "Replace waste toner container",
+        "frequency": "Every 54,000 pages or when 'Replace Waste Toner Container' appears",
+        "procedure": [
+          "Order WT-A3 waste toner container",
+          "Open front door",
+          "Locate waste toner container (right side, orange)",
+          "Pull container straight out - keep level to avoid spillage",
+          "Seal old container with cap (included with new container)",
+          "Insert new waste toner container until it clicks",
+          "Close front door - counter resets automatically",
+          "Dispose of old container per local e-waste regulations"
+        ],
+        "partsNeeded": ["WT-A3 Waste Toner Container"]
+      },
+      {
+        "task": "Clean scanner glass and platen",
+        "frequency": "Weekly for high-volume environments, monthly otherwise",
+        "procedure": [
+          "Lift scanner unit / Platen cover",
+          "Spray glass cleaner on lint-free cloth (not directly on glass)",
+          "Wipe scanner glass, document glass, and white reference plate",
+          "Clean ADF feed rollers with damp cloth",
+          "Allow all surfaces to dry completely",
+          "Close scanner unit",
+          "Run test scan to verify no streaks"
+        ]
+      },
+      {
+        "task": "Scheduled maintenance service",
+        "frequency": "Every 300,000 impressions or annually",
+        "procedure": [
+          "This is a comprehensive service performed by Canon certified technician",
+          "Includes replacement of: Fixing unit, transfer roller, pickup rollers, separation rollers",
+          "Full cleaning of all internal components",
+          "Lubrication of all mechanical assemblies",
+          "Firmware update to latest version",
+          "Comprehensive diagnostic tests",
+          "Calibration and adjustment procedures",
+          "Reset all maintenance counters",
+          "Typically covered under Canon service contract or can be purchased per-incident"
+        ],
+        "partsNeeded": ["Complete Maintenance Kit (provided by technician)"]
+      },
+      {
+        "task": "Firmware updates",
+        "frequency": "Quarterly or as recommended by Canon",
+        "procedure": [
+          "Check current firmware: Main Menu > Management > Device Information > Firmware Version",
+          "Login to Canon Partner Portal or contact Canon support",
+          "Download latest firmware file for imageRUNNER ADVANCE DX 4751i",
+          "Access Remote UI as administrator",
+          "Navigate to Device Management > Firmware Update",
+          "Upload firmware file (.BIN format)",
+          "Click Execute - device will show progress",
+          "Do NOT power off during update (typically takes 10-15 minutes)",
+          "Device will reboot automatically when complete",
+          "Verify new firmware version installed",
+          "Print configuration page to document update"
+        ]
+      },
+      {
+        "task": "Clean feed rollers and separation pads",
+        "frequency": "Every 50,000 pages or when frequent jams occur",
+        "procedure": [
+          "Power off device",
+          "Open all paper drawers",
+          "Locate pickup rollers at rear of each drawer opening",
+          "Dampen lint-free cloth with water (no chemicals)",
+          "Wipe rollers to remove paper dust and debris",
+          "Rotate rollers to clean entire surface",
+          "Clean separation pads in drawer",
+          "Allow to dry completely (15 minutes)",
+          "Reload paper and test feed from each drawer"
+        ]
+      }
+    ]
+  },
+  "firmware": {
+    "latest": "10.05.00.00",
+    "releaseDate": "2024-11-15",
+    "updateProcedure": "Access Remote UI > Device Management > Firmware Update. Upload firmware .BIN file from Canon Partner Portal. Requires administrator credentials."
+  },
+  "warranty": {
+    "standard": "1 year on-site limited warranty",
+    "extendedOptions": [
+      "Canon CarePAK Plus 3-year coverage with priority response",
+      "Canon CarePAK Pro 5-year comprehensive coverage",
+      "Canon Managed Print Services with full coverage and supplies included",
+      "Custom service level agreements available for enterprise fleet deployments"
+    ]
+  },
+  "certifications": ["ENERGY STAR", "EPEAT Silver", "Common Criteria EAL3+", "ISO 15408", "FIPS 140-2"],
+  "releaseDate": "2020-10",
+  "successor": "imageRUNNER ADVANCE DX 4935i"
+}

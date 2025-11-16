@@ -1,0 +1,360 @@
+{
+  "id": "sharp-mx-b468f",
+  "manufacturer": "Sharp",
+  "model": "MX-B468F",
+  "series": "MX-B",
+  "formFactor": "workgroup",
+  "type": "laser",
+  "color": false,
+  "functions": ["print", "copy", "scan", "fax"],
+  "specifications": {
+    "printSpeed": {
+      "mono": 46,
+      "color": 0
+    },
+    "printResolution": {
+      "max": "1200x1200 dpi"
+    },
+    "firstPageOut": {
+      "mono": 4.7,
+      "color": 0
+    },
+    "duty": {
+      "monthly": 150000,
+      "recommended": 20000
+    },
+    "paperHandling": {
+      "inputCapacity": 650,
+      "outputCapacity": 250,
+      "maxInputCapacity": 2650,
+      "duplexing": "standard",
+      "paperSizes": ["A3", "A4", "A5", "B4", "B5", "Letter", "Legal", "11x17", "Ledger"],
+      "paperWeights": "52-256 g/m²"
+    },
+    "memory": "2 GB RAM + 320 GB HDD",
+    "processor": "Dual-core 1.0 GHz",
+    "connectivity": ["Ethernet (10/100/1000)", "USB 2.0", "Wi-Fi (optional)"],
+    "networkProtocols": ["TCP/IP", "IPv4", "IPv6", "SMB", "FTP", "SNMP", "IPP", "LPD"],
+    "dimensions": {
+      "width": 550,
+      "depth": 650,
+      "height": 810,
+      "weight": 72,
+      "unit": "mm",
+      "weightUnit": "kg"
+    },
+    "powerConsumption": {
+      "operating": "1.2 kW",
+      "standby": "60 watts",
+      "sleep": "0.5 watts"
+    }
+  },
+  "sales": {
+    "msrp": 4495,
+    "currency": "USD",
+    "streetPrice": 3800,
+    "targetMarket": ["Small Workgroups", "Branch Offices", "SMB", "Professional Services"],
+    "sellingPoints": [
+      "Fast 46 PPM monochrome output",
+      "7-inch color touchscreen",
+      "Standard Single Pass Duplex Feeder",
+      "Expandable to A3 capability",
+      "Low energy consumption with Quick Startup mode"
+    ],
+    "competitiveAdvantages": [
+      "Sharp reliability and quality",
+      "Intuitive user interface",
+      "Strong security features",
+      "Flexible paper handling",
+      "Excellent value for A3 capability"
+    ],
+    "idealFor": [
+      "Workgroups needing A3 occasional use",
+      "Small businesses with varied document sizes",
+      "Professional services firms",
+      "Branch offices requiring reliability",
+      "Organizations seeking secure document handling"
+    ]
+  },
+  "costs": {
+    "consumables": {
+      "tonerCartridges": {
+        "black": {
+          "partNumber": "MX-B45NT",
+          "yield": 36000,
+          "cost": 165
+        }
+      },
+      "drums": {
+        "black": {
+          "partNumber": "MX-B45DR",
+          "yield": 200000,
+          "cost": 350
+        }
+      },
+      "wasteContainer": {
+        "partNumber": "MX-B45NWC",
+        "yield": 54000,
+        "cost": 45
+      }
+    },
+    "costPerPage": {
+      "mono": 0.0046,
+      "color": 0
+    }
+  },
+  "setup": {
+    "unboxing": [
+      "Remove all external packing materials",
+      "Remove orange protective tape and locks",
+      "Install toner cartridge",
+      "Install drum unit",
+      "Load paper in main cassette",
+      "Connect power cable"
+    ],
+    "initialSetup": [
+      "Power on using main power switch",
+      "Select language on 7-inch touchscreen",
+      "Configure date, time, and time zone",
+      "Set administrator password",
+      "Configure network settings",
+      "Register device (optional)",
+      "Print test page"
+    ],
+    "networkSetup": {
+      "ethernet": [
+        "Connect RJ-45 Gigabit Ethernet cable",
+        "Touchscreen: Settings > System Settings > Network Settings",
+        "Select IPv4 Settings",
+        "Choose Auto (DHCP) or Manual (Static)",
+        "If Manual: Enter IP, subnet, gateway, DNS",
+        "Print Network Settings to verify",
+        "Access web interface at http://[device-ip]"
+      ],
+      "wifi": [
+        "Requires optional MX-EB18 Wireless LAN Adapter",
+        "Professional installation required for module",
+        "Settings > System Settings > Network Settings > Wireless",
+        "Select Infrastructure Mode",
+        "Choose SSID and enter password",
+        "Confirm connection",
+        "Print Wireless Status"
+      ]
+    },
+    "driverInstallation": {
+      "windows": "Download Sharp MX-B468F PCL6 driver from Sharp support website. Run installer and select network connection. Driver will search for device or enter IP manually. Install complete package for all features.",
+      "mac": "Download macOS driver from Sharp. Install PKG file and add via System Preferences > Printers & Scanners. Supports AirPrint for basic printing. Use Sharp PPD for full features.",
+      "linux": "Download Linux PPD from Sharp support. Install via CUPS at localhost:631. Configure with device IP. Standard features supported."
+    },
+    "configPages": {
+      "meterPage": "Touchscreen: Counter. Shows total pages, copy/print breakdown.",
+      "configPage": "Settings/Registration > Output Reports > System Settings List",
+      "networkConfigPage": "Settings/Registration > Output Reports > Network Settings",
+      "webInterface": "Access at http://[device-ip]. Default: admin/admin. Change password immediately. Full device management available."
+    },
+    "commonIssues": [
+      "Configure scan destinations via web interface",
+      "Set up LDAP for address book",
+      "Enable user authentication",
+      "Configure scan-to-email settings",
+      "Update firmware for latest features",
+      "Enable Data Security Kit if needed",
+      "Set up department codes"
+    ]
+  },
+  "troubleshooting": {
+    "commonErrors": [
+      {
+        "code": "H5-00",
+        "description": "Polygon motor error",
+        "severity": "critical",
+        "causes": [
+          "Laser scanner failure",
+          "Motor malfunction"
+        ],
+        "solutions": [
+          "Power off main switch",
+          "Wait 60 seconds",
+          "Power back on",
+          "Contact Sharp service if persists",
+          "Professional service required"
+        ]
+      },
+      {
+        "code": "L3-00",
+        "description": "Fusing unit error",
+        "severity": "critical",
+        "causes": [
+          "Fuser temperature issue",
+          "Fuser at end of life"
+        ],
+        "solutions": [
+          "Power off and wait 30 minutes",
+          "Check fuser page count",
+          "Power on and test",
+          "Replace fuser if needed",
+          "Contact Sharp service"
+        ]
+      },
+      {
+        "code": "Paper Jam",
+        "description": "Paper misfeed detected",
+        "severity": "warning",
+        "causes": [
+          "Incorrect paper loading",
+          "Worn rollers",
+          "Paper quality issue"
+        ],
+        "solutions": [
+          "Follow touchscreen instructions",
+          "Open indicated cover",
+          "Remove jammed paper",
+          "Check paper guides",
+          "Clean pickup rollers if recurring"
+        ]
+      }
+    ],
+    "paperJams": [
+      {
+        "location": "Paper Cassette",
+        "accessInstructions": [
+          "Pull cassette out completely"
+        ],
+        "clearanceSteps": [
+          "Remove all paper",
+          "Check for jammed sheets",
+          "Remove torn pieces",
+          "Fan paper before reloading",
+          "Adjust guides properly",
+          "Reinsert cassette"
+        ],
+        "prevention": [
+          "Use 52-256 g/m² paper",
+          "Don't overfill",
+          "Store properly",
+          "Replace rollers at intervals"
+        ]
+      },
+      {
+        "location": "Duplex Unit",
+        "accessInstructions": [
+          "Open right side door"
+        ],
+        "clearanceSteps": [
+          "Pull duplex release",
+          "Remove jammed paper",
+          "Check for pieces",
+          "Close duplex unit",
+          "Close side door"
+        ],
+        "prevention": [
+          "Use appropriate paper weight",
+          "Avoid curled paper",
+          "Clean duplex path"
+        ]
+      }
+    ],
+    "qualityIssues": [
+      {
+        "issue": "Faded or light prints",
+        "symptoms": ["Washed out", "Light areas"],
+        "causes": ["Low toner", "Worn drum", "Toner save on"],
+        "solutions": [
+          "Check toner level",
+          "Disable toner save mode",
+          "Shake toner cartridge",
+          "Replace toner if low",
+          "Check drum life",
+          "Replace drum if worn"
+        ]
+      },
+      {
+        "issue": "Streaks or lines",
+        "symptoms": ["Vertical lines", "Horizontal streaks"],
+        "causes": ["Dirty drum", "Corona wire dirty", "Debris"],
+        "solutions": [
+          "Run cleaning mode",
+          "Clean drum unit",
+          "Print blank pages to clear",
+          "Check for toner spills",
+          "Replace drum if damaged"
+        ]
+      }
+    ],
+    "networkIssues": [
+      {
+        "issue": "Cannot connect to network",
+        "symptoms": ["No IP", "Offline"],
+        "diagnosticSteps": [
+          "Print network status",
+          "Check cable",
+          "Verify settings"
+        ],
+        "solutions": [
+          "Check Ethernet connection",
+          "Verify IP configuration",
+          "Enable DHCP or set static IP",
+          "Restart device and network",
+          "Check firewall settings"
+        ]
+      }
+    ],
+    "generalMaintenance": [
+      {
+        "task": "Replace toner cartridge",
+        "frequency": "36,000 pages",
+        "procedure": [
+          "Open front door",
+          "Remove old cartridge",
+          "Shake new MX-B45NT cartridge",
+          "Remove protective seal",
+          "Install new cartridge",
+          "Close front door"
+        ],
+        "partsNeeded": ["MX-B45NT"]
+      },
+      {
+        "task": "Replace drum unit",
+        "frequency": "200,000 pages",
+        "procedure": [
+          "Order MX-B45DR drum",
+          "Open front door",
+          "Remove toner cartridge",
+          "Remove old drum unit",
+          "Install new drum",
+          "Reinstall toner",
+          "Reset drum counter",
+          "Close door"
+        ],
+        "partsNeeded": ["MX-B45DR"]
+      },
+      {
+        "task": "Replace waste toner container",
+        "frequency": "54,000 pages",
+        "procedure": [
+          "Open front door",
+          "Remove waste container",
+          "Seal old container",
+          "Install new MX-B45NWC",
+          "Close door"
+        ],
+        "partsNeeded": ["MX-B45NWC"]
+      }
+    ]
+  },
+  "firmware": {
+    "latest": "01.00.00.00.008",
+    "releaseDate": "2024-07-10",
+    "updateProcedure": "Access web interface, navigate to System > Firmware Update. Upload firmware from Sharp support portal. Do not power off during update (10-15 minutes)."
+  },
+  "warranty": {
+    "standard": "1 year limited warranty",
+    "extendedOptions": [
+      "Sharp 2-year extended warranty",
+      "Sharp 3-year comprehensive coverage",
+      "Essential Service Agreement"
+    ]
+  },
+  "certifications": ["ENERGY STAR", "EPEAT Silver"],
+  "releaseDate": "2021-09"
+}

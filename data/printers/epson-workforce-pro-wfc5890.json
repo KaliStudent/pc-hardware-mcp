@@ -1,0 +1,900 @@
+{
+  "id": "epson-wfc5890",
+  "manufacturer": "Epson",
+  "model": "WorkForce Pro WF-C5890",
+  "series": "WorkForce Pro",
+  "formFactor": "workgroup",
+  "type": "inkjet",
+  "color": true,
+  "functions": ["print", "copy", "scan", "fax"],
+  "specifications": {
+    "printSpeed": {
+      "mono": 25,
+      "color": 25
+    },
+    "printResolution": {
+      "max": "4800x1200 dpi"
+    },
+    "firstPageOut": {
+      "mono": 4.8,
+      "color": 4.8
+    },
+    "duty": {
+      "monthly": 120000,
+      "recommended": 5500
+    },
+    "paperHandling": {
+      "inputCapacity": 1150,
+      "outputCapacity": 500,
+      "maxInputCapacity": 2350,
+      "duplexing": "standard",
+      "paperSizes": ["A4", "A5", "A6", "B5", "Letter", "Legal", "Executive"],
+      "paperWeights": "64-256 g/m²"
+    },
+    "memory": "2 GB RAM",
+    "processor": "1.2 GHz",
+    "connectivity": ["Ethernet (10/100/1000)", "USB 3.0", "Wi-Fi 802.11ac", "Wi-Fi Direct"],
+    "networkProtocols": ["TCP/IP", "IPv4", "IPv6", "SMB", "FTP", "SNMP", "IPP", "AirPrint", "Mopria"],
+    "dimensions": {
+      "width": 530,
+      "depth": 625,
+      "height": 505,
+      "weight": 25.1,
+      "unit": "mm",
+      "weightUnit": "kg"
+    },
+    "powerConsumption": {
+      "operating": "45 watts",
+      "standby": "12 watts",
+      "sleep": "1.4 watts"
+    }
+  },
+  "sales": {
+    "msrp": 699,
+    "currency": "USD",
+    "streetPrice": 599,
+    "targetMarket": ["Small Workgroups", "SMB", "Branch Offices", "Professional Services"],
+    "sellingPoints": [
+      "Business inkjet with 25 PPM color",
+      "High-capacity ink packs up to 86,000 pages",
+      "Ultra-low cost per page (1.2¢ color)",
+      "50-page automatic document feeder",
+      "Expandable to 2,350-sheet capacity"
+    ],
+    "competitiveAdvantages": [
+      "Revolutionary low cost per page for inkjet",
+      "PrecisionCore Heat-Free Technology",
+      "Replaceable Ink Pack System (RIPS)",
+      "Lower energy use vs laser",
+      "Excellent color quality for business"
+    ],
+    "idealFor": [
+      "Businesses seeking low TCO color",
+      "Workgroups with moderate color needs",
+      "Organizations wanting to reduce energy",
+      "Professional services creating presentations",
+      "SMBs replacing expensive laser color"
+    ]
+  },
+  "costs": {
+    "consumables": {
+      "inkPacks": {
+        "black": {
+          "partNumber": "T05G120 (standard), T05H120 (high capacity)",
+          "yield": 20000,
+          "yieldHigh": 50000,
+          "cost": 79.99,
+          "costHigh": 129.99
+        },
+        "cyan": {
+          "partNumber": "T05G220 (standard), T05H220 (high capacity)",
+          "yield": 20000,
+          "yieldHigh": 50000,
+          "cost": 79.99,
+          "costHigh": 129.99
+        },
+        "magenta": {
+          "partNumber": "T05G320 (standard), T05H320 (high capacity)",
+          "yield": 20000,
+          "yieldHigh": 50000,
+          "cost": 79.99,
+          "costHigh": 129.99
+        },
+        "yellow": {
+          "partNumber": "T05G420 (standard), T05H420 (high capacity)",
+          "yield": 20000,
+          "yieldHigh": 50000,
+          "cost": 79.99,
+          "costHigh": 129.99
+        }
+      },
+      "maintenanceBox": {
+        "partNumber": "T671600",
+        "yield": 100000,
+        "cost": 19.99
+      }
+    },
+    "costPerPage": {
+      "mono": 0.004,
+      "color": 0.012
+    }
+  },
+  "setup": {
+    "unboxing": [
+      "Remove all packing materials",
+      "Remove protective tape",
+      "Install all four ink packs (CMYK)",
+      "Install maintenance box",
+      "Load paper in cassettes",
+      "Connect power cable"
+    ],
+    "initialSetup": [
+      "Power on",
+      "Select language on 4.3-inch touchscreen",
+      "Select country/region",
+      "Configure date and time",
+      "Charge ink system (takes 20 minutes)",
+      "Choose network setup method",
+      "Print nozzle check pattern"
+    ],
+    "networkSetup": {
+      "ethernet": [
+        "Connect RJ-45 Gigabit Ethernet cable",
+        "Touchscreen: Setup > Network Settings > Wired LAN",
+        "Select Auto (DHCP) or Manual",
+        "If Manual: Enter IP, subnet, gateway, DNS",
+        "Print network status sheet",
+        "Access Epson Web Config at http://[device-ip]"
+      ],
+      "wifi": [
+        "Touchscreen: Setup > Network Settings > Wi-Fi Setup",
+        "Select Wi-Fi Setup Wizard",
+        "Choose your network from list",
+        "Enter WPA2/WPA3 password",
+        "Confirm connection",
+        "Print wireless status sheet",
+        "Alternative: Use WPS for automatic setup"
+      ],
+      "wifiDirect": [
+        "Setup > Network Settings > Wi-Fi Direct",
+        "Enable Wi-Fi Direct",
+        "Note SSID and password",
+        "Mobile devices connect directly",
+        "Up to 8 simultaneous connections"
+      ]
+    },
+    "webInterface": {
+      "accessUrl": "http://[printer-ip]",
+      "defaultCredentials": {
+        "username": "Not required by default",
+        "password": "Can be set via web interface: Product Security > Administrator Settings"
+      },
+      "certificateWarning": "Epson devices use HTTP by default. HTTPS available via Epson Web Config security settings.",
+      "accessSteps": [
+        "Print network status sheet: Touchscreen > Setup > Network Settings > Print Status Sheet",
+        "Note IPv4 address from printed sheet",
+        "Open web browser and navigate to http://[printer-ip]",
+        "Epson Web Config interface loads",
+        "No login required by default (set password for security)",
+        "First access: Product Security > Administrator Settings to enable password protection",
+        "Access all settings: Device Status, Network, Security, Scan/Email destinations"
+      ]
+    },
+    "driverInstallation": {
+      "windows10": {
+        "procedure": [
+          "Visit epson.com/support and search for WorkForce Pro WF-C5890",
+          "Select Windows 10 (64-bit) from operating system dropdown",
+          "Download 'Drivers and Utilities Combo Package' (recommended) or individual components",
+          "Run installer as Administrator",
+          "Accept license agreement",
+          "Select 'Network Connection' (or Wireless/USB as appropriate)",
+          "Installer searches network for printer automatically",
+          "Select WF-C5890 from discovered devices or enter IP manually",
+          "Choose installation type: Typical (recommended) or Custom",
+          "Typical installs: Printer driver, Epson Scan 2, Event Manager, Status Monitor",
+          "Complete installation and restart if prompted",
+          "Test print and scan to verify installation",
+          "Optional: Install Epson Connect for cloud/mobile printing"
+        ],
+        "notes": [
+          "Windows 10 Version 1903 or later recommended",
+          "Epson Scan 2 provides TWAIN and WIA scanning",
+          "Event Manager allows scan-to-email/folder workflows from PC",
+          "Status Monitor shows ink levels and device status",
+          "Epson Universal Print Driver available for basic functionality"
+        ]
+      },
+      "windows11": {
+        "procedure": [
+          "Visit epson.com/support and search for WorkForce Pro WF-C5890",
+          "Select Windows 11 (64-bit) from OS dropdown",
+          "Download 'Drivers and Utilities Combo Package'",
+          "Right-click installer > Run as administrator",
+          "Accept license agreement",
+          "Select connection type: Network, Wireless, or USB",
+          "Installer auto-discovers WF-C5890 on network",
+          "Select printer from list or manually enter IP address",
+          "Choose Typical installation (recommended)",
+          "Installs printer driver, Epson Scan 2, utilities",
+          "Grant Windows 11 security permissions when prompted",
+          "Complete installation",
+          "Test all functions: Print, Scan, Copy via Epson Scan 2"
+        ],
+        "notes": [
+          "Windows 11 22H2 or later fully supported",
+          "Native Windows 11 security features compatible",
+          "Epson Universal Print Driver alternative for basic printing",
+          "Works with Windows 11 ARM via emulation (limited performance)"
+        ]
+      },
+      "mac": {
+        "procedure": [
+          "For macOS Monterey (12) or later: AirPrint works for basic printing",
+          "For full features including scanning: Visit epson.com/support",
+          "Select macOS from OS dropdown (specify your version)",
+          "Download 'Driver and Utilities Combo Package Installer' DMG",
+          "Double-click DMG to mount disk image",
+          "Run Epson installer package (.pkg)",
+          "Follow installation wizard",
+          "Grant necessary permissions (System Extensions, Input Monitoring)",
+          "Open System Settings > Printers & Scanners (macOS 13+)",
+          "Or System Preferences > Printers & Scanners (macOS 12 and earlier)",
+          "Click '+' to add printer",
+          "Select WorkForce Pro WF-C5890 from list",
+          "Choose 'Epson WF-C5890 Series' driver for full features",
+          "Or choose 'AirPrint' for basic print-only",
+          "Install Epson Scan 2 for scanning (included in combo package)",
+          "Use Epson Scan 2 app or Image Capture for scanning"
+        ],
+        "notes": [
+          "macOS 11 (Big Sur) and later: AirPrint supported",
+          "macOS 10.15 (Catalina) minimum for full driver support",
+          "Epson Scan 2 supports all scanning features",
+          "Apple Silicon (M1/M2/M3) fully supported (Universal Binary)",
+          "Epson iPrint app available from Mac App Store for mobile-style interface"
+        ]
+      },
+      "linux": {
+        "procedure": [
+          "Visit download.ebz.epson.net/dsc/search/01/search/?OSC=LX",
+          "Search for WF-C5890 or WorkForce Pro WF-C5890",
+          "Download appropriate package (DEB for Debian/Ubuntu, RPM for Fedora/RHEL)",
+          "For Ubuntu/Debian:",
+          "  wget https://download2.ebz.epson.net/iscan/plugin/...",
+          "  sudo dpkg -i epson-inkjet-printer-wfc5890_*.deb",
+          "  sudo apt-get install -f (to fix dependencies)",
+          "For Fedora/RHEL:",
+          "  sudo rpm -ivh epson-inkjet-printer-wfc5890-*.rpm",
+          "Configure via CUPS: Open browser to localhost:631",
+          "Administration > Add Printer",
+          "Select 'Epson WF-C5890 Series' from discovered printers",
+          "Or manually add with IPP: ipp://[printer-ip]:631/ipp/print",
+          "Choose Epson PPD file from list",
+          "Set as default if desired",
+          "For scanning: Install iscan or Image Scan! for Linux package"
+        ],
+        "notes": [
+          "Ubuntu 20.04 LTS and later supported",
+          "Fedora 34+ and RHEL 8+ supported",
+          "Requires CUPS 2.0 or later for printing",
+          "Epson provides both 32-bit and 64-bit packages",
+          "Scanning via Image Scan! or SANE with eposn2 backend",
+          "IPP Everywhere protocol supported for driverless printing"
+        ]
+      },
+      "driverDownloads": [
+        {
+          "os": "Windows 10/11",
+          "url": "https://epson.com/Support/Printers/All-In-Ones/WorkForce-Series/Epson-WorkForce-Pro-WF-C5890/s/SPT_C11CJ55201"
+        },
+        {
+          "os": "macOS",
+          "url": "https://epson.com/Support/Printers/All-In-Ones/WorkForce-Series/Epson-WorkForce-Pro-WF-C5890/s/SPT_C11CJ55201"
+        },
+        {
+          "os": "Linux",
+          "url": "https://download.ebz.epson.net/dsc/search/01/search/?OSC=LX"
+        }
+      ]
+    },
+    "backupRestore": {
+      "systemBackup": {
+        "procedure": [
+          "Access Epson Web Config at http://[printer-ip]",
+          "No login required by default (unless administrator password set)",
+          "Navigate to Product Security tab or System Administration",
+          "Select 'Export All Settings' or 'Backup Configuration'",
+          "Choose settings to backup:",
+          "- Network settings (IP, WiFi, protocols)",
+          "- Email server configuration (SMTP settings)",
+          "- Scan destinations (network folders, email addresses)",
+          "- Device settings (paper, timeout, power save)",
+          "Click 'Export' button",
+          "Configuration file downloads: WFC5890_Settings_2024-11-16.epson or .xml",
+          "Store backup file securely - contains network and email credentials",
+          "Recommended: Backup before firmware updates or major network changes"
+        ],
+        "fileFormat": ".epson or .xml (Epson proprietary configuration format)",
+        "location": "Downloads to local computer via web browser",
+        "notes": [
+          "Backup file may contain SMTP passwords in encrypted form",
+          "Some advanced security settings exported separately",
+          "Address book (contacts/destinations) included in system backup",
+          "Consumable counters (ink levels) NOT backed up - hardware tracked"
+        ]
+      },
+      "systemRestore": {
+        "procedure": [
+          "Access Epson Web Config at http://[printer-ip]",
+          "Login if administrator password is enabled",
+          "Navigate to Product Security > Import/Export",
+          "Click 'Browse' or 'Choose File' under Import section",
+          "Select previously exported configuration file (.epson or .xml)",
+          "Click 'Import' or 'Restore' to begin",
+          "System displays progress: 'Importing configuration...'",
+          "Wait 30-60 seconds for import to complete",
+          "Device may reboot automatically to apply settings",
+          "After reboot (approximately 1-2 minutes), verify network connectivity",
+          "Access web interface again to confirm settings",
+          "Print network status sheet to verify configuration",
+          "Test device functions: print, scan, email"
+        ],
+        "prerequisites": [
+          "Valid backup file from same or compatible Epson model",
+          "Firmware should be same major version as backup",
+          "Network access to device via Ethernet or WiFi",
+          "Administrator password if authentication is enabled"
+        ],
+        "notes": [
+          "IP address may change if backup had different network configuration",
+          "Administrator password restored from backup file",
+          "Scan destinations and address book automatically restored",
+          "Ink levels NOT affected by restore (hardware-based counters)",
+          "If restore fails, device retains current settings - safe to retry"
+        ]
+      },
+      "addressBookBackup": {
+        "procedure": [
+          "Access Epson Web Config at http://[printer-ip]",
+          "Navigate to Scan/Copy > Contacts or Address Book Management",
+          "Click 'Export' button to save all contacts",
+          "Choose export format: CSV (recommended for editing) or XML",
+          "Select contacts to export: All entries or specific groups",
+          "Click 'OK' or 'Download' to save file",
+          "File saves as: contacts.csv or addressbook.xml",
+          "Rename with date: WFC5890_Contacts_2024-11-16.csv",
+          "Address book includes: Name, Email, Fax, SMB/FTP destination paths"
+        ],
+        "fileFormat": ".csv (Excel-compatible) or .xml",
+        "location": "Downloads to local computer",
+        "notes": [
+          "CSV can be edited in Excel/Sheets for bulk updates",
+          "Maximum contacts varies by model (typically 200-500 entries)",
+          "Includes all scan destinations: email recipients, network folders, FTP sites",
+          "Export before making bulk changes for easy rollback"
+        ]
+      },
+      "addressBookRestore": {
+        "procedure": [
+          "Prepare CSV file with headers: Name, Email, Fax Number, SMB Path, FTP Path",
+          "Follow Epson CSV format (export existing contacts to see structure)",
+          "Access Epson Web Config at http://[printer-ip]",
+          "Navigate to Scan/Copy > Contacts or Address Book",
+          "Click 'Import' button",
+          "Choose import file (CSV or XML format)",
+          "Select import mode:",
+          "  - Overwrite: Replaces entire address book",
+          "  - Append: Adds new entries, keeps existing",
+          "Click 'Import' to begin",
+          "System validates entries and displays progress",
+          "Review import summary (successful/failed entries)",
+          "Check address book list in web interface to verify",
+          "Test scan-to-email or scan-to-folder with imported destinations"
+        ],
+        "fileFormat": ".csv with specific headers or .xml",
+        "prerequisites": [
+          "CSV must have correct column headers matching Epson format",
+          "Email addresses must be valid format (user@domain.com)",
+          "SMB paths use format: \\\\\\\\server\\\\share\\\\folder",
+          "FTP paths: ftp://server.com/path",
+          "Maximum entries limit depends on device memory"
+        ],
+        "notes": [
+          "Invalid entries skipped during import - check summary for errors",
+          "For network paths, credentials configured separately in scan settings",
+          "Imported contacts immediately available on device touchscreen",
+          "Duplicate names may cause conflicts - use unique contact names"
+        ]
+      }
+    },
+    "scanDestinations": {
+      "scanToEmail": {
+        "requirements": [
+          "SMTP mail server address and port",
+          "SMTP authentication credentials (username/password)",
+          "Valid sender email address",
+          "Network connectivity to SMTP server (port 25/587/465)",
+          "Firewall allows outbound SMTP traffic"
+        ],
+        "smtpConfiguration": [
+          "Access Epson Web Config at http://[printer-ip]",
+          "Navigate to Scan/Copy > Email Server Settings",
+          "Enter SMTP Server Address: smtp.office365.com or smtp.gmail.com",
+          "Enter SMTP Server Port: 25 (standard), 587 (TLS), or 465 (SSL)",
+          "Select Authentication: Off, PLAIN, LOGIN, CRAM-MD5, or DIGEST-MD5",
+          "For Office 365/Gmail: Select LOGIN or PLAIN with TLS",
+          "Enter SMTP User Name (full email address for most servers)",
+          "Enter SMTP Password (use app password for Gmail with 2FA)",
+          "Set Sender's Email Address (From address - must be valid)",
+          "Select Security: None, SSL/TLS (465), or STARTTLS (587)",
+          "Maximum Email Size: Set limit or leave default (10 MB typical)",
+          "Sender's Name: Friendly name shown in emails (e.g., 'Office Scanner')",
+          "Click 'Apply' or 'OK' to save",
+          "Use 'Send Test Email' to verify configuration"
+        ],
+        "authenticationSetup": [
+          "Office 365: smtp.office365.com, port 587, STARTTLS, LOGIN auth, full email@domain.com",
+          "Gmail: smtp.gmail.com, port 587, STARTTLS, enable 2FA and create app password",
+          "Exchange on-premise: Internal server (mail.company.local), port 25 or 587",
+          "Generic SMTP: Check with IT department for server, port, authentication method",
+          "For SSL (port 465): Select SSL/TLS security option",
+          "For STARTTLS (port 587): Select STARTTLS security option",
+          "Note: Some servers require sender address to match authenticated account"
+        ],
+        "testProcedure": [
+          "In Email Server Settings: Click 'Send Test Email' button",
+          "Enter test recipient email address",
+          "Click 'OK' or 'Send'",
+          "Check recipient inbox (delivery may take 1-2 minutes)",
+          "If failed, touchscreen shows error code or web interface shows failure reason",
+          "Common errors: Authentication failed, Connection timeout, Relay access denied",
+          "From device touchscreen: Scan > Email > Enter address or select contact > Start"
+        ]
+      },
+      "scanToFolder": {
+        "requirements": [
+          "Network file share (SMB/CIFS or FTP server)",
+          "Valid user credentials with write permissions",
+          "Network path: \\\\\\\\server\\\\share\\\\folder or ftp://server/folder",
+          "Firewall allows SMB (port 445) or FTP (port 21)"
+        ],
+        "smbConfiguration": [
+          "Access Epson Web Config",
+          "Navigate to Scan/Copy > Shared Folder Settings",
+          "Click 'Add' to create new scan destination",
+          "Enter Destination Name (shown on touchscreen): Accounting Files",
+          "Communication Mode: SMB (Windows file sharing)",
+          "Enter Folder Path: \\\\\\\\fileserver\\\\scans\\\\accounting",
+          "Enter User Name: DOMAIN\\\\scanuser or SERVERNAME\\\\scanner",
+          "Enter Password for account",
+          "File Settings:",
+          "  - File Format: PDF (recommended), JPEG, TIFF, Multi-TIFF, Searchable PDF",
+          "  - PDF Settings: Standard, Compact, PDF/A-1b",
+          "  - File Name: Prefix (Scan_), Date/Time format, Counter",
+          "Scan Settings:",
+          "  - Color Mode: Auto, Color, Grayscale, Black & White",
+          "  - Resolution: 200 dpi (normal), 300 dpi (high quality), 600 dpi (photo)",
+          "  - Document Size: Auto-detect or specify (A4, Letter, etc.)",
+          "  - Duplex: Simplex (1-sided) or Duplex (2-sided)",
+          "Click 'Test Connection' to verify access and permissions",
+          "Click 'Register' to save destination"
+        ],
+        "ftpConfiguration": [
+          "Epson WF-C5890 supports FTP scanning",
+          "Access Web Config > Scan/Copy > FTP Server Settings",
+          "Click 'Add' for new FTP destination",
+          "Enter Destination Name: FTP Document Archive",
+          "Communication Mode: FTP",
+          "Enter Server Address: ftp.company.com or IP address",
+          "Port Number: 21 (default FTP) or custom",
+          "Enter Username and Password for FTP account",
+          "Directory Path on FTP server: /scans/incoming or /public/docs",
+          "Passive Mode: Enable if behind firewall (recommended)",
+          "Connection Timeout: 60 seconds (default)",
+          "Set file format and scan settings same as SMB",
+          "Test connection before saving",
+          "Note: Standard FTP not encrypted - consider FTPS if available"
+        ],
+        "authenticationSetup": [
+          "Active Directory: Use DOMAIN\\\\username (e.g., CONTOSO\\\\scanservice)",
+          "Local account: Use COMPUTERNAME\\\\username or just username",
+          "Verify account has write permissions:",
+          "  - SMB Share permissions: Read/Write access",
+          "  - NTFS permissions: Modify or Write on target folder",
+          "Test manually: Try creating file in folder from another PC using same credentials",
+          "Best practice: Use dedicated service account (not personal accounts)",
+          "For user-authenticated scanning: Enable 'Require Authentication' in scan job settings"
+        ]
+      },
+      "scanToUsb": {
+        "requirements": [
+          "USB flash drive formatted as FAT32 (best compatibility, up to 32GB)",
+          "exFAT supported for drives larger than 32GB",
+          "NTFS may work but not officially supported",
+          "Minimum 50MB free space for scans",
+          "USB 2.0/3.0 port on device (usually front panel)"
+        ],
+        "procedure": [
+          "Format USB drive as FAT32 (drives ≤32GB) or exFAT (larger drives)",
+          "Safely insert USB drive into device USB port (front or side panel)",
+          "Touchscreen displays 'USB Storage Device Connected' or similar message",
+          "Touch 'Scan' on main menu",
+          "Select 'Scan to USB' or 'Scan to Memory Device' option",
+          "Choose scan settings:",
+          "  - Document Type: Document (B&W or Color), Photo (Color)",
+          "  - File Format: PDF (recommended), JPEG, TIFF, Multi-TIFF",
+          "  - Resolution: 200 dpi (normal), 300 dpi (high), 600 dpi (photo)",
+          "  - Color Mode: Color, Grayscale, Black & White, Auto",
+          "  - Original Size: Auto, A4, Letter, Legal, etc.",
+          "  - Duplex (2-Sided): Off (1-sided) or On (2-sided)",
+          "Load document in ADF (up to 50 sheets) or on scanner glass",
+          "Press 'Start' button on touchscreen to begin scanning",
+          "Wait for scan completion message",
+          "Touchscreen: Select 'Eject USB' or 'Safely Remove' before physical removal",
+          "Files saved to /EPSCAN folder on USB drive: SCAN0001.pdf, SCAN0002.pdf, etc."
+        ],
+        "supportedFormats": [
+          "PDF (single or multi-page, default and recommended)",
+          "JPEG (single page, good for photos and images)",
+          "TIFF (single page, uncompressed, large files)",
+          "Multi-TIFF (multi-page TIFF format)",
+          "Searchable PDF (with OCR, if enabled)"
+        ],
+        "notes": [
+          "FAT32 has 4GB single file limit - use exFAT for very large scan jobs",
+          "Resolution affects file size: 200dpi ≈ 1-2MB/page, 600dpi ≈ 10MB/page",
+          "PDF recommended for documents, JPEG for photos",
+          "Always use 'Eject' or 'Safely Remove' before removing USB to prevent corruption",
+          "USB drive should be empty or have plenty of free space"
+        ]
+      }
+    },
+    "configPages": {
+      "meterPage": "Touchscreen: Settings > Maintenance > Print Status Sheet. Shows page counts and ink levels.",
+      "configPage": "Settings > Print Status Sheet > Network Status",
+      "networkConfigPage": "Settings > Network Settings > Print Status Sheet",
+      "webInterface": "Access Epson Web Config at http://[device-ip]. Configure all settings, monitor supplies, update firmware, manage users."
+    },
+    "commonIssues": [
+      "Run nozzle check after initial setup",
+      "Configure scan destinations via Web Config",
+      "Set up scan-to-email via Email Server Settings",
+      "Enable user authentication if needed",
+      "Update firmware via Web Config for latest features",
+      "Set up Address Book for frequent destinations",
+      "Configure department codes for job tracking"
+    ]
+  },
+  "troubleshooting": {
+    "commonErrors": [
+      {
+        "code": "Ink Pack Error",
+        "description": "Ink pack not recognized",
+        "severity": "warning",
+        "causes": [
+          "Ink pack not fully inserted",
+          "Non-genuine ink pack",
+          "Chip contact dirty",
+          "Defective ink pack"
+        ],
+        "solutions": [
+          "Remove and reseat ink pack firmly",
+          "Verify using genuine Epson T05G/T05H ink",
+          "Clean chip contacts with lint-free cloth",
+          "Check for protective tape still on ink pack",
+          "Try different ink pack to isolate issue",
+          "Update firmware if compatibility issue"
+        ]
+      },
+      {
+        "code": "Maintenance Box Nearly Full / Replace",
+        "description": "Waste ink maintenance box full",
+        "severity": "warning",
+        "causes": [
+          "Maintenance box at capacity"
+        ],
+        "solutions": [
+          "Order replacement T671600 maintenance box",
+          "Continue printing until 'Replace' message",
+          "When prompted, open front cover",
+          "Pull out maintenance box",
+          "Install new maintenance box",
+          "Close front cover - counter resets automatically"
+        ]
+      },
+      {
+        "code": "Paper Jam",
+        "description": "Paper misfeed detected",
+        "severity": "warning",
+        "causes": [
+          "Paper loaded incorrectly",
+          "Wrinkled or damp paper",
+          "Foreign object in path",
+          "Worn rollers"
+        ],
+        "solutions": [
+          "Follow touchscreen jam clearance instructions",
+          "Open indicated cover",
+          "Remove all jammed paper carefully",
+          "Remove torn pieces",
+          "Check paper quality and reload properly",
+          "Adjust paper guides to paper size",
+          "Clean rollers if jams recurring"
+        ]
+      },
+      {
+        "code": "Print Head Issue / Nozzle Check Required",
+        "description": "Print head needs attention",
+        "severity": "warning",
+        "causes": [
+          "Clogged nozzles",
+          "Dried ink",
+          "Infrequent use"
+        ],
+        "solutions": [
+          "Run nozzle check: Maintenance > Nozzle Check",
+          "If gaps in pattern, run head cleaning",
+          "Maintenance > Head Cleaning > Start",
+          "Run cleaning 2-3 times if needed",
+          "Let printer rest 6 hours between deep cleanings",
+          "Print regularly (weekly) to prevent drying",
+          "If issue persists, contact Epson support"
+        ]
+      }
+    ],
+    "paperJams": [
+      {
+        "location": "Paper Cassette",
+        "accessInstructions": [
+          "Pull cassette completely out",
+          "Note jam location from touchscreen"
+        ],
+        "clearanceSteps": [
+          "Remove all paper from cassette",
+          "Check feed area for jammed sheets",
+          "Remove jammed paper gently",
+          "Check for torn pieces",
+          "Fan paper before reloading",
+          "Adjust guides to paper size",
+          "Reinsert cassette fully"
+        ],
+        "prevention": [
+          "Use 64-256 g/m² paper",
+          "Don't exceed cassette capacity (500 sheets)",
+          "Fan paper before loading",
+          "Store paper properly (humidity control)",
+          "Adjust guides snug to paper edges",
+          "Use high-quality paper"
+        ]
+      },
+      {
+        "location": "ADF (Automatic Document Feeder)",
+        "accessInstructions": [
+          "Remove documents from ADF input",
+          "Lift ADF cover"
+        ],
+        "clearanceSteps": [
+          "Remove all documents from ADF",
+          "Open ADF cover",
+          "Remove jammed document carefully",
+          "Check for torn pieces",
+          "Close ADF cover",
+          "Reload documents (max 50 sheets)"
+        ],
+        "prevention": [
+          "Don't exceed 50 sheets in ADF",
+          "Use 64-95 g/m² paper in ADF",
+          "Remove staples and clips",
+          "Fan documents before loading",
+          "Align documents properly"
+        ]
+      },
+      {
+        "location": "Rear Unit / Duplex",
+        "accessInstructions": [
+          "Open rear unit cover"
+        ],
+        "clearanceSteps": [
+          "Open rear cover",
+          "Remove jammed paper",
+          "Check for torn pieces",
+          "Close rear cover firmly"
+        ],
+        "prevention": [
+          "Use appropriate weight for duplex (64-105 g/m²)",
+          "Avoid very smooth or textured paper",
+          "Don't use curled or folded sheets"
+        ]
+      }
+    ],
+    "qualityIssues": [
+      {
+        "issue": "Banding, streaks, or missing colors",
+        "symptoms": ["Horizontal bands", "Missing colors", "Streaky output"],
+        "causes": ["Clogged print head", "Low ink", "Misaligned heads"],
+        "solutions": [
+          "Run nozzle check to identify clogged colors",
+          "Run head cleaning 2-3 times if needed",
+          "Check ink levels and replace low packs",
+          "Run head alignment: Maintenance > Print Head Alignment",
+          "Let printer rest 6 hours if heavily clogged",
+          "Print regularly to prevent drying",
+          "Use genuine Epson ink for best results"
+        ]
+      },
+      {
+        "issue": "Faded or light prints",
+        "symptoms": ["Washed out", "Light colors", "Weak output"],
+        "causes": ["Low ink", "Eco mode enabled", "Wrong paper setting"],
+        "solutions": [
+          "Check ink levels on touchscreen",
+          "Replace low or empty ink packs",
+          "Disable Eco Mode in print settings",
+          "Select correct paper type in driver",
+          "Run nozzle check and clean if needed",
+          "Adjust print density if available"
+        ]
+      },
+      {
+        "issue": "Smudged or smeared ink",
+        "symptoms": ["Wet ink", "Smears on page", "Transfer to other pages"],
+        "causes": ["Wrong paper type", "Too much ink", "Damp paper"],
+        "solutions": [
+          "Select correct paper type in driver",
+          "Use Epson-recommended paper types",
+          "Reduce print quality/ink density",
+          "Ensure paper is dry and stored properly",
+          "Allow prints to dry before handling",
+          "Avoid very absorbent or coated papers"
+        ]
+      },
+      {
+        "issue": "Poor scan quality",
+        "symptoms": ["Blurry scans", "Dark or light scans"],
+        "causes": ["Dirty scanner glass", "Wrong scan settings"],
+        "solutions": [
+          "Clean scanner glass with glass cleaner",
+          "Clean ADF glass strip if using ADF",
+          "Adjust scan resolution (300 dpi for documents)",
+          "Use correct color mode (Color/Grayscale/B&W)",
+          "Check document placement on glass",
+          "Calibrate scanner if option available"
+        ]
+      }
+    ],
+    "networkIssues": [
+      {
+        "issue": "Printer not found on network",
+        "symptoms": ["Cannot find printer", "Shows offline", "No IP address"],
+        "diagnosticSteps": [
+          "Print network status sheet",
+          "Check IP address assignment",
+          "Verify cable/WiFi connection",
+          "Ping printer from computer"
+        ],
+        "solutions": [
+          "Verify Ethernet cable connected (check link lights)",
+          "For WiFi: Check signal strength and connection",
+          "Ensure printer and computer on same network",
+          "Check IP is not 0.0.0.0 or 169.254.x.x",
+          "Enable DHCP or configure static IP correctly",
+          "Restart printer and network equipment",
+          "Disable firewall temporarily to test",
+          "Use Epson Network Utility to find printer"
+        ]
+      },
+      {
+        "issue": "Scan to network folder not working",
+        "symptoms": ["Cannot save to folder", "Authentication fails"],
+        "diagnosticSteps": [
+          "Test folder access from PC",
+          "Verify SMB enabled",
+          "Check user permissions"
+        ],
+        "solutions": [
+          "Use UNC path: \\\\servername\\share\\folder",
+          "Enter domain\\username format",
+          "Verify write permissions on folder",
+          "Configure SMB settings in Web Config",
+          "Enable SMB2 or SMB3 on server",
+          "Test with IP address instead of hostname",
+          "Check Windows firewall allows file sharing"
+        ]
+      },
+      {
+        "issue": "Scan to email not working",
+        "symptoms": ["Email not sending", "SMTP error"],
+        "diagnosticSteps": [
+          "Check SMTP settings in Web Config",
+          "Test email account from PC",
+          "Verify firewall allows SMTP"
+        ],
+        "solutions": [
+          "Configure SMTP in Web Config > Email Server Settings",
+          "Enter correct SMTP server address and port",
+          "Use port 25, 465 (SSL), or 587 (TLS)",
+          "Enable SMTP authentication if required",
+          "Enter valid SMTP username and password",
+          "Configure sender email address",
+          "Test send via Web Config",
+          "Verify email server allows relay from printer IP"
+        ]
+      }
+    ],
+    "generalMaintenance": [
+      {
+        "task": "Replace ink packs",
+        "frequency": "Standard: 20K pages, High: 50K pages per color",
+        "procedure": [
+          "Open ink pack cover on front",
+          "Pull out empty ink pack",
+          "Unpack new Epson T05H ink pack",
+          "Remove protective cap",
+          "Insert new pack until it clicks",
+          "Close ink pack cover",
+          "Printer recognizes new ink automatically"
+        ],
+        "partsNeeded": ["T05G120/220/320/420 or T05H120/220/320/420"]
+      },
+      {
+        "task": "Replace maintenance box",
+        "frequency": "100,000 pages or when prompted",
+        "procedure": [
+          "Order T671600 maintenance box",
+          "Open front cover",
+          "Pull out maintenance box",
+          "Dispose according to local regulations",
+          "Install new maintenance box until it clicks",
+          "Close front cover",
+          "Counter resets automatically"
+        ],
+        "partsNeeded": ["T671600"]
+      },
+      {
+        "task": "Clean print head",
+        "frequency": "When quality degrades or weekly for preventive",
+        "procedure": [
+          "Touchscreen: Maintenance > Nozzle Check",
+          "Print nozzle check pattern",
+          "If gaps present: Maintenance > Head Cleaning",
+          "Select cleaning level (Standard or Power)",
+          "Wait for cleaning cycle to complete",
+          "Print nozzle check to verify",
+          "Repeat if necessary (max 3 times)",
+          "Let printer rest 6 hours if heavily clogged"
+        ],
+        "partsNeeded": ["None - uses ink"]
+      },
+      {
+        "task": "Clean scanner and ADF",
+        "frequency": "Weekly or as needed",
+        "procedure": [
+          "Lift document cover",
+          "Clean scanner glass with glass cleaner",
+          "Clean ADF glass strip on left",
+          "Wipe ADF rollers with water-dampened cloth",
+          "Clean exterior with damp cloth",
+          "Dry all areas thoroughly"
+        ],
+        "partsNeeded": ["Glass cleaner", "Lint-free cloths"]
+      }
+    ]
+  },
+  "firmware": {
+    "latest": "17.24.SM03J5",
+    "releaseDate": "2024-07-30",
+    "updateProcedure": "Access Epson Web Config at http://[device-ip]. Navigate to Firmware Update. Check for updates automatically or upload file from epson.com/support. Printer will reboot during update (approximately 10 minutes). Do not power off during update."
+  },
+  "warranty": {
+    "standard": "1 year limited warranty with advance exchange",
+    "extendedOptions": [
+      "Epson 2-year extended warranty",
+      "Epson 3-year next business day on-site",
+      "Epson Preferred Plus coverage with priority service",
+      "Epson CoverPlus with comprehensive protection"
+    ]
+  },
+  "certifications": ["ENERGY STAR", "EPEAT Silver"],
+  "releaseDate": "2022-04"
+}

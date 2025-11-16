@@ -1,0 +1,514 @@
+{
+  "id": "ricoh-im-c4510",
+  "manufacturer": "Ricoh",
+  "model": "IM C4510",
+  "series": "IM C",
+  "formFactor": "departmental",
+  "type": "laser",
+  "color": true,
+  "functions": ["print", "copy", "scan", "fax"],
+  "specifications": {
+    "printSpeed": {
+      "mono": 45,
+      "color": 45
+    },
+    "printResolution": {
+      "max": "1200x1200 dpi"
+    },
+    "firstPageOut": {
+      "mono": 5.2,
+      "color": 6.4
+    },
+    "duty": {
+      "monthly": 200000,
+      "recommended": 30000
+    },
+    "paperHandling": {
+      "inputCapacity": 1150,
+      "outputCapacity": 500,
+      "maxInputCapacity": 4150,
+      "duplexing": "standard",
+      "paperSizes": ["A3", "A4", "A5", "B4", "B5", "SRA3", "Letter", "Legal", "11x17", "Ledger"],
+      "paperWeights": "52-300 g/m²"
+    },
+    "memory": "4 GB RAM + 320 GB HDD",
+    "processor": "Quad-core 1.5 GHz",
+    "connectivity": ["Ethernet (10/100/1000)", "USB 3.0", "Wi-Fi (optional)"],
+    "networkProtocols": ["TCP/IP", "IPv4", "IPv6", "SMB", "FTP", "SNMP", "IPP", "LPD"],
+    "dimensions": {
+      "width": 587,
+      "depth": 685,
+      "height": 1103,
+      "weight": 130,
+      "unit": "mm",
+      "weightUnit": "kg"
+    },
+    "powerConsumption": {
+      "operating": "1.6 kW",
+      "standby": "78 watts",
+      "sleep": "0.8 watts"
+    }
+  },
+  "sales": {
+    "msrp": 12995,
+    "currency": "USD",
+    "streetPrice": 10500,
+    "targetMarket": ["Mid-size Workgroups", "Departments", "Corporate Offices", "Education"],
+    "sellingPoints": [
+      "Fast 45 PPM color and monochrome",
+      "10.1-inch Smart Operation Panel",
+      "Always Current Technology for updates",
+      "Advanced security with encryption",
+      "Flexible finishing options available"
+    ],
+    "competitiveAdvantages": [
+      "Ricoh's intelligent MFP platform",
+      "Always Current Technology keeps device updated",
+      "Exceptional uptime and reliability",
+      "Strong security framework",
+      "Cloud-ready with modern workflow integration"
+    ],
+    "idealFor": [
+      "Departments needing color capability",
+      "Corporate offices with security needs",
+      "Organizations seeking digital transformation",
+      "Businesses requiring cloud integration",
+      "Educational institutions"
+    ]
+  },
+  "costs": {
+    "consumables": {
+      "tonerCartridges": {
+        "black": {
+          "partNumber": "842315",
+          "yield": 31000,
+          "cost": 175
+        },
+        "cyan": {
+          "partNumber": "842316",
+          "yield": 28000,
+          "cost": 245
+        },
+        "magenta": {
+          "partNumber": "842317",
+          "yield": 28000,
+          "cost": 245
+        },
+        "yellow": {
+          "partNumber": "842318",
+          "yield": 28000,
+          "cost": 245
+        }
+      },
+      "wasteContainer": {
+        "partNumber": "D2426405",
+        "yield": 50000,
+        "cost": 55
+      }
+    },
+    "costPerPage": {
+      "mono": 0.0056,
+      "color": 0.075
+    }
+  },
+  "setup": {
+    "unboxing": [
+      "Professional installation recommended",
+      "Remove all packing materials",
+      "Remove protective tape and locks",
+      "Install all four toner bottles",
+      "Load paper in cassettes",
+      "Connect power cable"
+    ],
+    "initialSetup": [
+      "Power on",
+      "Select language on 10.1-inch panel",
+      "Configure date, time, zone",
+      "Set administrator password",
+      "Configure network",
+      "Register device",
+      "Run color calibration"
+    ],
+    "networkSetup": {
+      "ethernet": [
+        "Connect Gigabit Ethernet cable",
+        "Panel: Settings > Device Settings > Network",
+        "Select IPv4 or IPv6",
+        "Choose DHCP or Manual",
+        "Configure IP if manual",
+        "Print network status",
+        "Access web interface at http://[ip]"
+      ],
+      "wifi": [
+        "Requires optional wireless module",
+        "Professional installation",
+        "Settings > Network > Wireless LAN",
+        "Select infrastructure mode",
+        "Choose SSID",
+        "Enter password",
+        "Verify connection"
+      ]
+    },
+    "webInterface": {
+      "accessUrl": "https://[printer-ip]",
+      "defaultCredentials": {
+        "username": "admin",
+        "password": "admin or blank (device-specific)"
+      },
+      "certificateWarning": "Self-signed certificate warning will appear - this is normal for Ricoh devices",
+      "accessSteps": [
+        "Print network configuration page to get IP address",
+        "Open web browser and navigate to https://[printer-ip]",
+        "Accept self-signed certificate warning",
+        "Log in with admin credentials (default: admin/admin or blank)",
+        "Access all configuration, monitoring, and management features"
+      ]
+    },
+    "driverInstallation": {
+      "windows10": "Download Ricoh IM C4510 PCL6 driver from ricoh.com. Run installer and select network printer. Enter IP address when prompted. Install full package for all features including Smart Operation Panel.",
+      "windows11": "Same as Windows 10. Ricoh IM C drivers are fully compatible with Windows 11. Use PCL6 driver for best performance and feature support.",
+      "mac": "Download macOS driver from Ricoh support site. Open System Preferences > Printers & Scanners. Click + to add printer. Select IP tab, enter printer IP. Use Ricoh PPD for full feature support including finishing options.",
+      "linux": "Download Ricoh PostScript PPD file from support site. Configure via CUPS web interface (localhost:631). Add printer using IPP protocol (ipp://[printer-ip]/ipp/print). Select Ricoh IM C4510 PPD. Basic printing and scanning supported.",
+      "driverDownloads": {
+        "windows": "https://www.ricoh-usa.com/en/support-and-download/product/im-c4510",
+        "mac": "https://www.ricoh-usa.com/en/support-and-download/product/im-c4510",
+        "linux": "https://www.ricoh-usa.com/en/support-and-download/product/im-c4510",
+        "universal": "https://www.ricoh-usa.com/en/products/pd/printers/universal-printer-driver"
+      }
+    },
+    "backupRestore": {
+      "systemBackup": {
+        "procedure": [
+          "Access web interface at https://[printer-ip]",
+          "Log in as administrator",
+          "Navigate to Configuration > Import/Export",
+          "Select 'Backup Device Settings'",
+          "Choose backup items (all settings, address book, user codes, etc.)",
+          "Click 'Export' to download backup file",
+          "Save .dat or .zip file securely with date in filename"
+        ],
+        "fileFormat": ".dat or .zip",
+        "location": "Downloads to local computer - store securely with version/date"
+      },
+      "systemRestore": {
+        "procedure": [
+          "Access web interface at https://[printer-ip]",
+          "Log in as administrator",
+          "Navigate to Configuration > Import/Export",
+          "Select 'Restore Device Settings'",
+          "Click 'Browse' and select previously saved backup file",
+          "Review settings to be restored",
+          "Click 'Import' to begin restoration",
+          "Device will reboot automatically (3-5 minutes)",
+          "Verify settings after reboot"
+        ],
+        "prerequisites": [
+          "Backup file must be from same model or compatible model",
+          "Firmware version should match or be newer",
+          "Administrator password required",
+          "No active print jobs should be running"
+        ]
+      },
+      "addressBookBackup": {
+        "procedure": [
+          "Access web interface at https://[printer-ip]",
+          "Navigate to Address Book > Export",
+          "Select format (CSV or LDIF)",
+          "Choose which address books to export (personal, shared)",
+          "Click 'Export' to download",
+          "Save file with descriptive name (e.g., AddressBook_2024-11.csv)"
+        ],
+        "fileFormat": "CSV or LDIF",
+        "location": "Downloads to local computer"
+      },
+      "addressBookRestore": {
+        "procedure": [
+          "Access web interface",
+          "Navigate to Address Book > Import",
+          "Select file format (CSV or LDIF)",
+          "Click 'Browse' and select address book file",
+          "Choose import options (merge or replace)",
+          "Map fields if using CSV",
+          "Click 'Import' to complete",
+          "Verify entries in address book"
+        ],
+        "prerequisites": [
+          "File must be in supported format (CSV or LDIF)",
+          "CSV must have correct column headers",
+          "Administrator or address book manager permissions required"
+        ]
+      }
+    },
+    "scanDestinations": {
+      "scanToEmail": {
+        "requirements": [
+          "SMTP server address and port",
+          "Authentication credentials (if required)",
+          "Sender email address",
+          "Network connectivity to mail server"
+        ],
+        "smtpConfiguration": [
+          "Access web interface > Configuration > Email",
+          "Enter SMTP Server Address (e.g., smtp.office365.com)",
+          "Set SMTP Port (25, 587, or 465 for SSL)",
+          "Enable 'SMTP Authentication' if required",
+          "Enter SMTP username and password",
+          "Set 'Administrator Email Address' (shown as sender)",
+          "Configure 'Maximum Email Size' if needed",
+          "Click 'Apply' to save settings"
+        ],
+        "authenticationSetup": [
+          "For Office 365: Use smtp.office365.com, Port 587, TLS",
+          "For Gmail: Use smtp.gmail.com, Port 587, enable app password",
+          "For on-premise Exchange: Use internal SMTP server address",
+          "Enable 'Use TLS' for secure connections",
+          "Test email delivery from web interface"
+        ],
+        "testProcedure": [
+          "Go to web interface > Configuration > Email",
+          "Click 'Send Test Email'",
+          "Enter test recipient address",
+          "Check inbox for test message",
+          "If failed, check SMTP logs in Device > Log > Email Log"
+        ]
+      },
+      "scanToFolder": {
+        "requirements": [
+          "Network folder with write permissions",
+          "SMB or FTP server access",
+          "Valid credentials for folder access",
+          "UNC path (for SMB) or FTP URL"
+        ],
+        "smbConfiguration": [
+          "Access web interface > Configuration > Scan to Folder",
+          "Create new destination or edit existing",
+          "Enter destination name (appears on panel)",
+          "Set protocol to 'SMB'",
+          "Enter path: \\\\server\\share\\folder",
+          "Enter username and password (domain\\username for AD)",
+          "Set file name format (prefix, suffix, date/time stamps)",
+          "Choose default file format (PDF, TIFF, JPEG)",
+          "Test connection before saving"
+        ],
+        "ftpConfiguration": [
+          "Access web interface > Configuration > Scan to Folder",
+          "Create new destination",
+          "Set protocol to 'FTP'",
+          "Enter FTP server address (ftp://server.domain.com)",
+          "Enter port (default 21)",
+          "Enter FTP username and password",
+          "Set remote directory path",
+          "Configure passive mode if required",
+          "Test FTP connection"
+        ],
+        "authenticationSetup": [
+          "For Active Directory: Use domain\\username format",
+          "For local Windows accounts: Use computername\\username",
+          "Ensure account has write permissions to destination folder",
+          "For SMB: Share and NTFS permissions must both allow write",
+          "Test access from another computer first to verify permissions"
+        ],
+        "testProcedure": [
+          "Click 'Test Connection' in destination settings",
+          "Verify 'Connection Successful' message",
+          "Perform test scan from control panel",
+          "Check destination folder for scanned file",
+          "Verify file opens correctly"
+        ]
+      },
+      "scanToUsb": {
+        "requirements": [
+          "USB flash drive (FAT32 or exFAT format recommended)",
+          "USB port on front of device",
+          "Sufficient free space on drive"
+        ],
+        "procedure": [
+          "Format USB drive as FAT32 or exFAT for best compatibility",
+          "Insert USB drive into front USB port",
+          "Device will display 'USB Memory Detected'",
+          "On control panel, select Scan > Scan to USB",
+          "Choose scan settings (color/BW, resolution, file format)",
+          "Select single-sided or double-sided",
+          "Press Start to begin scanning",
+          "Files saved with date/time stamp",
+          "Wait for 'Save Complete' message before removing drive"
+        ],
+        "supportedFormats": [
+          "PDF (single or multi-page)",
+          "TIFF (single or multi-page)",
+          "JPEG (single page)",
+          "PDF/A for archival",
+          "Compact PDF for smaller file size"
+        ]
+      }
+    },
+    "configPages": {
+      "meterPage": "Panel: Counter. Shows total pages and color breakdown.",
+      "configPage": "Settings > List/Test Print > Configuration Page",
+      "networkConfigPage": "Settings > List/Test Print > Network Configuration",
+      "webInterface": "Access at https://[device-ip]. Configure all settings, monitor status, manage users."
+    },
+    "commonIssues": [
+      "Configure scan destinations via web interface",
+      "Set up LDAP for address book",
+      "Enable user authentication",
+      "Configure email settings for scan-to-email",
+      "Update firmware via Always Current Technology",
+      "Enable encryption for document security",
+      "Set up cloud connectors if needed"
+    ]
+  },
+  "troubleshooting": {
+    "commonErrors": [
+      {
+        "code": "SC Error",
+        "description": "Service call error",
+        "severity": "critical",
+        "causes": [
+          "Component failure"
+        ],
+        "solutions": [
+          "Note complete error code",
+          "Power off",
+          "Wait 60 seconds",
+          "Power on",
+          "Contact Ricoh service"
+        ]
+      },
+      {
+        "code": "Paper Misfeed",
+        "description": "Paper jam",
+        "severity": "warning",
+        "causes": [
+          "Incorrect loading",
+          "Worn rollers",
+          "Paper quality"
+        ],
+        "solutions": [
+          "Follow panel instructions",
+          "Open indicated area",
+          "Remove jammed paper",
+          "Check paper settings",
+          "Clean rollers if recurring"
+        ]
+      }
+    ],
+    "paperJams": [
+      {
+        "location": "Paper Cassette",
+        "accessInstructions": [
+          "Pull cassette out"
+        ],
+        "clearanceSteps": [
+          "Remove all paper",
+          "Check for jams",
+          "Remove torn pieces",
+          "Reload properly",
+          "Reinsert cassette"
+        ],
+        "prevention": [
+          "Use 52-300 g/m² paper",
+          "Don't overfill",
+          "Adjust guides",
+          "Store properly"
+        ]
+      },
+      {
+        "location": "Duplex Unit",
+        "accessInstructions": [
+          "Open right door"
+        ],
+        "clearanceSteps": [
+          "Pull duplex release",
+          "Remove paper",
+          "Close unit",
+          "Close door"
+        ],
+        "prevention": [
+          "Use appropriate weight",
+          "Avoid curled paper"
+        ]
+      }
+    ],
+    "qualityIssues": [
+      {
+        "issue": "Color inconsistency",
+        "symptoms": ["Wrong colors", "Color drift"],
+        "causes": ["Calibration needed", "Drum wear"],
+        "solutions": [
+          "Run auto calibration",
+          "Clean drums",
+          "Check toner levels",
+          "Replace worn drums"
+        ]
+      },
+      {
+        "issue": "Banding or streaking",
+        "symptoms": ["Horizontal bands", "Vertical streaks"],
+        "causes": ["Dirty transfer belt", "Drum contamination"],
+        "solutions": [
+          "Run cleaning mode",
+          "Print solid colors",
+          "Clean transfer belt",
+          "Replace worn components"
+        ]
+      }
+    ],
+    "networkIssues": [
+      {
+        "issue": "Cannot access web interface",
+        "symptoms": ["Timeout", "Cannot login"],
+        "diagnosticSteps": [
+          "Print network status",
+          "Check cable",
+          "Verify IP"
+        ],
+        "solutions": [
+          "Verify IP address",
+          "Check Ethernet connection",
+          "Try HTTPS",
+          "Check firewall"
+        ]
+      }
+    ],
+    "generalMaintenance": [
+      {
+        "task": "Replace toner bottles",
+        "frequency": "28K-31K pages per color",
+        "procedure": [
+          "Open front cover",
+          "Remove empty bottle",
+          "Install new toner",
+          "Close cover"
+        ],
+        "partsNeeded": ["842315/316/317/318"]
+      },
+      {
+        "task": "Replace waste container",
+        "frequency": "50,000 pages",
+        "procedure": [
+          "Open front cover",
+          "Remove waste container",
+          "Install new container",
+          "Close cover"
+        ],
+        "partsNeeded": ["D2426405"]
+      }
+    ]
+  },
+  "firmware": {
+    "latest": "1.22",
+    "releaseDate": "2024-09-01",
+    "updateProcedure": "Always Current Technology provides automatic updates. Manual: Access web interface > Configuration > Firmware. Upload from ricoh.com. Device reboots (15 min)."
+  },
+  "warranty": {
+    "standard": "1 year limited warranty",
+    "extendedOptions": [
+      "Ricoh 2-year extended warranty",
+      "Ricoh 3-year comprehensive",
+      "Service agreements with guaranteed response"
+    ]
+  },
+  "certifications": ["ENERGY STAR", "EPEAT Gold", "Blue Angel"],
+  "releaseDate": "2021-11"
+}

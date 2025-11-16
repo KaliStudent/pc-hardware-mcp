@@ -1,0 +1,378 @@
+{
+  "id": "konica-4050i",
+  "manufacturer": "Konica Minolta",
+  "model": "bizhub 4050i",
+  "series": "bizhub",
+  "formFactor": "workgroup",
+  "type": "laser",
+  "color": false,
+  "functions": ["print", "copy", "scan"],
+  "specifications": {
+    "printSpeed": {
+      "mono": 40,
+      "color": 0
+    },
+    "printResolution": {
+      "max": "1200x1200 dpi"
+    },
+    "firstPageOut": {
+      "mono": 5.5,
+      "color": 0
+    },
+    "duty": {
+      "monthly": 150000,
+      "recommended": 10000
+    },
+    "paperHandling": {
+      "inputCapacity": 600,
+      "outputCapacity": 250,
+      "maxInputCapacity": 2600,
+      "duplexing": "standard",
+      "paperSizes": ["A4", "A5", "B5", "Letter", "Legal"],
+      "paperWeights": "60-220 g/m²"
+    },
+    "memory": "2 GB RAM",
+    "processor": "1.5 GHz",
+    "connectivity": ["Ethernet (10/100/1000)", "USB 2.0", "Wi-Fi (optional)"],
+    "networkProtocols": ["TCP/IP", "IPv4", "IPv6", "SMB", "FTP", "SNMP", "IPP"],
+    "dimensions": {
+      "width": 460,
+      "depth": 535,
+      "height": 560,
+      "weight": 32,
+      "unit": "mm",
+      "weightUnit": "kg"
+    },
+    "powerConsumption": {
+      "operating": "750 watts",
+      "standby": "50 watts",
+      "sleep": "0.5 watts"
+    }
+  },
+  "sales": {
+    "msrp": 1899,
+    "currency": "USD",
+    "streetPrice": 1350,
+    "targetMarket": ["Small Workgroups", "Branch Offices", "SMB"],
+    "sellingPoints": [
+      "Fast 40 PPM monochrome printing",
+      "Compact footprint for small offices",
+      "Standard duplex and network connectivity",
+      "7-inch tablet-like touch panel",
+      "Low cost per page"
+    ],
+    "competitiveAdvantages": [
+      "Easy mobile printing support",
+      "Bizhub SECURE Platinum security",
+      "Low energy consumption",
+      "Reliable Konica Minolta technology",
+      "Simple operation and maintenance"
+    ],
+    "idealFor": [
+      "Small to medium workgroups",
+      "Branch offices needing reliable monochrome printing",
+      "Businesses seeking low TCO",
+      "Organizations requiring secure document handling"
+    ]
+  },
+  "costs": {
+    "consumables": {
+      "tonerCartridges": {
+        "black": {
+          "partNumber": "TN324K",
+          "yield": 28000,
+          "cost": 125
+        }
+      },
+      "drums": {
+        "black": {
+          "partNumber": "DR324K",
+          "yield": 100000,
+          "cost": 180
+        }
+      },
+      "wasteContainer": {
+        "partNumber": "WB-512",
+        "yield": 40000,
+        "cost": 35
+      }
+    },
+    "costPerPage": {
+      "mono": 0.0045,
+      "color": 0
+    }
+  },
+  "setup": {
+    "unboxing": [
+      "Remove all external packing materials",
+      "Remove orange protective tape and locks",
+      "Install toner cartridge",
+      "Load paper in standard tray",
+      "Connect power cable"
+    ],
+    "initialSetup": [
+      "Power on using main power switch",
+      "Select language on 7-inch touch panel",
+      "Configure date, time, and time zone",
+      "Set administrator password",
+      "Configure network settings",
+      "Print test page"
+    ],
+    "networkSetup": {
+      "ethernet": [
+        "Connect RJ-45 Ethernet cable to port on rear",
+        "Touch screen: Settings > Network Settings > TCP/IP Settings",
+        "Select Auto (DHCP) or Manual (Static IP)",
+        "Configure IPv4 address, subnet mask, gateway",
+        "Set DNS servers if using manual configuration",
+        "Print network status page to verify",
+        "Access Web Connection at http://[device-ip]"
+      ],
+      "wifi": [
+        "Requires optional Wireless LAN Unit (OT-115)",
+        "Install wireless module in designated slot",
+        "Settings > Network Settings > Wireless LAN",
+        "Select Infrastructure Mode",
+        "Choose SSID and enter WPA2 password",
+        "Confirm connection and test"
+      ]
+    },
+    "driverInstallation": {
+      "windows": "Download Konica Minolta bizhub 4050i PCL/PS driver from support website. Run installer and select network search or enter IP address manually. Configure print settings and test page.",
+      "mac": "Download macOS driver from Konica Minolta support. Install PKG file and add printer via System Preferences > Printers & Scanners. Device supports AirPrint for driver-free printing.",
+      "linux": "Download Linux PPD and driver package from support site. Install via CUPS web interface (localhost:631). Configure using device IP address."
+    },
+    "configPages": {
+      "meterPage": "Touch screen: Counter > Print Counter List. Shows total impressions, prints, copies, scans.",
+      "configPage": "Touch screen: Utility > Administrator Settings > Machine Settings > Print Reports > Configuration Page",
+      "networkConfigPage": "Utility > Administrator Settings > Network Settings > Print Network Configuration",
+      "webInterface": "Access Web Connection by entering device IP in browser (http://192.168.1.100). Default admin login required. Provides full device management, user settings, and monitoring."
+    },
+    "commonIssues": [
+      "Configure scan destinations via Web Connection > Maintenance > Import/Export",
+      "Set up LDAP for corporate address book integration",
+      "Enable user authentication if department tracking needed",
+      "Update firmware via Web Connection for latest features",
+      "Configure bizhub SECURE for enhanced security compliance"
+    ]
+  },
+  "troubleshooting": {
+    "commonErrors": [
+      {
+        "code": "C2558",
+        "description": "Polygon motor error",
+        "severity": "critical",
+        "causes": [
+          "Polygon motor failure",
+          "Laser unit malfunction",
+          "Main controller communication error"
+        ],
+        "solutions": [
+          "Power off device completely",
+          "Wait 30 seconds",
+          "Power back on",
+          "If error persists, contact Konica Minolta service",
+          "May require laser unit replacement by technician"
+        ]
+      },
+      {
+        "code": "C0640",
+        "description": "Fixing unit error",
+        "severity": "critical",
+        "causes": [
+          "Fusing unit temperature sensor failure",
+          "Fixing unit at end of life",
+          "Thermistor malfunction"
+        ],
+        "solutions": [
+          "Power off and wait 20 minutes for cooling",
+          "Power back on",
+          "Check fixing unit page count",
+          "Replace fixing unit if at rated life",
+          "Contact service if error persists"
+        ]
+      },
+      {
+        "code": "Paper Misfeed",
+        "description": "Paper jam detected",
+        "severity": "warning",
+        "causes": [
+          "Paper loaded incorrectly",
+          "Damaged or humid paper",
+          "Feed rollers worn",
+          "Foreign object in path"
+        ],
+        "solutions": [
+          "Follow touch screen instructions for jam location",
+          "Open indicated cover",
+          "Remove all jammed sheets carefully",
+          "Check paper quality and reload properly",
+          "Clean feed rollers if jams recurring",
+          "Replace pickup roller assembly if needed"
+        ]
+      }
+    ],
+    "paperJams": [
+      {
+        "location": "Paper Tray",
+        "accessInstructions": [
+          "Identify which tray from touch screen",
+          "Pull tray completely out"
+        ],
+        "clearanceSteps": [
+          "Remove all paper from tray",
+          "Check for damaged sheets",
+          "Remove jammed paper from feed area",
+          "Inspect pickup rollers for wear",
+          "Reload paper with guides snug",
+          "Reinsert tray fully"
+        ],
+        "prevention": [
+          "Use 60-220 g/m² paper only",
+          "Fan paper before loading",
+          "Don't mix paper types/weights",
+          "Store in controlled environment",
+          "Replace rollers at recommended intervals"
+        ]
+      },
+      {
+        "location": "Duplex Unit",
+        "accessInstructions": [
+          "Open rear door",
+          "Pull duplex unit release lever"
+        ],
+        "clearanceSteps": [
+          "Gently pull duplex unit out",
+          "Remove jammed paper carefully",
+          "Check for torn pieces",
+          "Push duplex unit back until it clicks",
+          "Close rear door"
+        ],
+        "prevention": [
+          "Use appropriate paper weight for duplex",
+          "Avoid very thin or thick paper in duplex mode",
+          "Keep duplex rollers clean"
+        ]
+      }
+    ],
+    "qualityIssues": [
+      {
+        "issue": "Streaking or lines on prints",
+        "symptoms": ["Vertical black lines", "Repetitive marks"],
+        "causes": ["Dirty drum", "Toner contamination", "Damaged drum"],
+        "solutions": [
+          "Run cleaning mode: Utility > Cleaning Mode",
+          "Inspect drum for visible damage",
+          "Clean charging wire",
+          "Replace toner if defective",
+          "Replace drum if damaged or at end of life"
+        ]
+      },
+      {
+        "issue": "Light or faded prints",
+        "symptoms": ["Washed out appearance", "Uneven density"],
+        "causes": ["Low toner", "Eco mode enabled", "Drum near end of life"],
+        "solutions": [
+          "Check toner level and replace if low",
+          "Disable Eco/Toner Save mode if enabled",
+          "Run density adjustment: Utility > Adjustment > Density",
+          "Clean drum and charging wire",
+          "Replace drum if near rated life"
+        ]
+      }
+    ],
+    "networkIssues": [
+      {
+        "issue": "Cannot connect to network",
+        "symptoms": ["No IP address", "Network unreachable"],
+        "diagnosticSteps": [
+          "Print network status page",
+          "Check cable connection",
+          "Verify switch port is active",
+          "Test with different cable"
+        ],
+        "solutions": [
+          "Verify Ethernet cable is securely connected",
+          "Check network port LED indicators",
+          "Try different port on network switch",
+          "Reset network settings and reconfigure",
+          "Enable DHCP or configure static IP correctly",
+          "Contact network administrator if firewall blocking"
+        ]
+      },
+      {
+        "issue": "Scan to email not working",
+        "symptoms": ["Email not sending", "SMTP error"],
+        "diagnosticSteps": [
+          "Test email server from PC",
+          "Verify SMTP settings",
+          "Check firewall rules"
+        ],
+        "solutions": [
+          "Configure SMTP server address correctly",
+          "Use correct SMTP port (25, 465, or 587)",
+          "Enable SMTP authentication if required",
+          "Configure sender email address",
+          "Test with simple email first",
+          "Check email server allows relay from printer IP"
+        ]
+      }
+    ],
+    "generalMaintenance": [
+      {
+        "task": "Replace toner cartridge",
+        "frequency": "28,000 pages",
+        "procedure": [
+          "Open front door",
+          "Pull out depleted toner cartridge",
+          "Shake new cartridge 10-15 times",
+          "Remove protective seal",
+          "Insert until it clicks",
+          "Close door"
+        ],
+        "partsNeeded": ["TN324K"]
+      },
+      {
+        "task": "Replace drum unit",
+        "frequency": "100,000 pages",
+        "procedure": [
+          "Open front door",
+          "Remove toner cartridge",
+          "Release drum unit locks",
+          "Pull out old drum",
+          "Install new drum unit",
+          "Reinstall toner cartridge",
+          "Reset drum counter via Utility menu",
+          "Close door"
+        ],
+        "partsNeeded": ["DR324K"]
+      },
+      {
+        "task": "Replace waste toner box",
+        "frequency": "Every 40,000 pages",
+        "procedure": [
+          "Open front door",
+          "Pull out waste toner box",
+          "Insert new box until it clicks",
+          "Close door - counter resets automatically"
+        ],
+        "partsNeeded": ["WB-512"]
+      }
+    ]
+  },
+  "firmware": {
+    "latest": "A2X10Y00-0100-G00-10",
+    "releaseDate": "2024-08-15",
+    "updateProcedure": "Access Web Connection > Maintenance > Firmware Update. Upload firmware file from Konica Minolta support site. Requires administrator credentials. Do not power off during update."
+  },
+  "warranty": {
+    "standard": "1 year onsite warranty",
+    "extendedOptions": [
+      "2-year extended warranty",
+      "3-year total coverage with priority response",
+      "Konica Minolta Optimized Print Services (OPS) with full coverage"
+    ]
+  },
+  "certifications": ["ENERGY STAR", "EPEAT Silver", "Blue Angel"],
+  "releaseDate": "2020-06"
+}
