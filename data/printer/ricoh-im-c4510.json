@@ -1,0 +1,326 @@
+{
+  "id": "ricoh-im-c4510",
+  "manufacturer": "Ricoh",
+  "model": "IM C4510",
+  "series": "IM C",
+  "formFactor": "departmental",
+  "type": "laser",
+  "color": true,
+  "functions": ["print", "copy", "scan", "fax"],
+  "specifications": {
+    "printSpeed": {
+      "mono": 45,
+      "color": 45
+    },
+    "printResolution": {
+      "max": "1200x1200 dpi"
+    },
+    "firstPageOut": {
+      "mono": 5.2,
+      "color": 6.4
+    },
+    "duty": {
+      "monthly": 200000,
+      "recommended": 30000
+    },
+    "paperHandling": {
+      "inputCapacity": 1150,
+      "outputCapacity": 500,
+      "maxInputCapacity": 4150,
+      "duplexing": "standard",
+      "paperSizes": ["A3", "A4", "A5", "B4", "B5", "SRA3", "Letter", "Legal", "11x17", "Ledger"],
+      "paperWeights": "52-300 g/m²"
+    },
+    "memory": "4 GB RAM + 320 GB HDD",
+    "processor": "Quad-core 1.5 GHz",
+    "connectivity": ["Ethernet (10/100/1000)", "USB 3.0", "Wi-Fi (optional)"],
+    "networkProtocols": ["TCP/IP", "IPv4", "IPv6", "SMB", "FTP", "SNMP", "IPP", "LPD"],
+    "dimensions": {
+      "width": 587,
+      "depth": 685,
+      "height": 1103,
+      "weight": 130,
+      "unit": "mm",
+      "weightUnit": "kg"
+    },
+    "powerConsumption": {
+      "operating": "1.6 kW",
+      "standby": "78 watts",
+      "sleep": "0.8 watts"
+    }
+  },
+  "sales": {
+    "msrp": 12995,
+    "currency": "USD",
+    "streetPrice": 10500,
+    "targetMarket": ["Mid-size Workgroups", "Departments", "Corporate Offices", "Education"],
+    "sellingPoints": [
+      "Fast 45 PPM color and monochrome",
+      "10.1-inch Smart Operation Panel",
+      "Always Current Technology for updates",
+      "Advanced security with encryption",
+      "Flexible finishing options available"
+    ],
+    "competitiveAdvantages": [
+      "Ricoh's intelligent MFP platform",
+      "Always Current Technology keeps device updated",
+      "Exceptional uptime and reliability",
+      "Strong security framework",
+      "Cloud-ready with modern workflow integration"
+    ],
+    "idealFor": [
+      "Departments needing color capability",
+      "Corporate offices with security needs",
+      "Organizations seeking digital transformation",
+      "Businesses requiring cloud integration",
+      "Educational institutions"
+    ]
+  },
+  "costs": {
+    "consumables": {
+      "tonerCartridges": {
+        "black": {
+          "partNumber": "842315",
+          "yield": 31000,
+          "cost": 175
+        },
+        "cyan": {
+          "partNumber": "842316",
+          "yield": 28000,
+          "cost": 245
+        },
+        "magenta": {
+          "partNumber": "842317",
+          "yield": 28000,
+          "cost": 245
+        },
+        "yellow": {
+          "partNumber": "842318",
+          "yield": 28000,
+          "cost": 245
+        }
+      },
+      "wasteContainer": {
+        "partNumber": "D2426405",
+        "yield": 50000,
+        "cost": 55
+      }
+    },
+    "costPerPage": {
+      "mono": 0.0056,
+      "color": 0.075
+    }
+  },
+  "setup": {
+    "unboxing": [
+      "Professional installation recommended",
+      "Remove all packing materials",
+      "Remove protective tape and locks",
+      "Install all four toner bottles",
+      "Load paper in cassettes",
+      "Connect power cable"
+    ],
+    "initialSetup": [
+      "Power on",
+      "Select language on 10.1-inch panel",
+      "Configure date, time, zone",
+      "Set administrator password",
+      "Configure network",
+      "Register device",
+      "Run color calibration"
+    ],
+    "networkSetup": {
+      "ethernet": [
+        "Connect Gigabit Ethernet cable",
+        "Panel: Settings > Device Settings > Network",
+        "Select IPv4 or IPv6",
+        "Choose DHCP or Manual",
+        "Configure IP if manual",
+        "Print network status",
+        "Access web interface at http://[ip]"
+      ],
+      "wifi": [
+        "Requires optional wireless module",
+        "Professional installation",
+        "Settings > Network > Wireless LAN",
+        "Select infrastructure mode",
+        "Choose SSID",
+        "Enter password",
+        "Verify connection"
+      ]
+    },
+    "driverInstallation": {
+      "windows": "Download Ricoh IM C4510 PCL6 driver from ricoh.com. Run installer and select network. Install full package for all features.",
+      "mac": "Download macOS driver from Ricoh. Add via System Preferences. Use Ricoh PPD for full features.",
+      "linux": "Download PPD from Ricoh. Configure via CUPS using device IP."
+    },
+    "configPages": {
+      "meterPage": "Panel: Counter. Shows total pages and color breakdown.",
+      "configPage": "Settings > List/Test Print > Configuration Page",
+      "networkConfigPage": "Settings > List/Test Print > Network Configuration",
+      "webInterface": "Access at https://[device-ip]. Configure all settings, monitor status, manage users."
+    },
+    "commonIssues": [
+      "Configure scan destinations via web interface",
+      "Set up LDAP for address book",
+      "Enable user authentication",
+      "Configure email settings for scan-to-email",
+      "Update firmware via Always Current Technology",
+      "Enable encryption for document security",
+      "Set up cloud connectors if needed"
+    ]
+  },
+  "troubleshooting": {
+    "commonErrors": [
+      {
+        "code": "SC Error",
+        "description": "Service call error",
+        "severity": "critical",
+        "causes": [
+          "Component failure"
+        ],
+        "solutions": [
+          "Note complete error code",
+          "Power off",
+          "Wait 60 seconds",
+          "Power on",
+          "Contact Ricoh service"
+        ]
+      },
+      {
+        "code": "Paper Misfeed",
+        "description": "Paper jam",
+        "severity": "warning",
+        "causes": [
+          "Incorrect loading",
+          "Worn rollers",
+          "Paper quality"
+        ],
+        "solutions": [
+          "Follow panel instructions",
+          "Open indicated area",
+          "Remove jammed paper",
+          "Check paper settings",
+          "Clean rollers if recurring"
+        ]
+      }
+    ],
+    "paperJams": [
+      {
+        "location": "Paper Cassette",
+        "accessInstructions": [
+          "Pull cassette out"
+        ],
+        "clearanceSteps": [
+          "Remove all paper",
+          "Check for jams",
+          "Remove torn pieces",
+          "Reload properly",
+          "Reinsert cassette"
+        ],
+        "prevention": [
+          "Use 52-300 g/m² paper",
+          "Don't overfill",
+          "Adjust guides",
+          "Store properly"
+        ]
+      },
+      {
+        "location": "Duplex Unit",
+        "accessInstructions": [
+          "Open right door"
+        ],
+        "clearanceSteps": [
+          "Pull duplex release",
+          "Remove paper",
+          "Close unit",
+          "Close door"
+        ],
+        "prevention": [
+          "Use appropriate weight",
+          "Avoid curled paper"
+        ]
+      }
+    ],
+    "qualityIssues": [
+      {
+        "issue": "Color inconsistency",
+        "symptoms": ["Wrong colors", "Color drift"],
+        "causes": ["Calibration needed", "Drum wear"],
+        "solutions": [
+          "Run auto calibration",
+          "Clean drums",
+          "Check toner levels",
+          "Replace worn drums"
+        ]
+      },
+      {
+        "issue": "Banding or streaking",
+        "symptoms": ["Horizontal bands", "Vertical streaks"],
+        "causes": ["Dirty transfer belt", "Drum contamination"],
+        "solutions": [
+          "Run cleaning mode",
+          "Print solid colors",
+          "Clean transfer belt",
+          "Replace worn components"
+        ]
+      }
+    ],
+    "networkIssues": [
+      {
+        "issue": "Cannot access web interface",
+        "symptoms": ["Timeout", "Cannot login"],
+        "diagnosticSteps": [
+          "Print network status",
+          "Check cable",
+          "Verify IP"
+        ],
+        "solutions": [
+          "Verify IP address",
+          "Check Ethernet connection",
+          "Try HTTPS",
+          "Check firewall"
+        ]
+      }
+    ],
+    "generalMaintenance": [
+      {
+        "task": "Replace toner bottles",
+        "frequency": "28K-31K pages per color",
+        "procedure": [
+          "Open front cover",
+          "Remove empty bottle",
+          "Install new toner",
+          "Close cover"
+        ],
+        "partsNeeded": ["842315/316/317/318"]
+      },
+      {
+        "task": "Replace waste container",
+        "frequency": "50,000 pages",
+        "procedure": [
+          "Open front cover",
+          "Remove waste container",
+          "Install new container",
+          "Close cover"
+        ],
+        "partsNeeded": ["D2426405"]
+      }
+    ]
+  },
+  "firmware": {
+    "latest": "1.22",
+    "releaseDate": "2024-09-01",
+    "updateProcedure": "Always Current Technology provides automatic updates. Manual: Access web interface > Configuration > Firmware. Upload from ricoh.com. Device reboots (15 min)."
+  },
+  "warranty": {
+    "standard": "1 year limited warranty",
+    "extendedOptions": [
+      "Ricoh 2-year extended warranty",
+      "Ricoh 3-year comprehensive",
+      "Service agreements with guaranteed response"
+    ]
+  },
+  "certifications": ["ENERGY STAR", "EPEAT Gold", "Blue Angel"],
+  "releaseDate": "2021-11"
+}

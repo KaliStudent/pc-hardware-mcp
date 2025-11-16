@@ -1,0 +1,400 @@
+{
+  "id": "konica-c360i",
+  "manufacturer": "Konica Minolta",
+  "model": "bizhub C360i",
+  "series": "bizhub",
+  "formFactor": "departmental",
+  "type": "laser",
+  "color": true,
+  "functions": ["print", "copy", "scan", "fax"],
+  "specifications": {
+    "printSpeed": {
+      "mono": 36,
+      "color": 36
+    },
+    "printResolution": {
+      "max": "1800x600 dpi (equivalent)",
+      "enhanced": "1200x1200 dpi"
+    },
+    "firstPageOut": {
+      "mono": 5.8,
+      "color": 6.5
+    },
+    "duty": {
+      "monthly": 275000,
+      "recommended": 20000
+    },
+    "paperHandling": {
+      "inputCapacity": 1150,
+      "outputCapacity": 500,
+      "maxInputCapacity": 6650,
+      "duplexing": "standard",
+      "paperSizes": ["A3", "A4", "A5", "B5", "Letter", "Legal", "11x17", "Ledger"],
+      "paperWeights": "52-300 g/m²"
+    },
+    "memory": "8 GB RAM + 256 GB SSD",
+    "processor": "Quad-core 1.5 GHz",
+    "connectivity": ["Ethernet (10/100/1000)", "USB 2.0", "Wi-Fi (optional)"],
+    "networkProtocols": ["TCP/IP", "IPv4", "IPv6", "SMB", "FTP", "SNMP", "IPP"],
+    "dimensions": {
+      "width": 615,
+      "depth": 685,
+      "height": 1168,
+      "weight": 140,
+      "unit": "mm",
+      "weightUnit": "kg"
+    },
+    "powerConsumption": {
+      "operating": "1.5 kW",
+      "standby": "81 watts",
+      "sleep": "0.5 watts"
+    }
+  },
+  "sales": {
+    "msrp": 4674,
+    "currency": "USD",
+    "streetPrice": 3200,
+    "targetMarket": ["Mid-size Workgroups", "Departments", "Corporate Offices"],
+    "sellingPoints": [
+      "High-quality color output at 36 PPM",
+      "Large paper capacity up to 6,650 sheets",
+      "Advanced security features",
+      "10.1-inch tablet-like touch panel",
+      "Scalable to meet growing needs"
+    ],
+    "competitiveAdvantages": [
+      "Superior color accuracy and consistency",
+      "Industry-leading ease of use",
+      "Bizhub SECURE platform for data protection",
+      "Low cost per page for color printing",
+      "Extensive finishing options available"
+    ],
+    "idealFor": [
+      "Marketing departments needing color output",
+      "Businesses consolidating multiple devices",
+      "Organizations requiring professional color quality",
+      "Departments with high-volume color needs"
+    ]
+  },
+  "costs": {
+    "consumables": {
+      "tonerCartridges": {
+        "black": {
+          "partNumber": "TN328K",
+          "yield": 28000,
+          "cost": 135
+        },
+        "cyan": {
+          "partNumber": "TN328C",
+          "yield": 28000,
+          "cost": 185
+        },
+        "magenta": {
+          "partNumber": "TN328M",
+          "yield": 28000,
+          "cost": 185
+        },
+        "yellow": {
+          "partNumber": "TN328Y",
+          "yield": 28000,
+          "cost": 185
+        }
+      },
+      "drums": {
+        "black": {
+          "partNumber": "DR316K",
+          "yield": 100000,
+          "cost": 195
+        },
+        "color": {
+          "partNumber": "DR316 C/M/Y",
+          "yield": 100000,
+          "cost": 195
+        }
+      },
+      "wasteContainer": {
+        "partNumber": "WX-107",
+        "yield": 50000,
+        "cost": 45
+      }
+    },
+    "costPerPage": {
+      "mono": 0.0048,
+      "color": 0.068
+    }
+  },
+  "setup": {
+    "unboxing": [
+      "Remove all external packing materials",
+      "Remove orange protective locks from scanner and internal components",
+      "Install toner cartridges (Black, Cyan, Magenta, Yellow)",
+      "Load paper in main cassette",
+      "Connect power cable"
+    ],
+    "initialSetup": [
+      "Power on using main power switch",
+      "Select language on 10.1-inch touch panel",
+      "Configure date, time, and time zone",
+      "Set administrator password",
+      "Configure network settings",
+      "Register device (optional cloud services)"
+    ],
+    "networkSetup": {
+      "ethernet": [
+        "Connect RJ-45 Ethernet cable to port on rear",
+        "Touch screen: Settings > Network Settings > TCP/IP Settings",
+        "Select Auto (DHCP) or Manual (Static IP)",
+        "Configure IPv4 address, subnet mask, gateway",
+        "Set DNS servers if using manual configuration",
+        "Print network status page to verify",
+        "Access Web Connection at http://[device-ip]"
+      ],
+      "wifi": [
+        "Requires optional Wireless LAN Unit (OT-115)",
+        "Install wireless module in designated slot",
+        "Settings > Network Settings > Wireless LAN",
+        "Select Infrastructure Mode",
+        "Choose SSID and enter WPA2 password",
+        "Confirm connection and test"
+      ]
+    },
+    "driverInstallation": {
+      "windows": "Download Konica Minolta bizhub C360i PCL/PS driver from support website. Run installer and select network search or enter IP address manually. Configure print settings and test page.",
+      "mac": "Download macOS driver from Konica Minolta support. Install PKG file and add printer via System Preferences > Printers & Scanners. Device supports AirPrint for driver-free printing.",
+      "linux": "Download Linux PPD and driver package from support site. Install via CUPS web interface (localhost:631). Configure using device IP address."
+    },
+    "configPages": {
+      "meterPage": "Touch screen: Counter > Print Counter List. Shows total impressions, prints, copies, scans by color.",
+      "configPage": "Touch screen: Utility > Administrator Settings > Machine Settings > Print Reports > Configuration Page",
+      "networkConfigPage": "Utility > Administrator Settings > Network Settings > Print Network Configuration",
+      "webInterface": "Access Web Connection by entering device IP in browser (http://192.168.1.100). Default admin login required. Provides full device management, user settings, and monitoring."
+    },
+    "commonIssues": [
+      "Configure scan destinations via Web Connection > Maintenance > Import/Export",
+      "Set up LDAP for corporate address book integration",
+      "Enable user authentication if department tracking needed",
+      "Update firmware via Web Connection for latest features",
+      "Configure bizhub SECURE for enhanced security compliance"
+    ]
+  },
+  "troubleshooting": {
+    "commonErrors": [
+      {
+        "code": "C2558",
+        "description": "Polygon motor error",
+        "severity": "critical",
+        "causes": [
+          "Polygon motor failure",
+          "Laser unit malfunction",
+          "Main controller communication error"
+        ],
+        "solutions": [
+          "Power off device completely",
+          "Wait 30 seconds",
+          "Power back on",
+          "If error persists, contact Konica Minolta service",
+          "May require laser unit replacement by technician"
+        ]
+      },
+      {
+        "code": "C0640",
+        "description": "Fixing unit error",
+        "severity": "critical",
+        "causes": [
+          "Fusing unit temperature sensor failure",
+          "Fixing unit at end of life",
+          "Thermistor malfunction"
+        ],
+        "solutions": [
+          "Power off and wait 20 minutes for cooling",
+          "Power back on",
+          "Check fixing unit page count",
+          "Replace fixing unit if at rated life",
+          "Contact service if error persists"
+        ]
+      },
+      {
+        "code": "Paper Misfeed",
+        "description": "Paper jam detected",
+        "severity": "warning",
+        "causes": [
+          "Paper loaded incorrectly",
+          "Damaged or humid paper",
+          "Feed rollers worn",
+          "Foreign object in path"
+        ],
+        "solutions": [
+          "Follow touch screen instructions for jam location",
+          "Open indicated cover",
+          "Remove all jammed sheets carefully",
+          "Check paper quality and reload properly",
+          "Clean feed rollers if jams recurring",
+          "Replace pickup roller assembly if needed"
+        ]
+      }
+    ],
+    "paperJams": [
+      {
+        "location": "Paper Cassette",
+        "accessInstructions": [
+          "Identify which cassette from touch screen",
+          "Pull cassette completely out"
+        ],
+        "clearanceSteps": [
+          "Remove all paper from cassette",
+          "Check for damaged sheets",
+          "Remove jammed paper from feed area",
+          "Inspect pickup rollers for wear",
+          "Reload paper with guides snug",
+          "Reinsert cassette fully"
+        ],
+        "prevention": [
+          "Use 52-300 g/m² paper only",
+          "Fan paper before loading",
+          "Don't mix paper types/weights",
+          "Store in controlled environment",
+          "Replace rollers at recommended intervals"
+        ]
+      },
+      {
+        "location": "Fixing Unit",
+        "accessInstructions": [
+          "WARNING: Wait 30 minutes after power off - extremely hot",
+          "Open right door"
+        ],
+        "clearanceSteps": [
+          "Ensure unit has cooled completely",
+          "Pull green release lever",
+          "Gently remove jammed paper",
+          "Do not touch fuser rollers",
+          "Close door firmly"
+        ],
+        "prevention": [
+          "Use correct paper weight setting",
+          "Avoid damp or wrinkled paper",
+          "Replace fixing unit at rated life"
+        ]
+      }
+    ],
+    "qualityIssues": [
+      {
+        "issue": "Color inconsistency or drift",
+        "symptoms": ["Colors not matching expected", "Gradual color shift"],
+        "causes": ["Auto color calibration disabled", "Drum wear", "Environmental factors"],
+        "solutions": [
+          "Run auto color calibration: Utility > Calibration > Auto Gradation",
+          "Perform full color calibration cycle",
+          "Clean drums and development units",
+          "Check room temperature (20-28°C recommended)",
+          "Replace drums if near end of life",
+          "Enable automatic calibration schedule"
+        ]
+      },
+      {
+        "issue": "Banding or streaking",
+        "symptoms": ["Horizontal bands", "Vertical streaks"],
+        "causes": ["Dirty transfer belt", "Drum contamination", "Toner issue"],
+        "solutions": [
+          "Run cleaning mode: Utility > Cleaning Mode",
+          "Inspect transfer belt for contamination",
+          "Clean drums and charging wires",
+          "Replace toner if defective",
+          "Check for foreign material in paper path"
+        ]
+      }
+    ],
+    "networkIssues": [
+      {
+        "issue": "Cannot access Web Connection interface",
+        "symptoms": ["Timeout when accessing IP", "Cannot login"],
+        "diagnosticSteps": [
+          "Print network status page",
+          "Verify IP address",
+          "Check Ethernet cable",
+          "Test network port"
+        ],
+        "solutions": [
+          "Verify correct IP address from status page",
+          "Check network cable is connected",
+          "Try different Ethernet port on switch",
+          "Reset network settings if needed",
+          "Enable HTTP/HTTPS in Network Settings",
+          "Check firewall rules allow access"
+        ]
+      },
+      {
+        "issue": "Scan to SMB not working",
+        "symptoms": ["Cannot access network folder", "Authentication fails"],
+        "diagnosticSteps": [
+          "Test folder access from Windows PC",
+          "Verify SMB is enabled on server",
+          "Check user permissions"
+        ],
+        "solutions": [
+          "Use format: \\\\servername\\share\\folder",
+          "Enter domain\\username in credentials",
+          "Enable SMB2 or SMB3 in Web Connection",
+          "Disable SMB1 requirement on Windows",
+          "Verify write permissions on destination",
+          "Test with IP address instead of hostname"
+        ]
+      }
+    ],
+    "generalMaintenance": [
+      {
+        "task": "Replace toner cartridges",
+        "frequency": "28,000 pages per color",
+        "procedure": [
+          "Open front door",
+          "Pull out depleted toner cartridge",
+          "Shake new cartridge 10-15 times",
+          "Remove protective seal",
+          "Insert until it clicks",
+          "Close door"
+        ],
+        "partsNeeded": ["TN328 series (K/C/M/Y)"]
+      },
+      {
+        "task": "Replace drum units",
+        "frequency": "100,000 pages per color",
+        "procedure": [
+          "Open front door",
+          "Remove toner cartridges",
+          "Release drum unit locks",
+          "Pull out old drums",
+          "Install new drum units",
+          "Reinstall toner cartridges",
+          "Reset drum counter via Utility menu"
+        ],
+        "partsNeeded": ["DR316K, DR316 C/M/Y"]
+      },
+      {
+        "task": "Replace waste toner box",
+        "frequency": "Every 50,000 pages",
+        "procedure": [
+          "Open front door",
+          "Pull out waste toner box",
+          "Insert new box until it clicks",
+          "Close door - counter resets automatically"
+        ],
+        "partsNeeded": ["WX-107"]
+      }
+    ]
+  },
+  "firmware": {
+    "latest": "A7PJ0Y00-0200-G00-11",
+    "releaseDate": "2024-09-20",
+    "updateProcedure": "Access Web Connection > Maintenance > Firmware Update. Upload firmware file from Konica Minolta support site. Requires administrator credentials. Do not power off during update."
+  },
+  "warranty": {
+    "standard": "1 year onsite warranty",
+    "extendedOptions": [
+      "2-year extended warranty",
+      "3-year total coverage with priority response",
+      "5-year comprehensive coverage available",
+      "Konica Minolta Optimized Print Services (OPS) with full coverage"
+    ]
+  },
+  "certifications": ["ENERGY STAR", "EPEAT Silver", "Blue Angel"],
+  "releaseDate": "2019-03"
+}

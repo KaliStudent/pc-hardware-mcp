@@ -1,0 +1,572 @@
+{
+  "id": "hp-ojp-9025e",
+  "manufacturer": "HP",
+  "model": "OfficeJet Pro 9025e",
+  "series": "OfficeJet Pro",
+  "formFactor": "workgroup",
+  "type": "inkjet",
+  "color": true,
+  "functions": ["print", "copy", "scan", "fax"],
+  "specifications": {
+    "printSpeed": {
+      "mono": 24,
+      "color": 24
+    },
+    "printResolution": {
+      "max": "4800x1200 dpi (color)",
+      "mono": "1200x1200 dpi"
+    },
+    "firstPageOut": {
+      "mono": 7,
+      "color": 7.5
+    },
+    "duty": {
+      "monthly": 30000,
+      "recommended": 2000
+    },
+    "paperHandling": {
+      "inputCapacity": 250,
+      "outputCapacity": 60,
+      "maxInputCapacity": 500,
+      "duplexing": "standard",
+      "paperSizes": ["A4", "A5", "B5", "Letter", "Legal", "Executive"],
+      "paperWeights": "60-300 g/m²"
+    },
+    "memory": "512 MB RAM",
+    "processor": "800 MHz",
+    "connectivity": ["Ethernet (10/100)", "USB 2.0", "Wi-Fi 802.11ac", "Bluetooth LE"],
+    "networkProtocols": ["TCP/IP", "IPv4", "IPv6", "SMB", "FTP", "SNMP", "IPP", "AirPrint", "Mopria"],
+    "dimensions": {
+      "width": 463,
+      "depth": 388,
+      "height": 288,
+      "weight": 9.96,
+      "unit": "mm",
+      "weightUnit": "kg"
+    },
+    "powerConsumption": {
+      "operating": "33 watts",
+      "standby": "2.9 watts",
+      "sleep": "0.7 watts"
+    }
+  },
+  "sales": {
+    "msrp": 279,
+    "currency": "USD",
+    "streetPrice": 229,
+    "targetMarket": ["Small Office", "Home Office", "SMB", "Remote Workers"],
+    "sellingPoints": [
+      "HP+ with 6 months free Instant Ink included",
+      "Self-healing WiFi automatically reconnects",
+      "Fast 24 PPM color and monochrome",
+      "Automatic 2-sided printing/scanning/copying",
+      "Smart tasks for workflow automation"
+    ],
+    "competitiveAdvantages": [
+      "HP+ ecosystem for free ink and advanced features",
+      "Lowest cost per page with Instant Ink",
+      "Self-healing WiFi prevents connectivity issues",
+      "HP Smart app with mobile scanning and shortcuts",
+      "Dual-band WiFi with best connection selection"
+    ],
+    "idealFor": [
+      "Home offices needing low ongoing costs",
+      "Small businesses with moderate color needs",
+      "Remote workers requiring reliable connectivity",
+      "Users wanting simplified ink management",
+      "Offices seeking subscription-based supplies"
+    ]
+  },
+  "costs": {
+    "consumables": {
+      "inkCartridges": {
+        "black": {
+          "partNumber": "HP 962 (standard), HP 962XL (high yield)",
+          "yield": 1000,
+          "yieldHigh": 2000,
+          "cost": 19.99,
+          "costHigh": 39.99
+        },
+        "cyan": {
+          "partNumber": "HP 962 (standard), HP 962XL (high yield)",
+          "yield": 700,
+          "yieldHigh": 1600,
+          "cost": 16.99,
+          "costHigh": 29.99
+        },
+        "magenta": {
+          "partNumber": "HP 962 (standard), HP 962XL (high yield)",
+          "yield": 700,
+          "yieldHigh": 1600,
+          "cost": 16.99,
+          "costHigh": 29.99
+        },
+        "yellow": {
+          "partNumber": "HP 962 (standard), HP 962XL (high yield)",
+          "yield": 700,
+          "yieldHigh": 1600,
+          "cost": 16.99,
+          "costHigh": 29.99
+        }
+      },
+      "instantInk": {
+        "description": "HP Instant Ink subscription service",
+        "plans": [
+          {"pages": 10, "monthlyCost": 0.99},
+          {"pages": 50, "monthlyCost": 4.99},
+          {"pages": 100, "monthlyCost": 7.99},
+          {"pages": 300, "monthlyCost": 12.99},
+          {"pages": 700, "monthlyCost": 24.99}
+        ],
+        "benefits": [
+          "Ink delivered before you run out",
+          "Includes all colors plus photo paper option",
+          "Rollover up to 2x monthly page limit",
+          "Recycle cartridges for free",
+          "Cancel anytime"
+        ]
+      }
+    },
+    "costPerPage": {
+      "mono": 0.02,
+      "color": 0.085,
+      "monoInstantInk": 0.002,
+      "colorInstantInk": 0.002
+    }
+  },
+  "setup": {
+    "unboxing": [
+      "Remove all packing materials and protective tape",
+      "Remove orange pull tabs from scanner and cartridge area",
+      "Open cartridge access door",
+      "Insert all four ink cartridges (CMYK) - remove orange clips first",
+      "Close cartridge door",
+      "Load paper in main tray",
+      "Connect power cable and turn on"
+    ],
+    "initialSetup": [
+      "Follow touchscreen prompts to select language",
+      "Select country/region",
+      "Load plain paper when prompted",
+      "Printer will align print heads (uses ink, takes 5 minutes)",
+      "Choose network connection method",
+      "Complete HP+ enrollment for free benefits (optional but recommended)",
+      "Install HP Smart app on phone/computer",
+      "Print test page"
+    ],
+    "networkSetup": {
+      "ethernet": [
+        "Connect RJ-45 Ethernet cable to port on rear",
+        "Printer automatically obtains IP via DHCP",
+        "Print network config page: Setup > Network > Print Network Config",
+        "Note IP address for driver installation",
+        "Access HP Smart or EWS at http://[printer-ip]"
+      ],
+      "wifi": [
+        "Touchscreen: Setup > Network > Wireless Settings > Wireless Setup Wizard",
+        "Select your WiFi network from list",
+        "Enter password using on-screen keyboard",
+        "Wait for connection confirmation",
+        "Self-healing WiFi will monitor and maintain connection",
+        "Print wireless test report to verify",
+        "Alternative: Use HP Smart app for guided WiFi setup"
+      ],
+      "wifiDirect": [
+        "Touchscreen: Setup > Network > WiFi Direct",
+        "Turn on WiFi Direct",
+        "Note SSID (DIRECT-xx-HP 9025) and password",
+        "Mobile devices connect directly without network",
+        "Up to 5 simultaneous connections"
+      ],
+      "bluetooth": [
+        "Used for easy mobile setup, not for printing",
+        "Enable Bluetooth during setup for HP Smart app pairing",
+        "HP Smart app uses Bluetooth to configure WiFi automatically"
+      ]
+    },
+    "driverInstallation": {
+      "windows": "Download HP OfficeJet Pro 9025e driver from hp.com/support or use HP Smart app from Microsoft Store (recommended). HP Smart provides full functionality including scan, mobile printing, and smart tasks. Driver includes PCL3 for standard printing.",
+      "mac": "Install HP Smart app from Mac App Store (recommended) or download driver from hp.com/support. Supports AirPrint for driverless printing. Add printer via System Preferences > Printers & Scanners for full features including scan and fax.",
+      "linux": "Install HPLIP from hplip.sourceforge.net. Run hp-setup for automatic configuration. Use CUPS interface for driver installation. Most features supported including duplex, color, and borderless."
+    },
+    "hpPlusSetup": [
+      "HP+ must be activated within 7 days of first use",
+      "Requires HP account creation (free)",
+      "Printer must remain connected to internet",
+      "Benefits: 6 months free Instant Ink, extended warranty, smart features",
+      "Use HP Smart app > Set up HP+",
+      "Follow prompts to create HP account",
+      "Register printer to account",
+      "Choose Instant Ink plan (free for 6 months)",
+      "HP+ restricts use of non-HP cartridges"
+    ],
+    "configPages": {
+      "meterPage": "Touchscreen: Setup > Reports > Printer Status Report. Shows page counts and ink levels.",
+      "configPage": "Setup > Reports > Configuration Report. Displays all settings and network configuration.",
+      "networkConfigPage": "Setup > Reports > Network Configuration Page. Shows IP, WiFi status, and network details.",
+      "webInterface": "Access HP Smart app or HP Embedded Web Server at http://[printer-ip]. No password required by default. Configure settings, view status, manage security."
+    },
+    "commonIssues": [
+      "Enable HP+ for best experience and free ink trial",
+      "Install HP Smart app for easiest management",
+      "Set up Smart Tasks in HP Smart for automated workflows",
+      "Configure scan to cloud (Google Drive, Dropbox, etc.) via HP Smart",
+      "Enable mobile fax if fax functionality needed",
+      "Update firmware via HP Smart or EWS for latest features",
+      "Enroll in Instant Ink for automatic ink delivery"
+    ]
+  },
+  "troubleshooting": {
+    "commonErrors": [
+      {
+        "code": "Printer Offline",
+        "description": "Printer shows offline status",
+        "severity": "warning",
+        "causes": [
+          "WiFi connection lost",
+          "Printer in sleep mode",
+          "IP address changed",
+          "Driver communication issue"
+        ],
+        "solutions": [
+          "Wake printer by pressing any button on touchscreen",
+          "Check WiFi connection: Setup > Network > Wireless Summary",
+          "Run wireless test report to diagnose connectivity",
+          "Self-healing WiFi should reconnect automatically",
+          "Manually restart WiFi: Setup > Network > Restore Network Settings",
+          "Power cycle printer and router",
+          "Use HP Print and Scan Doctor to fix connection",
+          "Reinstall printer driver if issue persists"
+        ]
+      },
+      {
+        "code": "Cartridge Problem",
+        "description": "Cartridge error or not recognized",
+        "severity": "warning",
+        "causes": [
+          "Cartridge not seated properly",
+          "Non-HP cartridge installed (with HP+)",
+          "Cartridge contacts dirty",
+          "Defective cartridge",
+          "Orange clip not removed"
+        ],
+        "solutions": [
+          "Remove and reseat cartridge firmly until it clicks",
+          "Verify orange protective clip was removed from new cartridge",
+          "Clean cartridge contacts with lint-free cloth slightly dampened",
+          "Check for protective tape still on cartridge",
+          "Use genuine HP 962/962XL cartridges (required with HP+)",
+          "Try cartridge in different slot to isolate issue",
+          "Replace cartridge if defective",
+          "Update firmware via HP Smart app"
+        ]
+      },
+      {
+        "code": "Print Head Problem",
+        "description": "Print head failure or alignment issue",
+        "severity": "critical",
+        "causes": [
+          "Clogged print head nozzles",
+          "Dried ink in print head",
+          "Print head alignment needed",
+          "Print head at end of life"
+        ],
+        "solutions": [
+          "Run print head cleaning: Touchscreen > Setup > Tools > Clean Printhead",
+          "Run cleaning 2-3 times if needed (uses ink)",
+          "Let printer rest 30 minutes between deep cleans",
+          "Print alignment page: Setup > Tools > Align Printer",
+          "Follow instructions to scan or photograph alignment page",
+          "Check all ink cartridges have adequate ink",
+          "If cleaning doesn't help, print head may need replacement",
+          "Contact HP support for print head replacement (not user serviceable)"
+        ]
+      },
+      {
+        "code": "Out of Ink",
+        "description": "Low or empty ink cartridge",
+        "severity": "warning",
+        "causes": [
+          "Cartridge empty",
+          "Low ink warning"
+        ],
+        "solutions": [
+          "Check ink levels on touchscreen or in HP Smart app",
+          "Replace depleted cartridge with HP 962 or 962XL",
+          "With Instant Ink: New cartridges automatically shipped when low",
+          "Can print temporarily with one color empty (uses other colors)",
+          "Override low ink warning: Setup > Preferences > Continue with low ink",
+          "Order replacement cartridges before completely empty",
+          "Consider HP Instant Ink subscription for automatic delivery"
+        ]
+      }
+    ],
+    "paperJams": [
+      {
+        "location": "Main Input Tray",
+        "accessInstructions": [
+          "Remove all paper from input tray",
+          "Check touchscreen for jam location diagram"
+        ],
+        "clearanceSteps": [
+          "Pull input tray out completely",
+          "Remove any jammed or damaged sheets",
+          "Check for torn pieces of paper",
+          "Inspect pickup roller for wear or debris",
+          "Wipe pickup roller with water-dampened cloth",
+          "Fan paper stack before reloading",
+          "Adjust paper guides snug against paper edges",
+          "Reinsert tray fully",
+          "Resume printing"
+        ],
+        "prevention": [
+          "Use 60-105 g/m² paper (16-28 lb) for regular printing",
+          "Don't overload tray - max 250 sheets 20lb paper",
+          "Fan paper before loading to prevent sticking",
+          "Store paper in controlled environment",
+          "Don't mix paper types or sizes in same tray",
+          "Keep paper wrapped until use to prevent humidity"
+        ]
+      },
+      {
+        "location": "Rear Access Door",
+        "accessInstructions": [
+          "Press tabs on both sides of rear door",
+          "Pull door down to open"
+        ],
+        "clearanceSteps": [
+          "Open rear access door",
+          "Gently pull jammed paper out in direction it feeds",
+          "Remove all torn pieces",
+          "Check duplexer area for additional paper",
+          "Close rear door firmly until it clicks",
+          "Resume printing"
+        ],
+        "prevention": [
+          "Use correct paper weight for duplex (60-105 g/m²)",
+          "Avoid cardstock or heavy media in duplex mode",
+          "Don't reuse previously jammed sheets",
+          "Ensure paper is not curled or folded"
+        ]
+      },
+      {
+        "location": "Cartridge Area",
+        "accessInstructions": [
+          "Open cartridge access door",
+          "Carriage will move to center"
+        ],
+        "clearanceSteps": [
+          "Wait for carriage to stop moving and become silent",
+          "Look for jammed paper in carriage path",
+          "Gently remove any paper without forcing",
+          "Check for torn pieces",
+          "Do not touch print head or copper contacts",
+          "Close cartridge door",
+          "Printer will reset and resume"
+        ],
+        "prevention": [
+          "Keep cartridge area clean",
+          "Don't open cartridge door during printing",
+          "Use straight, undamaged paper",
+          "Avoid printing on wrinkled or folded sheets"
+        ]
+      }
+    ],
+    "qualityIssues": [
+      {
+        "issue": "Streaks or missing colors",
+        "symptoms": ["White lines", "Missing color", "Streaky prints"],
+        "causes": ["Clogged print head", "Low ink", "Dried ink", "Misaligned print head"],
+        "solutions": [
+          "Check ink levels and replace low cartridges",
+          "Run print head cleaning: Setup > Tools > Clean Printhead",
+          "Run cleaning 2-3 times if heavily clogged (wait 30 min between)",
+          "Print alignment page: Setup > Tools > Align Printer",
+          "Use printer regularly (weekly) to prevent drying",
+          "Print test page to verify quality",
+          "If problem persists, may need print head replacement"
+        ]
+      },
+      {
+        "issue": "Smudged or smeared ink",
+        "symptoms": ["Wet or smeared ink", "Transfer to other pages", "Blurry text"],
+        "causes": ["Wrong paper type setting", "Too much ink", "Damp paper", "Print head too close"],
+        "solutions": [
+          "Select correct paper type in print settings (Plain/Photo/Brochure)",
+          "Use HP-recommended paper types",
+          "Ensure paper is dry and stored properly",
+          "Reduce print quality/ink density if on plain paper",
+          "Allow prints to dry before stacking",
+          "Clean paper path: Setup > Tools > Clean Paper Path",
+          "Check for ink buildup on rollers - clean with damp cloth"
+        ]
+      },
+      {
+        "issue": "Faded or light prints",
+        "symptoms": ["Washed out appearance", "Light colors", "Weak blacks"],
+        "causes": ["Low ink", "Draft mode enabled", "Wrong paper type", "Printhead needs alignment"],
+        "solutions": [
+          "Check ink levels in HP Smart app or touchscreen",
+          "Disable draft/EconoMode in print settings",
+          "Select 'Best' quality instead of 'Draft' or 'Normal'",
+          "Ensure correct paper type selected (Plain vs Photo)",
+          "Run print head alignment",
+          "Clean print head if colors still weak",
+          "Replace low or empty cartridges"
+        ]
+      },
+      {
+        "issue": "Paper curl or wave",
+        "symptoms": ["Printed pages curled", "Wavy edges", "Pages don't stack flat"],
+        "causes": ["Too much ink on thin paper", "High humidity", "Photo mode on plain paper"],
+        "solutions": [
+          "Use heavier paper weight (24 lb/90 g/m² instead of 20 lb)",
+          "Select 'Plain Paper' type, not 'Photo' for regular documents",
+          "Reduce print quality to use less ink",
+          "Store paper in controlled environment (40-60% RH)",
+          "Print on reverse side to counter-curl",
+          "Use HP BrightWhite or premium paper",
+          "Let prints dry thoroughly before stacking"
+        ]
+      }
+    ],
+    "networkIssues": [
+      {
+        "issue": "WiFi connection lost or unstable",
+        "symptoms": ["Printer offline", "Cannot print", "Intermittent connection"],
+        "diagnosticSteps": [
+          "Print wireless network test report",
+          "Check WiFi signal strength indicator",
+          "Verify router is working",
+          "Test from multiple devices"
+        ],
+        "solutions": [
+          "Self-healing WiFi should automatically reconnect",
+          "Move printer closer to router if signal weak",
+          "Reduce interference from other electronics",
+          "Switch to 2.4GHz band if using 5GHz and having issues",
+          "Restart router and printer",
+          "Update router firmware",
+          "Run network diagnostics: Setup > Network > Wireless Setup Wizard > Test",
+          "Reset network settings and reconfigure if needed",
+          "Use Ethernet cable for more stable connection"
+        ]
+      },
+      {
+        "issue": "HP Smart app can't find printer",
+        "symptoms": ["No printer found", "Setup failed", "Can't connect"],
+        "diagnosticSteps": [
+          "Check printer is powered on",
+          "Verify mobile device on same WiFi",
+          "Check Bluetooth is enabled during setup"
+        ],
+        "solutions": [
+          "Ensure mobile device on same WiFi network as printer",
+          "Enable Bluetooth on phone for automatic printer discovery",
+          "Use WiFi Direct if on different networks",
+          "Update HP Smart app to latest version",
+          "Restart HP Smart app",
+          "Restart printer",
+          "Try manual setup using printer IP address",
+          "Check router allows device-to-device communication (disable AP isolation)"
+        ]
+      },
+      {
+        "issue": "Instant Ink not working",
+        "symptoms": ["Not receiving ink", "Can't enroll", "Usage not tracking"],
+        "diagnosticSteps": [
+          "Check HP+ enrollment status",
+          "Verify printer connected to internet",
+          "Check Instant Ink account status online"
+        ],
+        "solutions": [
+          "Ensure HP+ is activated and printer registered",
+          "Verify printer has internet connection",
+          "Sign in to Instant Ink at instantink.hpconnected.com",
+          "Check shipping address is correct",
+          "Verify payment method is valid",
+          "Ensure printer reports usage (needs internet)",
+          "Contact Instant Ink support if shipment overdue",
+          "Make sure using original HP cartridges with chip"
+        ]
+      }
+    ],
+    "generalMaintenance": [
+      {
+        "task": "Replace ink cartridges",
+        "frequency": "When empty or based on Instant Ink delivery",
+        "procedure": [
+          "Wait for printer to be idle",
+          "Open cartridge access door",
+          "Wait for carriage to stop in center",
+          "Press down on old cartridge to release",
+          "Pull cartridge out",
+          "Remove new HP 962 or 962XL from package",
+          "Remove orange pull tab from new cartridge",
+          "Insert new cartridge at angle, push until it clicks",
+          "Close cartridge door",
+          "Printer recognizes new cartridge automatically",
+          "With Instant Ink: Return empty cartridge in prepaid envelope"
+        ],
+        "partsNeeded": ["HP 962 or HP 962XL (Black, Cyan, Magenta, Yellow)"]
+      },
+      {
+        "task": "Clean print heads",
+        "frequency": "Monthly or when quality degrades",
+        "procedure": [
+          "Touchscreen: Setup > Tools > Clean Printhead",
+          "Select 'Clean' or 'Deep Clean' based on severity",
+          "Wait for cleaning cycle to complete (uses ink)",
+          "Print test page to verify improvement",
+          "Repeat up to 3 times if needed (wait 30 min between)",
+          "If no improvement after 3 cleanings, contact HP support"
+        ],
+        "partsNeeded": ["Adequate ink in all cartridges"]
+      },
+      {
+        "task": "Align print heads",
+        "frequency": "After replacing cartridges or if alignment off",
+        "procedure": [
+          "Touchscreen: Setup > Tools > Align Printer",
+          "Load plain white paper in tray",
+          "Printer prints alignment page",
+          "Place alignment page on scanner glass as directed",
+          "Close scanner lid",
+          "Printer scans page and aligns automatically",
+          "Print test page to verify alignment"
+        ],
+        "partsNeeded": ["Plain white paper"]
+      },
+      {
+        "task": "Clean printer",
+        "frequency": "Monthly or when needed",
+        "procedure": [
+          "Wipe exterior with damp cloth",
+          "Clean scanner glass with glass cleaner and soft cloth",
+          "Clean ADF (if equipped) with damp cloth",
+          "Run 'Clean Paper Path' tool from touchscreen",
+          "Wipe output tray to remove ink residue",
+          "Clean pickup rollers with water-dampened cloth",
+          "Dry thoroughly before use"
+        ],
+        "partsNeeded": ["Lint-free cloths", "Glass cleaner", "Water"]
+      }
+    ]
+  },
+  "firmware": {
+    "latest": "2311A",
+    "releaseDate": "2023-11-15",
+    "updateProcedure": "Firmware updates automatically via HP+ when connected to internet. Manual update: Open HP Smart app > Printer Settings > Advanced Settings > Firmware Update. Or access EWS at http://[printer-ip] > Tools > Firmware Update. Printer must be connected to internet. Updates improve features, security, and HP+ functionality."
+  },
+  "warranty": {
+    "standard": "1 year limited hardware warranty",
+    "extendedOptions": [
+      "HP+ includes extended 2-year warranty (when activated within 7 days)",
+      "HP Care Pack 1-year post-warranty support",
+      "HP Care Pack 2-year pickup and return service",
+      "HP Care Pack 3-year next business day exchange"
+    ]
+  },
+  "certifications": ["ENERGY STAR", "EPEAT Silver"],
+  "releaseDate": "2021-09"
+}

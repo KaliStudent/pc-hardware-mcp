@@ -1,0 +1,305 @@
+{
+  "id": "ricoh-p-502",
+  "manufacturer": "Ricoh",
+  "model": "P 502",
+  "series": "P Series",
+  "formFactor": "workgroup",
+  "type": "laser",
+  "color": false,
+  "functions": ["print"],
+  "specifications": {
+    "printSpeed": {
+      "mono": 43,
+      "color": 0
+    },
+    "printResolution": {
+      "max": "1200x1200 dpi"
+    },
+    "firstPageOut": {
+      "mono": 5.9,
+      "color": 0
+    },
+    "duty": {
+      "monthly": 150000,
+      "recommended": 15000
+    },
+    "paperHandling": {
+      "inputCapacity": 650,
+      "outputCapacity": 500,
+      "maxInputCapacity": 2300,
+      "duplexing": "standard",
+      "paperSizes": ["A4", "A5", "A6", "B5", "Letter", "Legal", "Executive"],
+      "paperWeights": "60-220 g/m²"
+    },
+    "memory": "512 MB RAM",
+    "processor": "800 MHz",
+    "connectivity": ["Ethernet (10/100/1000)", "USB 2.0", "Wi-Fi (optional)"],
+    "networkProtocols": ["TCP/IP", "IPv4", "IPv6", "SMB", "FTP", "SNMP", "IPP", "LPD", "AirPrint"],
+    "dimensions": {
+      "width": 400,
+      "depth": 450,
+      "height": 375,
+      "weight": 23,
+      "unit": "mm",
+      "weightUnit": "kg"
+    },
+    "powerConsumption": {
+      "operating": "665 watts",
+      "standby": "42 watts",
+      "sleep": "0.9 watts"
+    }
+  },
+  "sales": {
+    "msrp": 499,
+    "currency": "USD",
+    "streetPrice": 399,
+    "targetMarket": ["Small Workgroups", "Branch Offices", "SMB", "Education"],
+    "sellingPoints": [
+      "Fast 43 PPM monochrome printing",
+      "Compact design for small spaces",
+      "Low total cost of ownership",
+      "Standard duplex printing",
+      "Energy-efficient operation"
+    ],
+    "competitiveAdvantages": [
+      "Ricoh reliability and quality",
+      "Simple operation and maintenance",
+      "Excellent value proposition",
+      "Low energy consumption",
+      "Quiet operation for office environments"
+    ],
+    "idealFor": [
+      "Small workgroups with moderate volume",
+      "Branch offices needing reliability",
+      "SMBs seeking affordability",
+      "Educational institutions",
+      "Organizations focused on low TCO"
+    ]
+  },
+  "costs": {
+    "consumables": {
+      "tonerCartridges": {
+        "black": {
+          "partNumber": "408184 (standard), 408187 (high yield)",
+          "yield": 12500,
+          "yieldHigh": 25000,
+          "cost": 135,
+          "costHigh": 215
+        }
+      }
+    },
+    "costPerPage": {
+      "mono": 0.0086,
+      "color": 0
+    }
+  },
+  "setup": {
+    "unboxing": [
+      "Remove all packing materials",
+      "Remove protective tape",
+      "Install toner cartridge",
+      "Load paper in tray",
+      "Connect power cable"
+    ],
+    "initialSetup": [
+      "Press power button",
+      "Wait for startup",
+      "Configure basic settings",
+      "Choose network method",
+      "Print test page"
+    ],
+    "networkSetup": {
+      "ethernet": [
+        "Connect Ethernet cable",
+        "Access control panel",
+        "Navigate to Network settings",
+        "Select DHCP or Static IP",
+        "Configure IP if static",
+        "Print network status",
+        "Access web interface at http://[ip]"
+      ],
+      "wifi": [
+        "Requires optional wireless module",
+        "Install module (service install)",
+        "Access Network > Wireless",
+        "Select SSID",
+        "Enter password",
+        "Confirm connection"
+      ]
+    },
+    "driverInstallation": {
+      "windows": "Download Ricoh P 502 PCL6 driver from ricoh.com. Run installer and select network setup. Driver finds printer automatically or enter IP manually.",
+      "mac": "Download macOS driver from Ricoh. Add via System Preferences > Printers & Scanners. Supports AirPrint for driverless printing.",
+      "linux": "Download PPD from Ricoh. Configure via CUPS at localhost:631 using device IP."
+    },
+    "configPages": {
+      "meterPage": "Control panel: Menu > Reports > Counter",
+      "configPage": "Menu > Reports > Configuration Page",
+      "networkConfigPage": "Menu > Reports > Network Status",
+      "webInterface": "Access at http://[device-ip]. Configure settings, monitor status."
+    },
+    "commonIssues": [
+      "Update firmware via web interface",
+      "Configure user authentication if needed",
+      "Set up network folder for document storage",
+      "Enable SNMP for monitoring"
+    ]
+  },
+  "troubleshooting": {
+    "commonErrors": [
+      {
+        "code": "SC Error",
+        "description": "Service call error",
+        "severity": "critical",
+        "causes": [
+          "Internal component failure"
+        ],
+        "solutions": [
+          "Note error code",
+          "Power off",
+          "Wait 30 seconds",
+          "Power on",
+          "Contact Ricoh service if persists"
+        ]
+      },
+      {
+        "code": "Paper Jam",
+        "description": "Paper misfeed",
+        "severity": "warning",
+        "causes": [
+          "Incorrect loading",
+          "Worn rollers"
+        ],
+        "solutions": [
+          "Follow display instructions",
+          "Open indicated cover",
+          "Remove jammed paper",
+          "Check paper quality",
+          "Clean rollers if recurring"
+        ]
+      },
+      {
+        "code": "Toner Low",
+        "description": "Low toner warning",
+        "severity": "warning",
+        "causes": [
+          "Toner nearing empty"
+        ],
+        "solutions": [
+          "Order replacement toner",
+          "Continue printing",
+          "Replace when empty"
+        ]
+      }
+    ],
+    "paperJams": [
+      {
+        "location": "Paper Tray",
+        "accessInstructions": [
+          "Pull tray out"
+        ],
+        "clearanceSteps": [
+          "Remove paper",
+          "Check for jams",
+          "Remove torn pieces",
+          "Reload properly",
+          "Reinsert tray"
+        ],
+        "prevention": [
+          "Use proper paper",
+          "Don't overfill",
+          "Adjust guides"
+        ]
+      },
+      {
+        "location": "Duplex",
+        "accessInstructions": [
+          "Open rear door"
+        ],
+        "clearanceSteps": [
+          "Open door",
+          "Remove jammed paper",
+          "Close door"
+        ],
+        "prevention": [
+          "Use appropriate weight",
+          "Avoid curled paper"
+        ]
+      }
+    ],
+    "qualityIssues": [
+      {
+        "issue": "Faded prints",
+        "symptoms": ["Light output"],
+        "causes": ["Low toner", "Eco mode"],
+        "solutions": [
+          "Check toner level",
+          "Disable Eco mode",
+          "Replace toner"
+        ]
+      },
+      {
+        "issue": "Streaks",
+        "symptoms": ["Lines on prints"],
+        "causes": ["Debris", "Worn components"],
+        "solutions": [
+          "Clean interior",
+          "Print cleaning pages",
+          "Replace worn parts"
+        ]
+      }
+    ],
+    "networkIssues": [
+      {
+        "issue": "Cannot connect",
+        "symptoms": ["Offline"],
+        "diagnosticSteps": [
+          "Check cable",
+          "Verify IP"
+        ],
+        "solutions": [
+          "Check connection",
+          "Verify settings",
+          "Restart device"
+        ]
+      }
+    ],
+    "generalMaintenance": [
+      {
+        "task": "Replace toner",
+        "frequency": "12.5K or 25K pages",
+        "procedure": [
+          "Open front cover",
+          "Remove old toner",
+          "Install new 408187",
+          "Close cover"
+        ],
+        "partsNeeded": ["408184 or 408187"]
+      },
+      {
+        "task": "Clean printer",
+        "frequency": "Monthly",
+        "procedure": [
+          "Wipe exterior",
+          "Clean paper path",
+          "Run cleaning page"
+        ],
+        "partsNeeded": ["Lint-free cloths"]
+      }
+    ]
+  },
+  "firmware": {
+    "latest": "1.14",
+    "releaseDate": "2024-06-15",
+    "updateProcedure": "Access web interface. Navigate to Configuration > Firmware. Upload file from ricoh.com. Device reboots during update."
+  },
+  "warranty": {
+    "standard": "1 year limited warranty",
+    "extendedOptions": [
+      "Ricoh 2-year extended warranty",
+      "Service agreements available"
+    ]
+  },
+  "certifications": ["ENERGY STAR"],
+  "releaseDate": "2020-03"
+}
