@@ -9,7 +9,9 @@
     "watch": "tsc --watch",
     "prepare": "npm run build",
     "dev": "tsc && cp src/pdf-wrapper.cjs dist/pdf-wrapper.cjs && node dist/index.js",
-    "start": "node dist/index.js"
+    "start": "node dist/index.js",
+    "api": "tsc && cp src/pdf-wrapper.cjs dist/pdf-wrapper.cjs && node dist/rest-api.js",
+    "dev:api": "tsc --watch & node --watch dist/rest-api.js"
   },
   "keywords": [
     "mcp",
@@ -28,10 +30,14 @@
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.0.4",
     "better-sqlite3": "^11.7.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
     "pdf-parse": "^2.4.5"
   },
   "devDependencies": {
     "@types/better-sqlite3": "^7.6.12",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.5",
     "@types/node": "^22.10.2",
     "typescript": "^5.7.2"
   }
